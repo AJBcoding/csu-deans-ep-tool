@@ -1,0 +1,19 @@
+node_modules/
+dist/
+build/
+.next/
+.cache/
+.parcel-cache/
+*.log
+.DS_Store
+.env
+.env.local
+.env.*.local
+
+# Pulled datasets (build-time only — re-fetch from primary sources)
+data/raw/
+
+# Editor
+.vscode/
+.idea/
+*.swp
