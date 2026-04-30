@@ -143,12 +143,19 @@ describe('R07 — 50%-in-state benchmark route', () => {
   it('fires parametric when in_state_share missing', () => {
     const f = RULES.R07!(ctxFor({}));
     expect(f?.data_status).toBe('PAR');
-    expect(f?.note).toMatch(/Phase 1 build-side join/);
+    expect(f?.note).toMatch(/legacy build pre-cp-0on\.1/);
   });
   it('fires deterministic when in_state_share supplied', () => {
     const f = RULES.R07!(ctxFor({ in_state_share: 0.93 }));
     expect(f?.data_status).toBe('DET');
     expect(f?.note).toMatch(/93\.0%/);
+  });
+  // cp-0on.5 acceptance — CSULB-specific value lands as DET post-merge.
+  it('CSULB fixture (in_state_share=0.9918) → DET citing 99.2% in-state share', () => {
+    const f = RULES.R07!(ctxFor({ in_state_share: 0.9918 }));
+    expect(f?.data_status).toBe('DET');
+    expect(f?.note).toMatch(/99\.2%/);
+    expect(f?.note).toMatch(/t4enrl_inst_instate_p1819/);
   });
 });
 

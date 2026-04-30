@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import type {
   BenchmarkRoute,
   Credlev,
+  HiddenProgramCandidate,
   InstitutionRecord,
   ProgramRecord,
   SuppressionFlags,
@@ -82,7 +83,10 @@ export function makeProgram(o: ProgramOverrides = {}): ProgramRecord {
   };
 }
 
-export function makeInstitution(programs: ProgramRecord[] = []): InstitutionRecord {
+export function makeInstitution(
+  programs: ProgramRecord[] = [],
+  hidden_program_candidates?: HiddenProgramCandidate[],
+): InstitutionRecord {
   return {
     unitid: '110583',
     opeid6: '001139',
@@ -94,5 +98,6 @@ export function makeInstitution(programs: ProgramRecord[] = []): InstitutionReco
     ppd_release: '2026',
     build_date: '2026-04-29',
     programs,
+    ...(hidden_program_candidates !== undefined ? { hidden_program_candidates } : {}),
   };
 }

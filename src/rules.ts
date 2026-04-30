@@ -142,8 +142,10 @@ const R06: RuleFn = ({ program }) => {
 
 // ─────────────────────────────────────────────────────────────────────────────
 // R07 — 50%-in-state benchmark route
-// Phase 1 (b) — amber's FA-part-1 join. Until that lands `in_state_share`
-// is undefined; R07 fires as a parametric advisory.
+// PAR→DET upgrade landed via cp-0on.5: amber's FA-part-1 / inst-completions
+// join (cp-0on.1) populates `in_state_share` on every program record, so the
+// CSULB run now fires DET. The PAR fallback is preserved for legacy fixtures
+// produced before the build-side join landed.
 // ─────────────────────────────────────────────────────────────────────────────
 
 const R07: RuleFn = ({ program }) => {
@@ -156,7 +158,7 @@ const R07: RuleFn = ({ program }) => {
       m_doc: M_DOCS.M03,
       data_status: 'PAR',
       note:
-        '`t4enrl_inst_instate_p1819` is in PPD financial-aid-part-1 (Phase 1 build-side join — pending). Currently parametric.',
+        '`t4enrl_inst_instate_p1819` not present on this fixture (legacy build pre-cp-0on.1). Parametric fallback.',
     };
   }
   return {
@@ -296,14 +298,16 @@ const R13: RuleFn = ({ surfacedVerdict }) => {
 
 // ─────────────────────────────────────────────────────────────────────────────
 // R14 — Hidden-program surfacer
-// Phase 1 (c) — amber's IPEDS Completions join (sub-sling). Surfacer logic
-// at the institution level lives in `engine.ts`; per-program R14 fires as a
-// parametric advisory until the join lands.
+// PAR→DET upgrade landed via cp-0on.5: amber's IPEDS Completions join
+// (cp-0on.1) populates `institution.hidden_program_candidates`. Surfacer
+// logic at the institution level lives in `engine.ts`
+// (`buildHiddenProgramSurface`) — DET when candidates are present, PAR
+// fallback when absent.
 //
-// Convention: R14 fires once per program AT THE INSTITUTION LEVEL, not per
-// program. The engine surfaces it via `hidden_programs.parametric_note`. The
-// per-program rule fire is omitted to avoid duplicating the advisory across
-// every card. (Engine still emits R14 at institution level — see engine.ts.)
+// Convention: R14 fires once AT THE INSTITUTION LEVEL, not per program. The
+// engine surfaces it via `hidden_programs.data_status` + `programs[]` /
+// `parametric_note`. Per-program rule fire is omitted to avoid duplicating
+// the advisory across every card.
 // ─────────────────────────────────────────────────────────────────────────────
 
 const R14: RuleFn = () => null;

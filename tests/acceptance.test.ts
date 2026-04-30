@@ -125,8 +125,15 @@ describe('Acceptance — dean memo v10 §1', () => {
     expect(result.cross_validation_banner).toBeNull();
   });
 
-  it('hidden-program surfacer is parametric (Phase 1 (c) pending)', () => {
-    expect(result.hidden_programs.available).toBe(false);
-    expect(result.hidden_programs.parametric_note).toMatch(/IPEDS Completions/);
+  it('hidden-program surfacer is deterministic (post-cp-0on.1 — candidates populated)', () => {
+    // PAR→DET upgrade landed via cp-0on.5: the CSULB fixture carries
+    // `hidden_program_candidates` from amber's IPEDS Completions join, so
+    // R14 surfaces the list deterministically.
+    expect(result.hidden_programs.available).toBe(true);
+    expect(result.hidden_programs.data_status).toBe('DET');
+    expect(result.hidden_programs.parametric_note).toBeNull();
+    expect(result.hidden_programs.programs.length).toBeGreaterThan(0);
+    // Provenance cites the IPEDS Completions C-survey vintage.
+    expect(result.hidden_programs.provenance).toMatch(/IPEDS Completions/);
   });
 });

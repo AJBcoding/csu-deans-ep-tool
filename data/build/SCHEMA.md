@@ -156,3 +156,29 @@ python3 data/build/build_fixtures.py
 ```
 
 A full refresh takes ~60s on a recent laptop (debt-earnings xlsx parse dominates).
+
+## Changelog
+
+### cp-0on.5 — R07/R14 PAR→DET upgrade (atomic bundle, 2026-04-30)
+
+Bundles cp-0on.1's build-pipeline outputs (`in_state_share`,
+`hidden_program_candidates`) with the engine-side tag flip. No schema changes
+to the JSON shape itself; the upgrade is a determinism-tag re-classification
+in the rules engine:
+
+- **R07** (`in_state_share`) — when the program record carries
+  `in_state_share` (now true for all post-cp-0on.1 fixtures), R07 fires with
+  `data_status: 'DET'` citing the actual percentage. PAR fallback retained
+  for legacy fixtures predating the build-side join.
+- **R14** (`hidden_program_candidates`) — `HiddenProgramSurface` now
+  carries an explicit `data_status: 'DET' | 'PAR'` field. When the
+  institution carries a populated `hidden_program_candidates` array (now
+  true for all post-cp-0on.1 fixtures), the surfacer materializes the list
+  with `available: true`, `data_status: 'DET'`, and provenance citing the
+  IPEDS Completions C2024_A vintage. PAR fallback retained for legacy
+  fixtures predating the build-side join.
+
+CSULB fixture re-run preserves the four dean-memo verdicts (Music MM FAIL
+−32.65%, Art MFA FAIL −20.40%, Theatre BA PASS +6.06% within R19 noise band,
+Cinematic Arts BA NOT MEASURED via b16_invisible_to_ppd through the
+queried-CIPs path) — the change is tag-only.

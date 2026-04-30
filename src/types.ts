@@ -41,8 +41,23 @@ export interface ProgramRecord {
   ppd_fail_obbb: 0 | 1 | null;
   ppd_fail_master: 0 | 1 | null;
   suppression: SuppressionFlags;
-  // Phase 1 (b) — surfaced once amber's FA-part-1 join lands. Engine treats as null until then.
+  // Phase 1 (b) populated by amber's FA-part-1 join (cp-0on.1). When present,
+  // R07 fires with data_status=DET; when absent (legacy fixtures), R07 falls
+  // back to a parametric advisory (data_status=PAR).
   in_state_share?: number | null;
+}
+
+/**
+ * Hidden-program candidate as emitted by the build pipeline (Phase 1 (c) /
+ * cp-0on.1 IPEDS Completions join — see data/build/SCHEMA.md "R14
+ * hidden_program_candidates"). One row per (cip6, credlev) at the
+ * institution that confers awards in IPEDS but has no PPD program cell.
+ */
+export interface HiddenProgramCandidate {
+  cip6: string;
+  credlev: Credlev;
+  completers_total: number;
+  vintage: string;
 }
 
 export interface InstitutionRecord {
@@ -56,6 +71,11 @@ export interface InstitutionRecord {
   ppd_release: string;
   build_date: string;
   programs: ProgramRecord[];
+  // Phase 1 (c) populated by amber's IPEDS Completions join (cp-0on.1). When
+  // present + non-empty, the hidden-program surfacer (R14) materializes the
+  // list with data_status=DET; when absent, the surfacer falls back to a
+  // parametric advisory (data_status=PAR).
+  hidden_program_candidates?: HiddenProgramCandidate[];
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -157,6 +177,13 @@ export interface HiddenProgramSurface {
   programs: HiddenProgram[];
   provenance: string;
   parametric_note: string | null;
+  /**
+   * Determinism tag mirroring the RuleFire convention. DET when
+   * `institution.hidden_program_candidates` is populated and the surfacer
+   * materializes the list; PAR when the build-side join has not landed and
+   * only a parametric advisory is available (cp-0on.5 PAR→DET upgrade).
+   */
+  data_status: DataStatus;
 }
 
 export interface HiddenProgram {

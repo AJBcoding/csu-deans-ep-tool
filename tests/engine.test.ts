@@ -250,3 +250,42 @@ describe('Engine — noise-band suppressed-earnings annotation', () => {
     expect(v.noise_band.provenance).toBe('earnings_suppressed_ppd_published');
   });
 });
+
+// ─────────────────────────────────────────────────────────────────────────────
+// R14 — Hidden-program surfacer PAR→DET upgrade (cp-0on.5)
+// ─────────────────────────────────────────────────────────────────────────────
+
+describe('R14 — hidden-program surfacer (institution-level)', () => {
+  it('falls back to PAR when hidden_program_candidates is absent', () => {
+    const inst = makeInstitution([makeProgram({})]);
+    const r = analyzeInstitution(inst);
+    expect(r.hidden_programs.available).toBe(false);
+    expect(r.hidden_programs.data_status).toBe('PAR');
+    expect(r.hidden_programs.parametric_note).toMatch(/legacy build pre-cp-0on\.1/);
+    expect(r.hidden_programs.programs).toEqual([]);
+  });
+
+  it('fires DET when hidden_program_candidates includes Cinematic Arts BA (50.0601)', () => {
+    const inst = makeInstitution(
+      [makeProgram({})],
+      [
+        {
+          cip6: '50.0601',
+          credlev: 'Bachelor',
+          completers_total: 230,
+          vintage: '2024',
+        },
+      ],
+    );
+    const r = analyzeInstitution(inst);
+    expect(r.hidden_programs.available).toBe(true);
+    expect(r.hidden_programs.data_status).toBe('DET');
+    expect(r.hidden_programs.parametric_note).toBeNull();
+    expect(r.hidden_programs.provenance).toMatch(/IPEDS Completions C2024_A/);
+    expect(r.hidden_programs.programs).toHaveLength(1);
+    const cinema = r.hidden_programs.programs[0]!;
+    expect(cinema.cip6).toBe('50.0601');
+    expect(cinema.credlev).toBe('Bachelor');
+    expect(cinema.cohort_range_label).toBe('230 completers');
+  });
+});

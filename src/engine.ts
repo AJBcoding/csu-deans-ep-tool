@@ -4,6 +4,8 @@
 import type {
   AnalysisResult,
   Credlev,
+  HiddenProgram,
+  HiddenProgramCandidate,
   HiddenProgramSurface,
   InstitutionRecord,
   IntegrityEnvelope,
@@ -177,17 +179,48 @@ function buildCrossValidationBanner(
   return `On this institution, the tool's re-derivation differs from the Department's pre-computed verdict on ${disagreements.length} of ${measured.length} measured programs (${pct}%). This is above the 5% systemic-flag threshold and warrants institutional-research review of the rule's application to your CIP slate.`;
 }
 
-function buildHiddenProgramSurface(): HiddenProgramSurface {
-  // Phase 1 (c) — amber sub-sling on IPEDS Completions join. Until that
-  // lands, the runtime surfaces a parametric advisory rather than a list.
+function buildHiddenProgramSurface(
+  institution: InstitutionRecord,
+): HiddenProgramSurface {
+  // R14 PAR→DET upgrade (cp-0on.5): when the build pipeline emits
+  // `hidden_program_candidates` (cp-0on.1 IPEDS Completions join), surface
+  // them deterministically. PAR fallback covers legacy fixtures.
+  const candidates = institution.hidden_program_candidates;
+  if (candidates !== undefined && candidates.length > 0) {
+    const programs: HiddenProgram[] = candidates.map(
+      (c: HiddenProgramCandidate): HiddenProgram => ({
+        cip6: c.cip6,
+        // IPEDS C-survey does not publish CIP titles inline; surface the
+        // dotted cip6 as a stable identifier and let the UI layer hydrate
+        // the human-readable title from a CIP code dictionary.
+        title: c.cip6,
+        credlev: c.credlev,
+        cohort_range_label: formatCompletersRange(c.completers_total),
+      }),
+    );
+    return {
+      available: true,
+      programs,
+      provenance: `IPEDS Completions C${candidates[0]!.vintage}_A (MAJORNUM=1). Candidates are (cip6, credlev) pairs at this institution that confer awards in IPEDS but have no PPD program cell at the corresponding (cip4, credlev). The federal privacy rule replaces cell sizes 10–19 with the midpoint value 15; ranges shown as "between 10 and 19" rather than "15".`,
+      parametric_note: null,
+      data_status: 'DET',
+    };
+  }
   return {
     available: false,
     programs: [],
     provenance:
       'IPEDS Completions C-survey 2019–2024 (build-side join — Phase 1 (c), amber sub-sling pending). The federal privacy rule replaces cell sizes 10–19 with the midpoint value 15; ranges shown as "between 10 and 19" rather than "15".',
     parametric_note:
-      'Hidden-program surfacer is parametric in this build. The IPEDS Completions join is scheduled to land on a separate sub-sling and will populate this list deterministically. Until then, programs that the cohort cascade may pool in are not enumerated; the cascade text (R01–R04) still surfaces in each verdict drill-in.',
+      'Hidden-program surfacer is parametric on this fixture (legacy build pre-cp-0on.1). Programs that the cohort cascade may pool in are not enumerated; the cascade text (R01–R04) still surfaces in each verdict drill-in.',
+    data_status: 'PAR',
   };
+}
+
+function formatCompletersRange(n: number): string {
+  if (n >= 20) return `${n} completers`;
+  if (n >= 10) return 'between 10 and 19 completers';
+  return `${n} completers`;
 }
 
 function compareVerdictSeverity(a: ProgramVerdict, b: ProgramVerdict): number {
@@ -302,7 +335,7 @@ export function analyzeInstitution(
   const panels = buildPanels(verdicts, institution);
   const cross_validation_banner = buildCrossValidationBanner(verdicts);
   const integrity_envelope = buildIntegrityEnvelope(institution, verdicts);
-  const hidden_programs = buildHiddenProgramSurface();
+  const hidden_programs = buildHiddenProgramSurface(institution);
 
   return {
     unitid: institution.unitid,
@@ -339,7 +372,7 @@ export function analyzeQueriedPrograms(
   const panels = buildPanels(verdicts, institution);
   const cross_validation_banner = buildCrossValidationBanner(verdicts);
   const integrity_envelope = buildIntegrityEnvelope(institution, verdicts);
-  const hidden_programs = buildHiddenProgramSurface();
+  const hidden_programs = buildHiddenProgramSurface(institution);
 
   return {
     unitid: institution.unitid,
