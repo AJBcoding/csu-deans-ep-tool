@@ -59,6 +59,12 @@ The TypeScript rules engine should glossary-lint these strings at build time aga
 
 ## `mdoc_anchors.{anchor_id}`
 
+Two coexisting anchor conventions hydrate from the same `mdoc_anchors` object. Both are valid; consumers do a single case-insensitive lookup against this map.
+
+### Convention 1 — rule-internal anchors (legacy 29; original Phase 1 cp-0on.3 set)
+
+Named after the specific rule reference within an M-doc, indexed by which R-rule cites it. Used by the TS rules engine.
+
 ```jsonc
 {
   "mdoc":           "M01",
@@ -68,7 +74,35 @@ The TypeScript rules engine should glossary-lint these strings at build time aga
 }
 ```
 
-Anchor IDs follow `M##[#kebab-section]` form. The `#section` portion is engine-stable; the underlying M-doc draft files may rename headings. When the M-series promotes from `.draft.md` to release, the `file:` field updates here, not in the engine.
+Examples: `M01#stage-1-rule` (cited by R01), `M01#stage-2-rule` (R02), `M12#data-quality-regime` (R19/R20).
+
+### Convention 2 — panel-theme anchors (new 16 from cp-0on.3.1; Phase 4 cp-0on.2 set)
+
+Named after the panel's overall content theme; one per M-doc panel (plus `R12#FIVE-REASONS` covering the five-reason taxonomy enumerated in M12). Used by the M-doc panel renderer for `<a data-cite="…">` hydration. Carry an extra `convention: "panel-theme"` field for filtering.
+
+```jsonc
+{
+  "mdoc":           "M01",
+  "convention":     "panel-theme",
+  "title":          "Cohort-expansion logic walk-through (panel)",
+  "section_heading": "M01 — The rule's cohort-expansion logic",
+  "file":           "content/mdocs/M01.html"
+}
+```
+
+Panel data-cite keys are stored uppercase here (e.g. `M01#EXPANSION-LOGIC`); panel source HTML uses lowercase (`data-cite="m01#expansion-logic"`). **Lookup is case-insensitive.** Consumer renderers normalize to uppercase before resolving against this map.
+
+#### Shared key — M14#named-populations
+
+`M14#named-populations` is one anchor that satisfies BOTH conventions: R17 cites it as a rule-internal reference, and garnet's M14 panel uses `data-cite="m14#named-populations"` as the panel-level theme anchor. The single existing entry (under Convention 1, indexed by R17) hydrates both surfaces. This is the ONLY overlap between the two namespaces; the chair filing for cp-0on.3.1 listed 17 panel-theme entries to add, but only 16 are net-new.
+
+### Anchor ID form
+
+Anchor IDs follow `[MR]##[#KEBAB-SECTION]` form. The `#section` portion is engine-stable; the underlying M-doc draft files may rename headings. When the M-series analyses promote from `.draft.md` to release, the `file:` field updates here, not in the engine.
+
+### Cross-validation
+
+`scripts/validate-panel-anchors.mjs` scans `content/mdocs/*.html` for `data-cite=` attributes, filters to panel-anchor pattern (`/^[mr]\d+#/i`), case-normalizes to uppercase, and asserts each resolves to a key in `mdoc_anchors`. Run via `node scripts/validate-panel-anchors.mjs`. Exits non-zero on any unresolved key. Skips gracefully (exit 0) when `content/mdocs/` does not exist on the current branch — full validation runs against the integrated tree (post-merge of phase-1-citations + phase-4-mdocs-glossary).
 
 ## `sources`
 

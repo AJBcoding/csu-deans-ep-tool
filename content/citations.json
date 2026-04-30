@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "build_date": "2026-04-30",
   "spec_version": "design.v6",
   "sources": {
@@ -575,6 +575,118 @@
       "title": "RIA Table 3.19 verbatim language",
       "section_heading": "## 3. Verbatim language",
       "file": "analyses/mechanisms/M14-targeting-named-populations.draft.md"
+    },
+    "M01#EXPANSION-LOGIC": {
+      "mdoc": "M01",
+      "convention": "panel-theme",
+      "title": "Cohort-expansion logic walk-through (panel)",
+      "section_heading": "M01 — The rule's cohort-expansion logic",
+      "file": "content/mdocs/M01.html"
+    },
+    "M02#NUMERATOR-CONSTRUCTION": {
+      "mdoc": "M02",
+      "convention": "panel-theme",
+      "title": "Earnings-numerator construction (panel)",
+      "section_heading": "M02 — What the earnings figure measures",
+      "file": "content/mdocs/M02.html"
+    },
+    "M03#LOWEST-OF-THREE": {
+      "mdoc": "M03",
+      "convention": "panel-theme",
+      "title": "Benchmark selection — lowest-of-three (panel)",
+      "section_heading": "M03 — How the benchmark is selected",
+      "file": "content/mdocs/M03.html"
+    },
+    "M04#FAILURE-STATE-MACHINE": {
+      "mdoc": "M04",
+      "convention": "panel-theme",
+      "title": "Pass/fail state machine (panel)",
+      "section_heading": "M04 — Operational specificity (two-of-three-year trigger)",
+      "file": "content/mdocs/M04.html"
+    },
+    "M05#CONSEQUENCE-SCOPE": {
+      "mdoc": "M05",
+      "convention": "panel-theme",
+      "title": "Program-level consequence scope (panel)",
+      "section_heading": "M05 — Title IV Direct Loan ineligibility scope",
+      "file": "content/mdocs/M05.html"
+    },
+    "M06#INSTITUTION-ESCALATION": {
+      "mdoc": "M06",
+      "convention": "panel-theme",
+      "title": "Institution-level escalation under § 668.14(h) / § 668.16(t) (panel)",
+      "section_heading": "M06 — Institution-level escalation",
+      "file": "content/mdocs/M06.html"
+    },
+    "M07#DISCLOSURE-TIMING": {
+      "mdoc": "M07",
+      "convention": "panel-theme",
+      "title": "First-failure disclosure obligation timing (panel)",
+      "section_heading": "M07 — Disclosure obligations under proposed § 668.43(d)(1)",
+      "file": "content/mdocs/M07.html"
+    },
+    "M08#CAP-MECHANICS": {
+      "mdoc": "M08",
+      "convention": "panel-theme",
+      "title": "OBBBA § 81001 federal-loan-cap mechanics (panel)",
+      "section_heading": "M08 — OBBBA § 81001 federal loan caps",
+      "file": "content/mdocs/M08.html"
+    },
+    "M09#APPEAL-SCOPE": {
+      "mdoc": "M09",
+      "convention": "panel-theme",
+      "title": "Appeal scope under proposed § 668.603 — calc-error only (panel)",
+      "section_heading": "M09 — Appeal scope (calculation-error only)",
+      "file": "content/mdocs/M09.html"
+    },
+    "M10#AUTHORITY-LITIGATION": {
+      "mdoc": "M10",
+      "convention": "panel-theme",
+      "title": "Authority architecture and severability (panel)",
+      "section_heading": "M10 — Authority architecture and severability",
+      "file": "content/mdocs/M10.html"
+    },
+    "M11#ADMIN-PATHWAY": {
+      "mdoc": "M11",
+      "convention": "panel-theme",
+      "title": "Institutional administrative-compliance pathway (panel)",
+      "section_heading": "M11 — Institutional administrative compliance pathway",
+      "file": "content/mdocs/M11.html"
+    },
+    "M12#NO-MEASURE-STATES": {
+      "mdoc": "M12",
+      "convention": "panel-theme",
+      "title": "No-measurement states — distinct from PASS (panel)",
+      "section_heading": "M12 — Programs without a published measure",
+      "file": "content/mdocs/M12.html"
+    },
+    "M13#CALENDAR-ANCHORS": {
+      "mdoc": "M13",
+      "convention": "panel-theme",
+      "title": "Calendar anchors — measurement and eligibility-loss dates (panel)",
+      "section_heading": "M13 — Calendar dates that matter",
+      "file": "content/mdocs/M13.html"
+    },
+    "M15#STRATEGIC-MECHANICS": {
+      "mdoc": "M15",
+      "convention": "panel-theme",
+      "title": "Strategic-response mechanics (panel)",
+      "section_heading": "M15 — Strategic response options",
+      "file": "content/mdocs/M15.html"
+    },
+    "M17#BD-CSD-INTERACTION": {
+      "mdoc": "M17",
+      "convention": "panel-theme",
+      "title": "Borrower-defense / closed-school-discharge suspension interaction (panel)",
+      "section_heading": "M17 — BD/CSD timelines under OBBBA §§ 85001–85002",
+      "file": "content/mdocs/M17.html"
+    },
+    "R12#FIVE-REASONS": {
+      "mdoc": "M12",
+      "convention": "panel-theme",
+      "title": "R12 five-reason NOT MEASURED taxonomy (panel)",
+      "section_heading": "R12 — five-reason taxonomy (rules-engine enumeration)",
+      "file": "content/mdocs/M12.html"
     }
   }
 }
