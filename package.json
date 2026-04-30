@@ -10,19 +10,24 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "build:pages": "tsx scripts/build-pages.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "analyze:csulb": "tsx src/cli/analyze.ts tests/fixtures/sample-institution.json",
     "dev": "tsx scripts/dev-server.ts",
     "dev:api-only": "tsx src/api/cli.ts",
+    "dev:pages": "wrangler pages dev dist-pages",
+    "deploy": "wrangler pages deploy dist-pages --project-name=csu-deans-ep-tool",
     "lint:glossary": "tsx scripts/lint-glossary.ts content web",
     "lint:glossary:content": "tsx scripts/lint-glossary.ts content"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
+    "happy-dom": "^20.9.0",
     "tsx": "^4.7.0",
     "typescript": "^5.4.0",
-    "vitest": "^1.4.0"
+    "vitest": "^1.4.0",
+    "wrangler": "^3.78.0"
   }
 }
