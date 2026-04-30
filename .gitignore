@@ -25,3 +25,6 @@ venv/
 .vscode/
 .idea/
 *.swp
+
+# Phase 1 build artifacts (regenerable from src + fixtures)
+artifacts/
