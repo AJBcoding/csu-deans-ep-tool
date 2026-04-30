@@ -1,0 +1,24 @@
+{
+  "name": "csu-deans-ep-tool",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public deterministic web tool that lets arts deans model their institution's exposure to the OBBBA Earnings-Premium test.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "analyze:csulb": "tsx src/cli/analyze.ts tests/fixtures/sample-institution.json"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  }
+}
