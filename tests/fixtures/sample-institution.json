@@ -20,6 +20,7 @@
       "ep_gap_pct": 0.7471,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -38,6 +39,7 @@
       "ep_gap_pct": 0.3877,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -56,6 +58,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -74,6 +77,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -92,6 +96,7 @@
       "ep_gap_pct": 0.3983,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -110,6 +115,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -128,6 +134,7 @@
       "ep_gap_pct": 0.6112,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -146,6 +153,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -164,6 +172,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -182,6 +191,7 @@
       "ep_gap_pct": 0.5296,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -200,6 +210,7 @@
       "ep_gap_pct": 0.3149,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -218,6 +229,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -236,6 +248,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -254,6 +267,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -272,6 +286,7 @@
       "ep_gap_pct": 1.811,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -290,6 +305,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -308,6 +324,7 @@
       "ep_gap_pct": 0.9099,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -326,6 +343,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -344,6 +362,7 @@
       "ep_gap_pct": 1.158,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -362,6 +381,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -380,6 +400,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -398,6 +419,7 @@
       "ep_gap_pct": 1.2898,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -416,6 +438,7 @@
       "ep_gap_pct": 0.6778,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -434,6 +457,7 @@
       "ep_gap_pct": 0.663,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -452,6 +476,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -470,6 +495,7 @@
       "ep_gap_pct": 0.9712,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -488,6 +514,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -506,6 +533,7 @@
       "ep_gap_pct": 0.5697,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -524,6 +552,7 @@
       "ep_gap_pct": 0.9725,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -542,6 +571,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -560,6 +590,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -578,6 +609,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -596,6 +628,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -614,6 +647,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -632,6 +666,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -650,6 +685,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -668,6 +704,7 @@
       "ep_gap_pct": 1.8213,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -686,6 +723,7 @@
       "ep_gap_pct": 0.6591,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -704,6 +742,7 @@
       "ep_gap_pct": 1.9527,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -722,6 +761,7 @@
       "ep_gap_pct": 1.5642,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -740,6 +780,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -758,6 +799,7 @@
       "ep_gap_pct": 1.4793,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -776,6 +818,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -794,6 +837,7 @@
       "ep_gap_pct": 1.7428,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -812,6 +856,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -830,6 +875,7 @@
       "ep_gap_pct": 1.8567,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -848,6 +894,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -866,6 +913,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -884,6 +932,7 @@
       "ep_gap_pct": 1.6594,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -902,6 +951,7 @@
       "ep_gap_pct": 1.0047,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -920,6 +970,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -938,6 +989,7 @@
       "ep_gap_pct": 1.0024,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -956,6 +1008,7 @@
       "ep_gap_pct": 1.8581,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -974,6 +1027,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -992,6 +1046,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1010,6 +1065,7 @@
       "ep_gap_pct": 0.0808,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1028,6 +1084,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1046,6 +1103,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1064,6 +1122,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1082,6 +1141,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1100,6 +1160,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1118,6 +1179,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1136,6 +1198,7 @@
       "ep_gap_pct": 0.4678,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1154,6 +1217,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1172,6 +1236,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1190,6 +1255,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1208,6 +1274,7 @@
       "ep_gap_pct": 0.3957,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1226,6 +1293,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1244,6 +1312,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1262,6 +1331,7 @@
       "ep_gap_pct": 0.3016,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1280,6 +1350,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1298,6 +1369,7 @@
       "ep_gap_pct": 0.3803,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1316,6 +1388,7 @@
       "ep_gap_pct": -0.0497,
       "ppd_fail_obbb": 1,
       "ppd_fail_master": 1,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1334,6 +1407,7 @@
       "ep_gap_pct": 0.1397,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1352,6 +1426,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1370,6 +1445,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1388,6 +1464,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1406,6 +1483,7 @@
       "ep_gap_pct": 0.6634,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1424,6 +1502,7 @@
       "ep_gap_pct": 0.7042,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1442,6 +1521,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1460,6 +1540,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1478,6 +1559,7 @@
       "ep_gap_pct": 1.2122,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1496,6 +1578,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1514,6 +1597,7 @@
       "ep_gap_pct": 1.0506,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1532,6 +1616,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1550,6 +1635,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1568,6 +1654,7 @@
       "ep_gap_pct": 0.5406,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1586,6 +1673,7 @@
       "ep_gap_pct": 0.7115,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1604,6 +1692,7 @@
       "ep_gap_pct": 0.3811,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1622,6 +1711,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1640,6 +1730,7 @@
       "ep_gap_pct": 0.3646,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1658,6 +1749,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1676,6 +1768,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1694,6 +1787,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1712,6 +1806,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1730,6 +1825,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1748,6 +1844,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1766,6 +1863,7 @@
       "ep_gap_pct": 0.4943,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1784,6 +1882,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1802,6 +1901,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1820,6 +1920,7 @@
       "ep_gap_pct": 0.4947,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1838,6 +1939,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1856,6 +1958,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1874,6 +1977,7 @@
       "ep_gap_pct": 0.5976,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1892,6 +1996,7 @@
       "ep_gap_pct": 0.4073,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1910,6 +2015,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 1,
         "earn_suppressed": true,
@@ -1928,6 +2034,7 @@
       "ep_gap_pct": 0.3597,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -1946,6 +2053,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1964,6 +2072,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -1982,6 +2091,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2000,6 +2110,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2018,6 +2129,7 @@
       "ep_gap_pct": 0.8796,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2036,6 +2148,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2054,6 +2167,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2072,6 +2186,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2090,6 +2205,7 @@
       "ep_gap_pct": 0.9528,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2108,6 +2224,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2126,6 +2243,7 @@
       "ep_gap_pct": 0.356,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2144,6 +2262,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2162,6 +2281,7 @@
       "ep_gap_pct": 1.0618,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2180,6 +2300,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2198,6 +2319,7 @@
       "ep_gap_pct": 0.6217,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2216,6 +2338,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2234,6 +2357,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2252,6 +2376,7 @@
       "ep_gap_pct": 1.4159,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2270,6 +2395,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2288,6 +2414,7 @@
       "ep_gap_pct": 0.869,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2306,6 +2433,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2324,6 +2452,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2342,6 +2471,7 @@
       "ep_gap_pct": 0.897,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2360,6 +2490,7 @@
       "ep_gap_pct": 0.7851,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2378,6 +2509,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2396,6 +2528,7 @@
       "ep_gap_pct": 0.3072,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2414,6 +2547,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2432,6 +2566,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2450,6 +2585,7 @@
       "ep_gap_pct": 0.9738,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2468,6 +2604,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2486,6 +2623,7 @@
       "ep_gap_pct": 0.3501,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2504,6 +2642,7 @@
       "ep_gap_pct": 0.3659,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2522,6 +2661,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2540,6 +2680,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2558,6 +2699,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2576,6 +2718,7 @@
       "ep_gap_pct": 0.657,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2594,6 +2737,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2612,6 +2756,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2630,6 +2775,7 @@
       "ep_gap_pct": 0.4407,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2648,6 +2794,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2666,6 +2813,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2684,6 +2832,7 @@
       "ep_gap_pct": 0.2856,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2702,6 +2851,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2720,6 +2870,7 @@
       "ep_gap_pct": 0.8412,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2738,6 +2889,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2756,6 +2908,7 @@
       "ep_gap_pct": 0.0606,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2774,6 +2927,7 @@
       "ep_gap_pct": 0.2014,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2792,6 +2946,7 @@
       "ep_gap_pct": -0.204,
       "ppd_fail_obbb": 1,
       "ppd_fail_master": 1,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2810,6 +2965,7 @@
       "ep_gap_pct": 0.3256,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2828,6 +2984,7 @@
       "ep_gap_pct": -0.3265,
       "ppd_fail_obbb": 1,
       "ppd_fail_master": 1,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2846,6 +3003,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2864,6 +3022,7 @@
       "ep_gap_pct": 1.0824,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2882,6 +3041,7 @@
       "ep_gap_pct": 0.3985,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2900,6 +3060,7 @@
       "ep_gap_pct": 0.7913,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2918,6 +3079,7 @@
       "ep_gap_pct": 0.5869,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2936,6 +3098,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2954,6 +3117,7 @@
       "ep_gap_pct": 0.4295,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -2972,6 +3136,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -2990,6 +3155,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -3008,6 +3174,7 @@
       "ep_gap_pct": 0.5879,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3026,6 +3193,7 @@
       "ep_gap_pct": 0.4347,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3044,6 +3212,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -3062,6 +3231,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -3080,6 +3250,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -3098,6 +3269,7 @@
       "ep_gap_pct": 0.9006,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3116,6 +3288,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -3134,6 +3307,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -3152,6 +3326,7 @@
       "ep_gap_pct": 2.0952,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3170,6 +3345,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -3188,6 +3364,7 @@
       "ep_gap_pct": 1.2624,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3206,6 +3383,7 @@
       "ep_gap_pct": 1.2436,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3224,6 +3402,7 @@
       "ep_gap_pct": 0.8805,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3242,6 +3421,7 @@
       "ep_gap_pct": 0.7996,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3260,6 +3440,7 @@
       "ep_gap_pct": 1.0741,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3278,6 +3459,7 @@
       "ep_gap_pct": 0.5062,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3296,6 +3478,7 @@
       "ep_gap_pct": 1.0503,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3314,6 +3497,7 @@
       "ep_gap_pct": 1.1641,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3332,6 +3516,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -3350,6 +3535,7 @@
       "ep_gap_pct": 0.6054,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3368,6 +3554,7 @@
       "ep_gap_pct": 1.0469,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3386,6 +3573,7 @@
       "ep_gap_pct": 1.1247,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3404,6 +3592,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -3422,6 +3611,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -3440,6 +3630,7 @@
       "ep_gap_pct": 0.8679,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3458,6 +3649,7 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
@@ -3476,6 +3668,7 @@
       "ep_gap_pct": 0.4529,
       "ppd_fail_obbb": 0,
       "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": false,
@@ -3494,12 +3687,57 @@
       "ep_gap_pct": null,
       "ppd_fail_obbb": null,
       "ppd_fail_master": null,
+      "in_state_share": 0.9918,
       "suppression": {
         "missing_test": 0,
         "earn_suppressed": true,
         "cohort_suppressed": true,
         "out_of_scope": false
       }
+    }
+  ],
+  "hidden_program_candidates": [
+    {
+      "cip6": "13.0101",
+      "credlev": "Master's",
+      "completers_total": 68,
+      "vintage": "2024"
+    },
+    {
+      "cip6": "16.0905",
+      "credlev": "Post-Bacc Certificate",
+      "completers_total": 2,
+      "vintage": "2024"
+    },
+    {
+      "cip6": "27.0599",
+      "credlev": "Master's",
+      "completers_total": 17,
+      "vintage": "2024"
+    },
+    {
+      "cip6": "50.0601",
+      "credlev": "Bachelor",
+      "completers_total": 230,
+      "vintage": "2024"
+    },
+    {
+      "cip6": "51.0000",
+      "credlev": "Bachelor",
+      "completers_total": 217,
+      "vintage": "2024"
+    },
+    {
+      "cip6": "51.2308",
+      "credlev": "First Professional Degree",
+      "completers_total": 40,
+      "vintage": "2024"
+    },
+    {
+      "cip6": "51.3811",
+      "credlev": "Post-Bacc Certificate",
+      "completers_total": 69,
+      "vintage": "2024"
     }
   ]
 }
