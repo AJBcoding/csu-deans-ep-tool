@@ -1,6 +1,6 @@
 node_modules/
 dist/
-build/
+/build/
 .next/
 .cache/
 .parcel-cache/
@@ -12,8 +12,19 @@ build/
 
 # Pulled datasets (build-time only — re-fetch from primary sources)
 data/raw/
+data/build/raw/
+data/build/output/
+
+# Python build pipeline
+__pycache__/
+*.pyc
+.venv/
+venv/
 
 # Editor
 .vscode/
 .idea/
 *.swp
+
+# Phase 1 build artifacts (regenerable from src + fixtures)
+artifacts/

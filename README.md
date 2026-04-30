@@ -29,12 +29,40 @@ Static site + thin API server reading pre-built JSON. Build pipeline lints dean-
 
 | Phase | What | Status |
 |---|---|---|
-| 0 | Data ingestion: PPD:2026 + IPEDS HD + IPEDS Completions → build-time JSON | not started |
+| 0 | Data ingestion: PPD:2026 + IPEDS HD + IPEDS Completions → build-time JSON | **in review (SPEC-DELTA pending chair signoff)** |
 | 1 | Rules engine R01–R20 as pure functions over the JSON | blocked on 0 |
 | 2 | API contract frozen; Persona C endpoint live | blocked on 1 |
 | 3 | Static UI for Personas A & B | blocked on 2 |
 | 4 | M-doc panels pre-rendered at build time + glossary linter | parallel with 3 |
 | 5 | One-page PDF export + deployment | blocked on 3, 4 |
+
+## Refreshing the build-time data
+
+The data plane is two public sources joined into per-institution JSON slices.
+
+```bash
+# 1. Pull PPD:2026 (debt-earnings file is the load-bearing one for Phase 0)
+python3 data/build/fetch_ppd.py --only debt
+# (Phase 1 will additionally need: --only fa1 for the in-state share variable)
+
+# 2. Pull IPEDS HD (institutional directory; provides the OPEID6 ↔ UNITID crosswalk)
+python3 data/build/fetch_ipeds.py
+
+# 3. Build the JSON fixtures
+python3 data/build/build_fixtures.py                # all 5,021 institutions
+python3 data/build/build_fixtures.py --unitid 110583  # single institution (CSULB)
+```
+
+Output is written to `data/build/output/` (gitignored — regenerable). One sample fixture is committed at `tests/fixtures/sample-institution.json` for Phase 1 rules-engine tests.
+
+Schema reference: `data/build/SCHEMA.md`. PPD:2026 vs design.v6 §2-§3 reconciliation: `data/build/SPEC-DELTA.md`.
+
+### Source provenance
+
+| Dataset | Source | Vintage | sha256 pinned in |
+|---|---|---|---|
+| PPD:2026 | `ed.gov/media/document/ahead-session-2-program-performance-data-*.xlsx` | 2026-04 | `data/build/fetch_ppd.py` |
+| IPEDS HD | `nces.ed.gov/ipeds/datacenter/data/HD2024.zip` | 2024 (most recent fully-released vintage) | — |
 
 ## License
 
