@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSU Deans EP Tool</title>
+    <meta
+      name="description"
+      content="Public deterministic web tool that lets arts deans model their institution's exposure to the OBBBA Earnings-Premium test."
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>CSU Deans EP Tool</h1>
+      <p class="tagline">
+        Public, deterministic re-derivation of the Earnings-Premium test for
+        arts programs. Uses the Department's published data; cites every rule.
+      </p>
+    </header>
+
+    <main class="landing">
+      <section class="persona-picker">
+        <h2>Which view do you need?</h2>
+
+        <article class="persona-card">
+          <h3>Pull every program at my institution</h3>
+          <p>
+            Enter your IPEDS UNITID. The tool returns a verdict for every
+            program the Department publishes for your campus, sorted with the
+            failing programs first.
+          </p>
+          <a class="cta" href="./persona-b.html">Pull by UNITID →</a>
+        </article>
+
+        <article class="persona-card">
+          <h3>Check specific programs</h3>
+          <p>
+            Enter your UNITID plus the four-digit CIP codes and credential
+            levels you want to check. Programs absent from the Department's
+            published dataset surface as NOT MEASURED with the reason.
+          </p>
+          <a class="cta" href="./persona-a.html">Check specific programs →</a>
+        </article>
+      </section>
+
+      <section class="ground-rules">
+        <h2>Ground rules</h2>
+        <ul>
+          <li>Public data only. The tool does not collect institutional records.</li>
+          <li>No accounts, no login. UNITID and CIP list are the entire input.</li>
+          <li>
+            Every verdict cites the regulation, the statute, or the Department's
+            preamble it rests on.
+          </li>
+          <li>
+            The verdict word — PASS, FAIL, NOT MEASURED — is operationally
+            specific, not a color band.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="primary-source-reminder">
+        Re-derive against primary sources before any external submission.
+      </p>
+    </footer>
+  </body>
+</html>

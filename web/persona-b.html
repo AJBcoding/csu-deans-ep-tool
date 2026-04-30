@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pull by UNITID — CSU Deans EP Tool</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="breadcrumb"><a href="./index.html">← Back</a></p>
+      <h1>Pull every program at your institution</h1>
+    </header>
+
+    <main class="run-page">
+      <form id="run-form" class="run-form" novalidate>
+        <label for="unitid-input">
+          IPEDS UNITID
+          <span class="hint">
+            Six-digit federal identifier. Find yours via
+            <a
+              href="https://nces.ed.gov/ipeds/datacenter/InstitutionList.aspx"
+              target="_blank"
+              rel="noopener noreferrer"
+              >IPEDS Data Center</a
+            >.
+          </span>
+        </label>
+        <input
+          id="unitid-input"
+          name="unitid"
+          type="text"
+          inputmode="numeric"
+          pattern="[0-9]+"
+          maxlength="8"
+          placeholder="e.g. 110583"
+          required
+        />
+        <button type="submit" class="cta">Run analysis</button>
+      </form>
+
+      <p id="status-line" class="status-line" role="status" aria-live="polite"></p>
+
+      <section id="result-region" class="result-region" hidden></section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="primary-source-reminder">
+        Re-derive against primary sources before any external submission.
+      </p>
+    </footer>
+
+    <script type="module" src="./js/persona-b.js"></script>
+  </body>
+</html>

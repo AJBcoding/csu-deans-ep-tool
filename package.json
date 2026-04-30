@@ -14,6 +14,8 @@
     "test:watch": "vitest",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "analyze:csulb": "tsx src/cli/analyze.ts tests/fixtures/sample-institution.json",
+    "dev": "tsx scripts/dev-server.ts",
+    "dev:api-only": "tsx src/api/cli.ts",
     "lint:glossary": "tsx scripts/lint-glossary.ts content web",
     "lint:glossary:content": "tsx scripts/lint-glossary.ts content"
   },

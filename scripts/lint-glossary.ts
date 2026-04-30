@@ -54,6 +54,8 @@ const EXEMPT_FILES = new Set([
   "content/glossary.json",
   "content/glossary.schema.json",
   "content/mdocs/SCHEMA.md",
+  "content/CITATIONS-SCHEMA.md",
+  "content/CITATIONS-VERIFICATION.md",
   "scripts/lint-glossary.ts",
   "scripts/lint-glossary.test.ts",
 ]);
@@ -81,7 +83,7 @@ const EXEMPT_PREFIXES = [
  */
 const DEFAULT_ROOTS = ["content"];
 
-const SCAN_EXTENSIONS = new Set([".html", ".mdx", ".md", ".tsx", ".jsx"]);
+const SCAN_EXTENSIONS = new Set([".html", ".mdx", ".md", ".tsx", ".jsx", ".js"]);
 
 function isExempt(relPath: string): boolean {
   if (EXEMPT_FILES.has(relPath)) return true;
@@ -126,11 +128,16 @@ function findMatches(content: string, term: string): Array<{ index: number; line
     : new RegExp(`\\b${escaped}\\b`, "gi");
 
   // Strip HTML comments + <code>/<pre>/<script> + data-cite="..." values before scanning.
+  // Also strip JS property-access patterns (`.foo`, `['foo']`, `["foo"]`, `: foo` in
+  // destructuring) — those are syntactic references to API field names, not Dean-facing
+  // text. Linter targets RENDERED output literals, not field-name spelling in code.
   const masked = content
     .replace(/<!--[\s\S]*?-->/g, (m) => " ".repeat(m.length))
     .replace(/<(code|pre|script|style)[^>]*>[\s\S]*?<\/\1>/gi, (m) => " ".repeat(m.length))
     .replace(/data-cite\s*=\s*"[^"]*"/g, (m) => " ".repeat(m.length))
-    .replace(/data-cite\s*=\s*'[^']*'/g, (m) => " ".repeat(m.length));
+    .replace(/data-cite\s*=\s*'[^']*'/g, (m) => " ".repeat(m.length))
+    .replace(/\.([A-Za-z_][A-Za-z0-9_]*)/g, (m) => " ".repeat(m.length))
+    .replace(/\[\s*['"][A-Za-z_][A-Za-z0-9_]*['"]\s*\]/g, (m) => " ".repeat(m.length));
 
   let m: RegExpExecArray | null;
   while ((m = pattern.exec(masked)) !== null) {
