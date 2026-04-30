@@ -1,0 +1,3743 @@
+{
+  "unitid": "110583",
+  "opeid6": "001139",
+  "instnm": "California State University-Long Beach",
+  "stabbr": "CA",
+  "control": 1,
+  "iclevel": 1,
+  "sector": 1,
+  "ppd_release": "2026",
+  "build_date": "2026-04-29",
+  "programs": [
+    {
+      "cip4": "0301",
+      "cip4_title": "Natural Resources Conservation and Research.",
+      "credlev": "Bachelor",
+      "cohort_count": 49,
+      "median_earn_p4": 63040.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.7471,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "0501",
+      "cip4_title": "Area Studies.",
+      "credlev": "Bachelor",
+      "cohort_count": 67,
+      "median_earn_p4": 50071.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.3877,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "0501",
+      "cip4_title": "Area Studies.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 51545.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "0501",
+      "cip4_title": "Area Studies.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "0502",
+      "cip4_title": "Ethnic  Cultural Minority  Gender  and Group Studies.",
+      "credlev": "Bachelor",
+      "cohort_count": 70,
+      "median_earn_p4": 50453.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.3983,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "0502",
+      "cip4_title": "Ethnic  Cultural Minority  Gender  and Group Studies.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "0901",
+      "cip4_title": "Communication and Media Studies.",
+      "credlev": "Bachelor",
+      "cohort_count": 512,
+      "median_earn_p4": 58137.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.6112,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "0901",
+      "cip4_title": "Communication and Media Studies.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 58761.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "0901",
+      "cip4_title": "Communication and Media Studies.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "0904",
+      "cip4_title": "Journalism.",
+      "credlev": "Bachelor",
+      "cohort_count": 182,
+      "median_earn_p4": 55192.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.5296,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "0907",
+      "cip4_title": "Radio  Television  and Digital Communication.",
+      "credlev": "Bachelor",
+      "cohort_count": 203,
+      "median_earn_p4": 47444.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.3149,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "0909",
+      "cip4_title": "Public Relations  Advertising  and Applied Communication.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1101",
+      "cip4_title": "Computer and Information Sciences  General.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1101",
+      "cip4_title": "Computer and Information Sciences  General.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 69070.0,
+      "benchmark_route": "Same-State BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1107",
+      "cip4_title": "Computer Science.",
+      "credlev": "Bachelor",
+      "cohort_count": 220,
+      "median_earn_p4": 101428.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.811,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1107",
+      "cip4_title": "Computer Science.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 69070.0,
+      "benchmark_route": "Same-State BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1302",
+      "cip4_title": "Bilingual  Multilingual  and Multicultural Education.",
+      "credlev": "Master's",
+      "cohort_count": 22,
+      "median_earn_p4": 88600.0,
+      "benchmark": 46391.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.9099,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1303",
+      "cip4_title": "Curriculum and Instruction.",
+      "credlev": "Graduate Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 46391.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1303",
+      "cip4_title": "Curriculum and Instruction.",
+      "credlev": "Master's",
+      "cohort_count": 47,
+      "median_earn_p4": 100111.0,
+      "benchmark": 46391.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 1.158,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1303",
+      "cip4_title": "Curriculum and Instruction.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "1304",
+      "cip4_title": "Educational Administration and Supervision.",
+      "credlev": "Doctoral",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 46391.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1304",
+      "cip4_title": "Educational Administration and Supervision.",
+      "credlev": "Master's",
+      "cohort_count": 42,
+      "median_earn_p4": 106225.0,
+      "benchmark": 46391.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 1.2898,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1305",
+      "cip4_title": "Educational/Instructional Media Design.",
+      "credlev": "Master's",
+      "cohort_count": 21,
+      "median_earn_p4": 77837.0,
+      "benchmark": 46391.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.6778,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1309",
+      "cip4_title": "Social and Philosophical Foundations of Education.",
+      "credlev": "Master's",
+      "cohort_count": 16,
+      "median_earn_p4": 77150.0,
+      "benchmark": 46391.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.663,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1310",
+      "cip4_title": "Special Education and Teaching.",
+      "credlev": "Graduate Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 46391.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1310",
+      "cip4_title": "Special Education and Teaching.",
+      "credlev": "Master's",
+      "cohort_count": 44,
+      "median_earn_p4": 91444.0,
+      "benchmark": 46391.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.9712,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1310",
+      "cip4_title": "Special Education and Teaching.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "1311",
+      "cip4_title": "Student Counseling and Personnel Services.",
+      "credlev": "Master's",
+      "cohort_count": 43,
+      "median_earn_p4": 72822.0,
+      "benchmark": 46391.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.5697,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1312",
+      "cip4_title": "Teacher Education and Professional Development  Specific Levels and Methods.",
+      "credlev": "Master's",
+      "cohort_count": 26,
+      "median_earn_p4": 91505.0,
+      "benchmark": 46391.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.9725,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1312",
+      "cip4_title": "Teacher Education and Professional Development  Specific Levels and Methods.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "1313",
+      "cip4_title": "Teacher Education and Professional Development  Specific Subject Areas.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1313",
+      "cip4_title": "Teacher Education and Professional Development  Specific Subject Areas.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 46391.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1313",
+      "cip4_title": "Teacher Education and Professional Development  Specific Subject Areas.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "1313",
+      "cip4_title": "Teacher Education and Professional Development  Specific Subject Areas.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "1314",
+      "cip4_title": "Teaching English or French as a Second or Foreign Language.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 46391.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1401",
+      "cip4_title": "Engineering  General.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 69070.0,
+      "benchmark_route": "Same-State BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1402",
+      "cip4_title": "Aerospace  Aeronautical  and Astronautical/Space Engineering.",
+      "credlev": "Bachelor",
+      "cohort_count": 53,
+      "median_earn_p4": 101797.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.8213,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1402",
+      "cip4_title": "Aerospace  Aeronautical  and Astronautical/Space Engineering.",
+      "credlev": "Master's",
+      "cohort_count": 16,
+      "median_earn_p4": 114594.0,
+      "benchmark": 69070.0,
+      "benchmark_route": "Same-State BA Median",
+      "ep_gap_pct": 0.6591,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1405",
+      "cip4_title": "Biomedical/Medical Engineering.",
+      "credlev": "Bachelor",
+      "cohort_count": 24,
+      "median_earn_p4": 106540.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.9527,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1407",
+      "cip4_title": "Chemical Engineering.",
+      "credlev": "Bachelor",
+      "cohort_count": 92,
+      "median_earn_p4": 92523.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.5642,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1407",
+      "cip4_title": "Chemical Engineering.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 69070.0,
+      "benchmark_route": "Same-State BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1408",
+      "cip4_title": "Civil Engineering.",
+      "credlev": "Bachelor",
+      "cohort_count": 128,
+      "median_earn_p4": 89457.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.4793,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1408",
+      "cip4_title": "Civil Engineering.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 69070.0,
+      "benchmark_route": "Same-State BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1409",
+      "cip4_title": "Computer Engineering.",
+      "credlev": "Bachelor",
+      "cohort_count": 72,
+      "median_earn_p4": 98967.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.7428,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1409",
+      "cip4_title": "Computer Engineering.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 69070.0,
+      "benchmark_route": "Same-State BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1410",
+      "cip4_title": "Electrical  Electronics  and Communications Engineering.",
+      "credlev": "Bachelor",
+      "cohort_count": 172,
+      "median_earn_p4": 103075.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.8567,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1410",
+      "cip4_title": "Electrical  Electronics  and Communications Engineering.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 69070.0,
+      "benchmark_route": "Same-State BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1414",
+      "cip4_title": "Environmental/Environmental Health Engineering.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1419",
+      "cip4_title": "Mechanical Engineering.",
+      "credlev": "Bachelor",
+      "cohort_count": 234,
+      "median_earn_p4": 95957.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.6594,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1419",
+      "cip4_title": "Mechanical Engineering.",
+      "credlev": "Master's",
+      "cohort_count": 16,
+      "median_earn_p4": 138465.0,
+      "benchmark": 69070.0,
+      "benchmark_route": "Same-State BA Median",
+      "ep_gap_pct": 1.0047,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1499",
+      "cip4_title": "Engineering  Other.",
+      "credlev": "Doctoral",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 69070.0,
+      "benchmark_route": "Same-State BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1503",
+      "cip4_title": "Electrical/Electronic Engineering Technologies/Technicians.",
+      "credlev": "Bachelor",
+      "cohort_count": 30,
+      "median_earn_p4": 72251.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.0024,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1510",
+      "cip4_title": "Construction Engineering Technology/Technician.",
+      "credlev": "Bachelor",
+      "cohort_count": 59,
+      "median_earn_p4": 103125.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.8581,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1510",
+      "cip4_title": "Construction Engineering Technology/Technician.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "1512",
+      "cip4_title": "Computer Engineering Technologies/Technicians.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1601",
+      "cip4_title": "Linguistic  Comparative  and Related Language Studies and Services.",
+      "credlev": "Bachelor",
+      "cohort_count": 58,
+      "median_earn_p4": 38996.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.0808,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1601",
+      "cip4_title": "Linguistic  Comparative  and Related Language Studies and Services.",
+      "credlev": "Graduate Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 48304.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1601",
+      "cip4_title": "Linguistic  Comparative  and Related Language Studies and Services.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 48304.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1601",
+      "cip4_title": "Linguistic  Comparative  and Related Language Studies and Services.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "1603",
+      "cip4_title": "East Asian Languages  Literatures  and Linguistics.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1605",
+      "cip4_title": "Germanic Languages  Literatures  and Linguistics.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1605",
+      "cip4_title": "Germanic Languages  Literatures  and Linguistics.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 48304.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1609",
+      "cip4_title": "Romance Languages  Literatures  and Linguistics.",
+      "credlev": "Bachelor",
+      "cohort_count": 51,
+      "median_earn_p4": 52961.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.4678,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1609",
+      "cip4_title": "Romance Languages  Literatures  and Linguistics.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 48304.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1609",
+      "cip4_title": "Romance Languages  Literatures  and Linguistics.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "1612",
+      "cip4_title": "Classics and Classical Languages  Literatures  and Linguistics.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1901",
+      "cip4_title": "Family and Consumer Sciences/Human Sciences  General.",
+      "credlev": "Bachelor",
+      "cohort_count": 481,
+      "median_earn_p4": 50361.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.3957,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1904",
+      "cip4_title": "Family and Consumer Economics and Related Studies.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1904",
+      "cip4_title": "Family and Consumer Economics and Related Studies.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "1907",
+      "cip4_title": "Human Development  Family Studies  and Related Services.",
+      "credlev": "Bachelor",
+      "cohort_count": 254,
+      "median_earn_p4": 46966.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.3016,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "1909",
+      "cip4_title": "Apparel and Textiles.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2301",
+      "cip4_title": "English Language and Literature  General.",
+      "credlev": "Bachelor",
+      "cohort_count": 187,
+      "median_earn_p4": 49804.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.3803,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2301",
+      "cip4_title": "English Language and Literature  General.",
+      "credlev": "Master's",
+      "cohort_count": 29,
+      "median_earn_p4": 47026.0,
+      "benchmark": 49483.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": -0.0497,
+      "ppd_fail_obbb": 1,
+      "ppd_fail_master": 1,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2313",
+      "cip4_title": "Rhetoric and Composition/Writing Studies.",
+      "credlev": "Bachelor",
+      "cohort_count": 111,
+      "median_earn_p4": 41123.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.1397,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2313",
+      "cip4_title": "Rhetoric and Composition/Writing Studies.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 49483.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2313",
+      "cip4_title": "Rhetoric and Composition/Writing Studies.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "2313",
+      "cip4_title": "Rhetoric and Composition/Writing Studies.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "2401",
+      "cip4_title": "Liberal Arts and Sciences  General Studies and Humanities.",
+      "credlev": "Bachelor",
+      "cohort_count": 222,
+      "median_earn_p4": 60019.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.6634,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2601",
+      "cip4_title": "Biology  General.",
+      "credlev": "Bachelor",
+      "cohort_count": 121,
+      "median_earn_p4": 61492.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.7042,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2601",
+      "cip4_title": "Biology  General.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 53672.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2601",
+      "cip4_title": "Biology  General.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "2602",
+      "cip4_title": "Biochemistry  Biophysics and Molecular Biology.",
+      "credlev": "Bachelor",
+      "cohort_count": 28,
+      "median_earn_p4": 79820.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.2122,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2602",
+      "cip4_title": "Biochemistry  Biophysics and Molecular Biology.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 53672.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2605",
+      "cip4_title": "Microbiological Sciences and Immunology.",
+      "credlev": "Bachelor",
+      "cohort_count": 25,
+      "median_earn_p4": 73988.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.0506,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2605",
+      "cip4_title": "Microbiological Sciences and Immunology.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 53672.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2612",
+      "cip4_title": "Biotechnology.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "2613",
+      "cip4_title": "Ecology  Evolution  Systematics  and Population Biology.",
+      "credlev": "Bachelor",
+      "cohort_count": 20,
+      "median_earn_p4": 55588.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.5406,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2701",
+      "cip4_title": "Mathematics.",
+      "credlev": "Bachelor",
+      "cohort_count": 38,
+      "median_earn_p4": 61754.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.7115,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2701",
+      "cip4_title": "Mathematics.",
+      "credlev": "Master's",
+      "cohort_count": 21,
+      "median_earn_p4": 95395.0,
+      "benchmark": 69070.0,
+      "benchmark_route": "Same-State BA Median",
+      "ep_gap_pct": 0.3811,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2703",
+      "cip4_title": "Applied Mathematics.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2703",
+      "cip4_title": "Applied Mathematics.",
+      "credlev": "Master's",
+      "cohort_count": 32,
+      "median_earn_p4": 94256.0,
+      "benchmark": 69070.0,
+      "benchmark_route": "Same-State BA Median",
+      "ep_gap_pct": 0.3646,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "2705",
+      "cip4_title": "Statistics.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3011",
+      "cip4_title": "Gerontology.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 53607.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3011",
+      "cip4_title": "Gerontology.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "3011",
+      "cip4_title": "Gerontology.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "3019",
+      "cip4_title": "Nutrition Sciences.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3019",
+      "cip4_title": "Nutrition Sciences.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 53607.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3020",
+      "cip4_title": "International/Globalization Studies.",
+      "credlev": "Bachelor",
+      "cohort_count": 60,
+      "median_earn_p4": 53918.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.4943,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3033",
+      "cip4_title": "Sustainability Studies.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 53607.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3071",
+      "cip4_title": "Data Analytics.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 53607.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3101",
+      "cip4_title": "Parks  Recreation  and Leisure Studies.",
+      "credlev": "Bachelor",
+      "cohort_count": 81,
+      "median_earn_p4": 53933.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.4947,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3101",
+      "cip4_title": "Parks  Recreation  and Leisure Studies.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 51545.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3101",
+      "cip4_title": "Parks  Recreation  and Leisure Studies.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "3105",
+      "cip4_title": "Sports  Kinesiology  and Physical Education/Fitness.",
+      "credlev": "Bachelor",
+      "cohort_count": 230,
+      "median_earn_p4": 57643.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.5976,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3105",
+      "cip4_title": "Sports  Kinesiology  and Physical Education/Fitness.",
+      "credlev": "Master's",
+      "cohort_count": 98,
+      "median_earn_p4": 72540.0,
+      "benchmark": 51545.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.4073,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3601",
+      "cip4_title": "Leisure and Recreational Activities.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 69070.0,
+      "benchmark_route": "Same-State BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 1,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3801",
+      "cip4_title": "Philosophy.",
+      "credlev": "Bachelor",
+      "cohort_count": 27,
+      "median_earn_p4": 49062.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.3597,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3801",
+      "cip4_title": "Philosophy.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 54638.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3802",
+      "cip4_title": "Religion/Religious Studies.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3802",
+      "cip4_title": "Religion/Religious Studies.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 54638.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "3802",
+      "cip4_title": "Religion/Religious Studies.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "4005",
+      "cip4_title": "Chemistry.",
+      "credlev": "Bachelor",
+      "cohort_count": 21,
+      "median_earn_p4": 67818.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.8796,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4005",
+      "cip4_title": "Chemistry.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 59600.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4006",
+      "cip4_title": "Geological and Earth Sciences/Geosciences.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4006",
+      "cip4_title": "Geological and Earth Sciences/Geosciences.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 59600.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4008",
+      "cip4_title": "Physics.",
+      "credlev": "Bachelor",
+      "cohort_count": 35,
+      "median_earn_p4": 70462.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.9528,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4008",
+      "cip4_title": "Physics.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 59600.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4201",
+      "cip4_title": "Psychology  General.",
+      "credlev": "Bachelor",
+      "cohort_count": 513,
+      "median_earn_p4": 48926.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.356,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4201",
+      "cip4_title": "Psychology  General.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 48653.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4228",
+      "cip4_title": "Clinical  Counseling and Applied Psychology.",
+      "credlev": "Master's",
+      "cohort_count": 50,
+      "median_earn_p4": 100315.0,
+      "benchmark": 48653.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 1.0618,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4299",
+      "cip4_title": "Psychology  Other.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 48653.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4301",
+      "cip4_title": "Criminal Justice and Corrections.",
+      "credlev": "Bachelor",
+      "cohort_count": 216,
+      "median_earn_p4": 58513.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.6217,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4301",
+      "cip4_title": "Criminal Justice and Corrections.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 53607.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4301",
+      "cip4_title": "Criminal Justice and Corrections.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "4399",
+      "cip4_title": "Homeland Security  Law Enforcement  Firefighting and Related Protective Services  Other.",
+      "credlev": "Master's",
+      "cohort_count": 20,
+      "median_earn_p4": 129508.0,
+      "benchmark": 53607.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 1.4159,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4404",
+      "cip4_title": "Public Administration.",
+      "credlev": "Graduate Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 46158.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4404",
+      "cip4_title": "Public Administration.",
+      "credlev": "Master's",
+      "cohort_count": 137,
+      "median_earn_p4": 86271.0,
+      "benchmark": 46158.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.869,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4404",
+      "cip4_title": "Public Administration.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "4405",
+      "cip4_title": "Public Policy Analysis.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 46158.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4407",
+      "cip4_title": "Social Work.",
+      "credlev": "Bachelor",
+      "cohort_count": 94,
+      "median_earn_p4": 68448.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.897,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4407",
+      "cip4_title": "Social Work.",
+      "credlev": "Master's",
+      "cohort_count": 412,
+      "median_earn_p4": 82395.0,
+      "benchmark": 46158.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.7851,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4501",
+      "cip4_title": "Social Sciences  General.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4502",
+      "cip4_title": "Anthropology.",
+      "credlev": "Bachelor",
+      "cohort_count": 76,
+      "median_earn_p4": 47166.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.3072,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4502",
+      "cip4_title": "Anthropology.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 63816.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4502",
+      "cip4_title": "Anthropology.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "4506",
+      "cip4_title": "Economics.",
+      "credlev": "Bachelor",
+      "cohort_count": 92,
+      "median_earn_p4": 71220.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.9738,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4506",
+      "cip4_title": "Economics.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 63816.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4507",
+      "cip4_title": "Geography and Cartography.",
+      "credlev": "Bachelor",
+      "cohort_count": 50,
+      "median_earn_p4": 48715.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.3501,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4507",
+      "cip4_title": "Geography and Cartography.",
+      "credlev": "Master's",
+      "cohort_count": 41,
+      "median_earn_p4": 87165.0,
+      "benchmark": 63816.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.3659,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4507",
+      "cip4_title": "Geography and Cartography.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "4507",
+      "cip4_title": "Geography and Cartography.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "4509",
+      "cip4_title": "International Relations and National Security Studies.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4510",
+      "cip4_title": "Political Science and Government.",
+      "credlev": "Bachelor",
+      "cohort_count": 207,
+      "median_earn_p4": 59787.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.657,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4510",
+      "cip4_title": "Political Science and Government.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 63816.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4510",
+      "cip4_title": "Political Science and Government.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "4511",
+      "cip4_title": "Sociology.",
+      "credlev": "Bachelor",
+      "cohort_count": 389,
+      "median_earn_p4": 51982.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.4407,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "4512",
+      "cip4_title": "Urban Studies/Affairs.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "4512",
+      "cip4_title": "Urban Studies/Affairs.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "5003",
+      "cip4_title": "Dance.",
+      "credlev": "Bachelor",
+      "cohort_count": 27,
+      "median_earn_p4": 46387.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.2856,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5003",
+      "cip4_title": "Dance.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 48304.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5004",
+      "cip4_title": "Design and Applied Arts.",
+      "credlev": "Bachelor",
+      "cohort_count": 205,
+      "median_earn_p4": 66435.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.8412,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5004",
+      "cip4_title": "Design and Applied Arts.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 48304.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5005",
+      "cip4_title": "Drama/Theatre Arts and Stagecraft.",
+      "credlev": "Bachelor",
+      "cohort_count": 81,
+      "median_earn_p4": 38270.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.0606,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5007",
+      "cip4_title": "Fine and Studio Arts.",
+      "credlev": "Bachelor",
+      "cohort_count": 415,
+      "median_earn_p4": 43349.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.2014,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5007",
+      "cip4_title": "Fine and Studio Arts.",
+      "credlev": "Master's",
+      "cohort_count": 23,
+      "median_earn_p4": 38452.0,
+      "benchmark": 48304.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": -0.204,
+      "ppd_fail_obbb": 1,
+      "ppd_fail_master": 1,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5009",
+      "cip4_title": "Music.",
+      "credlev": "Bachelor",
+      "cohort_count": 71,
+      "median_earn_p4": 47831.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.3256,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5009",
+      "cip4_title": "Music.",
+      "credlev": "Master's",
+      "cohort_count": 28,
+      "median_earn_p4": 32534.0,
+      "benchmark": 48304.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": -0.3265,
+      "ppd_fail_obbb": 1,
+      "ppd_fail_master": 1,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5010",
+      "cip4_title": "Arts  Entertainment  and Media Management.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 48304.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5102",
+      "cip4_title": "Communication Disorders Sciences and Services.",
+      "credlev": "Bachelor",
+      "cohort_count": 31,
+      "median_earn_p4": 75137.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.0824,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5102",
+      "cip4_title": "Communication Disorders Sciences and Services.",
+      "credlev": "Master's",
+      "cohort_count": 48,
+      "median_earn_p4": 86502.0,
+      "benchmark": 61854.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.3985,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5107",
+      "cip4_title": "Health and Medical Administrative Services.",
+      "credlev": "Bachelor",
+      "cohort_count": 226,
+      "median_earn_p4": 64633.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.7913,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5107",
+      "cip4_title": "Health and Medical Administrative Services.",
+      "credlev": "Master's",
+      "cohort_count": 70,
+      "median_earn_p4": 98156.0,
+      "benchmark": 61854.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.5869,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5107",
+      "cip4_title": "Health and Medical Administrative Services.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "5109",
+      "cip4_title": "Allied Health Diagnostic  Intervention  and Treatment Professions.",
+      "credlev": "Bachelor",
+      "cohort_count": 20,
+      "median_earn_p4": 51580.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.4295,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5109",
+      "cip4_title": "Allied Health Diagnostic  Intervention  and Treatment Professions.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 61854.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5111",
+      "cip4_title": "Health/Medical Preparatory Programs.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5122",
+      "cip4_title": "Public Health.",
+      "credlev": "Bachelor",
+      "cohort_count": 218,
+      "median_earn_p4": 57296.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.5879,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5122",
+      "cip4_title": "Public Health.",
+      "credlev": "Master's",
+      "cohort_count": 24,
+      "median_earn_p4": 88743.0,
+      "benchmark": 61854.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.4347,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5122",
+      "cip4_title": "Public Health.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "5123",
+      "cip4_title": "Rehabilitation and Therapeutic Professions.",
+      "credlev": "Bachelor",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5123",
+      "cip4_title": "Rehabilitation and Therapeutic Professions.",
+      "credlev": "Doctoral",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 61854.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5131",
+      "cip4_title": "Dietetics and Clinical Nutrition Services.",
+      "credlev": "Bachelor",
+      "cohort_count": 83,
+      "median_earn_p4": 68578.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.9006,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5131",
+      "cip4_title": "Dietetics and Clinical Nutrition Services.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 61854.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5131",
+      "cip4_title": "Dietetics and Clinical Nutrition Services.",
+      "credlev": "Post-Bacc Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "5138",
+      "cip4_title": "Registered Nursing  Nursing Administration  Nursing Research and Clinical Nursing.",
+      "credlev": "Bachelor",
+      "cohort_count": 271,
+      "median_earn_p4": 111681.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 2.0952,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5138",
+      "cip4_title": "Registered Nursing  Nursing Administration  Nursing Research and Clinical Nursing.",
+      "credlev": "Doctoral",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 61854.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5138",
+      "cip4_title": "Registered Nursing  Nursing Administration  Nursing Research and Clinical Nursing.",
+      "credlev": "Graduate Certificate",
+      "cohort_count": 53,
+      "median_earn_p4": 139937.0,
+      "benchmark": 61854.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 1.2624,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5138",
+      "cip4_title": "Registered Nursing  Nursing Administration  Nursing Research and Clinical Nursing.",
+      "credlev": "Master's",
+      "cohort_count": 62,
+      "median_earn_p4": 138776.0,
+      "benchmark": 61854.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 1.2436,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5202",
+      "cip4_title": "Business Administration  Management and Operations.",
+      "credlev": "Bachelor",
+      "cohort_count": 367,
+      "median_earn_p4": 67853.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.8805,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5202",
+      "cip4_title": "Business Administration  Management and Operations.",
+      "credlev": "Master's",
+      "cohort_count": 119,
+      "median_earn_p4": 120394.0,
+      "benchmark": 66899.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.7996,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5203",
+      "cip4_title": "Accounting and Related Services.",
+      "credlev": "Bachelor",
+      "cohort_count": 386,
+      "median_earn_p4": 74839.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.0741,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5203",
+      "cip4_title": "Accounting and Related Services.",
+      "credlev": "Master's",
+      "cohort_count": 32,
+      "median_earn_p4": 100762.0,
+      "benchmark": 66899.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": 0.5062,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5206",
+      "cip4_title": "Business/Managerial Economics.",
+      "credlev": "Bachelor",
+      "cohort_count": 40,
+      "median_earn_p4": 73980.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.0503,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5208",
+      "cip4_title": "Finance and Financial Management Services.",
+      "credlev": "Bachelor",
+      "cohort_count": 283,
+      "median_earn_p4": 78085.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.1641,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5208",
+      "cip4_title": "Finance and Financial Management Services.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 66899.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5209",
+      "cip4_title": "Hospitality Administration/Management.",
+      "credlev": "Bachelor",
+      "cohort_count": 81,
+      "median_earn_p4": 57927.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.6054,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5210",
+      "cip4_title": "Human Resources Management and Services.",
+      "credlev": "Bachelor",
+      "cohort_count": 119,
+      "median_earn_p4": 73857.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.0469,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5212",
+      "cip4_title": "Management Information Systems and Services.",
+      "credlev": "Bachelor",
+      "cohort_count": 144,
+      "median_earn_p4": 76664.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 1.1247,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5212",
+      "cip4_title": "Management Information Systems and Services.",
+      "credlev": "Undergrad Certificate",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": null,
+      "benchmark_route": "Not Listed in Section 84001",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": true
+      }
+    },
+    {
+      "cip4": "5213",
+      "cip4_title": "Management Sciences and Quantitative Methods.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 66899.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5214",
+      "cip4_title": "Marketing.",
+      "credlev": "Bachelor",
+      "cohort_count": 311,
+      "median_earn_p4": 67396.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.8679,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5220",
+      "cip4_title": "Construction Management.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 66899.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5401",
+      "cip4_title": "History.",
+      "credlev": "Bachelor",
+      "cohort_count": 180,
+      "median_earn_p4": 52423.0,
+      "benchmark": 36082.0,
+      "benchmark_route": "Same-State HS Median",
+      "ep_gap_pct": 0.4529,
+      "ppd_fail_obbb": 0,
+      "ppd_fail_master": 0,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": false,
+        "cohort_suppressed": false,
+        "out_of_scope": false
+      }
+    },
+    {
+      "cip4": "5401",
+      "cip4_title": "History.",
+      "credlev": "Master's",
+      "cohort_count": null,
+      "median_earn_p4": null,
+      "benchmark": 53884.0,
+      "benchmark_route": "National Same-Field BA Median",
+      "ep_gap_pct": null,
+      "ppd_fail_obbb": null,
+      "ppd_fail_master": null,
+      "in_state_share": 0.9918,
+      "suppression": {
+        "missing_test": 0,
+        "earn_suppressed": true,
+        "cohort_suppressed": true,
+        "out_of_scope": false
+      }
+    }
+  ],
+  "hidden_program_candidates": [
+    {
+      "cip6": "13.0101",
+      "credlev": "Master's",
+      "completers_total": 68,
+      "vintage": "2024"
+    },
+    {
+      "cip6": "16.0905",
+      "credlev": "Post-Bacc Certificate",
+      "completers_total": 2,
+      "vintage": "2024"
+    },
+    {
+      "cip6": "27.0599",
+      "credlev": "Master's",
+      "completers_total": 17,
+      "vintage": "2024"
+    },
+    {
+      "cip6": "50.0601",
+      "credlev": "Bachelor",
+      "completers_total": 230,
+      "vintage": "2024"
+    },
+    {
+      "cip6": "51.0000",
+      "credlev": "Bachelor",
+      "completers_total": 217,
+      "vintage": "2024"
+    },
+    {
+      "cip6": "51.2308",
+      "credlev": "First Professional Degree",
+      "completers_total": 40,
+      "vintage": "2024"
+    },
+    {
+      "cip6": "51.3811",
+      "credlev": "Post-Bacc Certificate",
+      "completers_total": 69,
+      "vintage": "2024"
+    }
+  ]
+}
