@@ -1,0 +1,580 @@
+{
+  "schema_version": "1.0.0",
+  "build_date": "2026-04-30",
+  "spec_version": "design.v6",
+  "sources": {
+    "nprm": {
+      "title": "Streamlining Title IV Aligned Standards (STATS) Notice of Proposed Rulemaking",
+      "fr_doc": "FR Doc 2026-07666",
+      "fr_volume": "91 FR",
+      "fr_published": "2026-04-20",
+      "fr_part": "Part II — Department of Education, Proposed Rules",
+      "corpus_path": "research/primary-sources/STATS_NPRM_FR_2026-07666.raw.txt"
+    },
+    "irc": {
+      "title": "OBBBA — One Big Beautiful Bill Act, Public Law 119-21",
+      "enacted": "2025-07-04",
+      "stat_cite": "139 STAT. 354",
+      "amends": "Higher Education Act of 1965 § 454 (20 U.S.C. 1087d)",
+      "corpus_path": "research/primary-sources/PLAW-119publ21.raw.txt"
+    }
+  },
+  "rules": {
+    "R01": {
+      "rule_id": "R01",
+      "name": "Cohort cascade Stage 1 — single-year 6-digit",
+      "tag": "PAR-data",
+      "primary_citation": {
+        "kind": "nprm",
+        "section": "Cohort Period (preamble) / proposed § 668.403(d)",
+        "fr_page": 21099,
+        "verbatim": "Under the proposed regulations, the cohort of students used to determine a program's median student earnings and calculate the earnings premium metric under proposed 34 CFR 668 subpart Q would begin with the program's graduates from a single award year ending four years prior to the calendar year used to source earnings data.",
+        "corpus_anchor": "research/primary-sources/STATS_NPRM_FR_2026-07666.raw.txt:2272-2286"
+      },
+      "supporting_citations": [
+        {
+          "kind": "irc",
+          "section": "OBBBA § 84001(c)(4)(A)",
+          "verbatim": "first, aggregate additional years of programmatic data in order to achieve a cohort of at least 30 individuals",
+          "corpus_anchor": "research/primary-sources/PLAW-119publ21.raw.txt:16539-16541"
+        }
+      ],
+      "mdoc_anchors": ["M01#stage-1-rule", "M01#3-verbatim-language"],
+      "dean_facing_string": "The rule starts with one award year of completers at the 6-digit program code. If the count is below 30, expansion proceeds. At 6-digit grain the published data only supplies an upper-bound count; the working-not-enrolled subset that the rule actually counts is published only at 4-digit grain (see R03)."
+    },
+    "R02": {
+      "rule_id": "R02",
+      "name": "Cohort expansion Stage 2 — pool 5 years × 6-digit",
+      "tag": "PAR-data",
+      "primary_citation": {
+        "kind": "nprm",
+        "section": "Cohort Period (preamble) / proposed § 668.403(d)",
+        "fr_page": 21099,
+        "verbatim": "If the single year cohort does not yield 30 completers or if a sufficient number cannot be paired with earnings, the Department would add completers from the fifth, sixth, seventh, and eighth award years prior to the earnings year, one award year at a time, until a minimum number of completers is reached.",
+        "corpus_anchor": "research/primary-sources/STATS_NPRM_FR_2026-07666.raw.txt:2287-2300"
+      },
+      "supporting_citations": [
+        {
+          "kind": "irc",
+          "section": "OBBBA § 84001(c)(4)(A)",
+          "verbatim": "first, aggregate additional years of programmatic data in order to achieve a cohort of at least 30 individuals",
+          "corpus_anchor": "research/primary-sources/PLAW-119publ21.raw.txt:16539-16541"
+        }
+      ],
+      "mdoc_anchors": ["M01#stage-2-rule", "M01#3-verbatim-language"],
+      "dean_facing_string": "If a single year does not reach 30 completers, the rule adds award years one at a time at the 6-digit program code, up to a five-year window. Same upper-bound caveat as Stage 1."
+    },
+    "R03": {
+      "rule_id": "R03",
+      "name": "Cohort expansion Stage 3 — add 4-digit one award year at a time",
+      "tag": "PAR-data",
+      "primary_citation": {
+        "kind": "nprm",
+        "section": "Cohort Period (preamble) / proposed § 668.403(d)",
+        "fr_page": 21099,
+        "verbatim": "If the expanded cohort group still does not reach the minimum number of completers, the cohort would continue to include the completers from all five years (fourth through eighth award years prior to the earnings year) at that six-digit CIP code and credential level. Then, completers from programs at the same credential level sharing the first four CIP code digits would be added one at a time, starting with the fourth award year prior to the earnings year.",
+        "corpus_anchor": "research/primary-sources/STATS_NPRM_FR_2026-07666.raw.txt:2301-2320"
+      },
+      "supporting_citations": [
+        {
+          "kind": "irc",
+          "section": "OBBBA § 84001(c)(4)(B)",
+          "verbatim": "second, in cases in which the cohort (including the individuals added under subparagraph (A)) is still fewer than 30 individuals, aggregate additional cohort years of programmatic data for educational programs of equivalent length",
+          "corpus_anchor": "research/primary-sources/PLAW-119publ21.raw.txt:16542-16546"
+        }
+      ],
+      "mdoc_anchors": ["M01#stage-3-rule", "M01#3-verbatim-language"],
+      "dean_facing_string": "When 6-digit expansion does not reach 30, the rule pulls in completers from related programs sharing the first four digits of the program code, one award year at a time, at the same credential level. This is the cell where the published data carries the verdict."
+    },
+    "R04": {
+      "rule_id": "R04",
+      "name": "Cohort expansion Stage 4 — add 2-digit one award year at a time",
+      "tag": "PAR-data",
+      "primary_citation": {
+        "kind": "nprm",
+        "section": "Cohort Period (preamble) / proposed § 668.403(d)",
+        "fr_page": 21099,
+        "verbatim": "If adding completers from all five award years at the same credential level sharing the same first four CIP code digits still does not reach the minimum number of completers, the Department would keep the completers at the six-digit and four-digit CIP levels and add completers sharing the same credential level and first two digits of a CIP code one award year at a time as needed.",
+        "corpus_anchor": "research/primary-sources/STATS_NPRM_FR_2026-07666.raw.txt:2321-2335"
+      },
+      "supporting_citations": [
+        {
+          "kind": "irc",
+          "section": "OBBBA § 84001(c)(4)(B)",
+          "verbatim": "aggregate additional cohort years of programmatic data for educational programs of equivalent length in order to achieve a cohort of at least 30 individuals",
+          "corpus_anchor": "research/primary-sources/PLAW-119publ21.raw.txt:16544-16546"
+        }
+      ],
+      "mdoc_anchors": ["M01#stage-4-rule", "M01#3-verbatim-language"],
+      "dean_facing_string": "When 4-digit expansion still falls short, the rule pulls in completers from programs sharing the first two digits of the program code at the same credential level. This is the broadest expansion the rule allows."
+    },
+    "R05": {
+      "rule_id": "R05",
+      "name": "Cohort expansion exhausted — no median published",
+      "tag": "DET",
+      "primary_citation": {
+        "kind": "nprm",
+        "section": "Cohort Period (preamble) / proposed § 668.403(d)(1)",
+        "fr_page": 21099,
+        "verbatim": "If cohort expansion proceeds through the addition of students who completed a program in the fourth through eighth award years prior to the earnings year at the six, four, and two-digit CIP levels and a minimum number of completers still cannot be reached, the Department would not publish median earnings or an earnings premium for the program.",
+        "corpus_anchor": "research/primary-sources/STATS_NPRM_FR_2026-07666.raw.txt:2336-2344"
+      },
+      "supporting_citations": [],
+      "mdoc_anchors": ["M01#failure-rule", "M01#3-verbatim-language"],
+      "dean_facing_string": "If expansion to 2-digit grain still falls short of 30, no median is published. The verdict word is NOT MEASURED, which is operationally distinct from PASS — there is no procedural anchor for appeal under the proposed § 668.603 calc-error-only scope."
+    },
+    "R06": {
+      "rule_id": "R06",
+      "name": "IRS match floor — 16-reporter minimum",
+      "tag": "PAR-data",
+      "primary_citation": {
+        "kind": "nprm",
+        "section": "proposed § 668.404(d)",
+        "fr_page": 21099,
+        "verbatim": "Because the proposed framework only matches completers who are working and who are not enrolled in an eligible institution during the earnings year or subject to another exclusion, it is possible that a cohort that meets the n-size of 30 will have too few matches to earnings data for the federal agency with earnings data to meet their own threshold to release what they consider statistically reliable.",
+        "corpus_anchor": "research/primary-sources/STATS_NPRM_FR_2026-07666.raw.txt:2360-2369"
+      },
+      "supporting_citations": [],
+      "mdoc_anchors": ["M01#16-irs-reporter-floor", "M02#earnings-numerator"],
+      "dean_facing_string": "Even when the cohort clears 30, the federal earnings agency releases a median only when at least 16 individuals can be matched to earnings records. Below that floor, the verdict is NOT MEASURED."
+    },
+    "R07": {
+      "rule_id": "R07",
+      "name": "Benchmark route selector — 50%-in-state trigger",
+      "tag": "DET",
+      "primary_citation": {
+        "kind": "irc",
+        "section": "OBBBA § 84001(c)(3)(B)(i)(II) and (c)(3)(B)(ii)(II)",
+        "verbatim": "if fewer than 50 percent of the students enrolled in the institution reside in the State where the institution is located, for the entire United States",
+        "corpus_anchor": "research/primary-sources/PLAW-119publ21.raw.txt:16509-16512"
+      },
+      "supporting_citations": [
+        {
+          "kind": "nprm",
+          "section": "proposed § 668.402(c)(3)",
+          "fr_page": 21099,
+          "verbatim": "50%-in-state skip-calculation rule (institution-level test that selects state vs national benchmark route)",
+          "corpus_anchor": "analyses/mechanisms/M01-cohort-visibility-cascade.draft.md:81-86"
+        }
+      ],
+      "mdoc_anchors": ["M03#benchmark-route", "M01#proposed-668-402-c-3"],
+      "dean_facing_string": "If 50 percent or more of the institution's students reside in its state, the benchmark uses state-of-institution figures. If fewer than 50 percent, the benchmark uses national figures. The published data supplies the in-state share directly."
+    },
+    "R08": {
+      "rule_id": "R08",
+      "name": "Graduate benchmark — lowest of three",
+      "tag": "PAR-data",
+      "primary_citation": {
+        "kind": "irc",
+        "section": "OBBBA § 84001(c)(3)(B)(ii)(I)",
+        "verbatim": "with respect to an educational program that is a graduate or professional program — for the lowest median earnings of — (aa) a working adult in the State in which the institution is located; (bb) a working adult in the same field of study (as determined by the Secretary, such as by using the 2-digit CIP code) in the State in which the institution is located; and (cc) a working adult in the same field of study (as so determined) in the entire United States",
+        "corpus_anchor": "research/primary-sources/PLAW-119publ21.raw.txt:16513-16524"
+      },
+      "supporting_citations": [
+        {
+          "kind": "nprm",
+          "section": "Earnings Threshold (preamble)",
+          "fr_page": 21099,
+          "verbatim": "For graduate-level programs at institutions where at least 50 percent of enrollment is from the State in which the institution is located, if statistically significant data (n-size of at least 30) for working adults aged 25–34 in the same field of study in the same State is unavailable, the Department proposes that the program will be evaluated against the lower of median income for working adults with a baccalaureate degree aged 25–34 in the same State and median income for working adults aged 25–34 with a baccalaureate degree in the same field of study nationally.",
+          "corpus_anchor": "research/primary-sources/STATS_NPRM_FR_2026-07666.raw.txt:2793-2812"
+        }
+      ],
+      "mdoc_anchors": ["M03#graduate-benchmark", "M03#3-verbatim-language"],
+      "dean_facing_string": "Graduate programs are compared against the lowest of three figures: state working-adult bachelor's earnings; state field-of-study bachelor's earnings; national field-of-study bachelor's earnings. The lowest binds."
+    },
+    "R09": {
+      "rule_id": "R09",
+      "name": "Undergraduate benchmark — state high-school-only baseline",
+      "tag": "DET",
+      "primary_citation": {
+        "kind": "irc",
+        "section": "OBBBA § 84001(c)(3)(B)(i)(I)",
+        "verbatim": "with respect to an educational program that awards a baccalaureate or lesser degree — for the State in which the institution is located",
+        "corpus_anchor": "research/primary-sources/PLAW-119publ21.raw.txt:16505-16508"
+      },
+      "supporting_citations": [
+        {
+          "kind": "irc",
+          "section": "OBBBA § 84001(c)(3)(A)(iii)(I)",
+          "verbatim": "in the case of a determination made for an educational program that awards a baccalaureate or lesser degree, has only a high school diploma or its recognized equivalent",
+          "corpus_anchor": "research/primary-sources/PLAW-119publ21.raw.txt:16493-16496"
+        },
+        {
+          "kind": "nprm",
+          "section": "RIA — undergraduate baseline",
+          "fr_page": 21099,
+          "verbatim": "(state high-school-only baseline cited in design.v1 §3.1 R09)",
+          "corpus_anchor": "briefs/2026-04-28-csu-deans-ep-tool/design.v1.md:139"
+        }
+      ],
+      "mdoc_anchors": ["M03#undergraduate-benchmark"],
+      "dean_facing_string": "Bachelor's-and-below programs are compared against the state's working-adult earnings for those whose highest credential is a high-school diploma, ages 25 to 34."
+    },
+    "R10": {
+      "rule_id": "R10",
+      "name": "Benchmark cell drop — ACS n=30 minimum",
+      "tag": "DET",
+      "primary_citation": {
+        "kind": "nprm",
+        "section": "Earnings Threshold (preamble)",
+        "fr_page": 21099,
+        "verbatim": "if statistically significant data (n-size of at least 30) for working adults aged 25–34 in the same field of study in the same State is unavailable, the Department proposes that the program will be evaluated against the lower of median income for working adults with a baccalaureate degree aged 25–34 in the same State and median income for working adults aged 25–34 with a baccalaureate degree in the same field of study nationally. The Department is concerned that calculating an earnings threshold using less than 30 individuals could produce arbitrary and non-representative values in which programs are judged against.",
+        "corpus_anchor": "research/primary-sources/STATS_NPRM_FR_2026-07666.raw.txt:2793-2834"
+      },
+      "supporting_citations": [],
+      "mdoc_anchors": ["M03#acs-n30-rule", "M03#3-verbatim-language"],
+      "dean_facing_string": "If a Census American Community Survey cell underlying a benchmark has fewer than 30 working adults, that cell is dropped and the rule falls to the next benchmark in the sequence. Cell-drop logic is reflected in the published benchmark assignment."
+    },
+    "R11": {
+      "rule_id": "R11",
+      "name": "Earnings premium — gap calculation",
+      "tag": "DET",
+      "primary_citation": {
+        "kind": "irc",
+        "section": "OBBBA § 84001(c)(2)",
+        "verbatim": "the median earnings (as determined by the Secretary) of the programmatic cohort of students who received funds under this title for enrollment in such program, who completed such program during the academic year that is 4 years before the year of the determination, who are not enrolled in any institution of higher education, and who are working, are, for not less than 2 of the 3 years immediately preceding the date of the determination, less than the median earnings of a working adult described in paragraph (3) for the corresponding year",
+        "corpus_anchor": "research/primary-sources/PLAW-119publ21.raw.txt:16468-16484"
+      },
+      "supporting_citations": [],
+      "mdoc_anchors": ["M04#pass-fail-trigger", "M04#3-verbatim-language"],
+      "dean_facing_string": "The earnings-premium gap is the program median minus the benchmark, expressed as a percent of the benchmark. A non-positive gap is a fail signal for the year. The 2-of-3-year rule (R13) governs whether the signal triggers eligibility loss."
+    },
+    "R12": {
+      "rule_id": "R12",
+      "name": "Verdict-card display helper — risk band",
+      "tag": "DISP",
+      "primary_citation": {
+        "kind": "design",
+        "section": "design.v3 §3 (DET/PAR/judgment audit)",
+        "verbatim": "R12 converted to display helper; the ±10% bubble band is corpus convention, not statute. v6 surfaces the noise-band annotation through R19 instead.",
+        "corpus_anchor": "briefs/2026-04-28-csu-deans-ep-tool/design.v3.md"
+      },
+      "supporting_citations": [],
+      "mdoc_anchors": ["M04#display-helper", "M12#data-quality-regime"],
+      "dean_facing_string": "Color-band on the verdict card is a display helper, not a regulatory state. The legally meaningful boundaries are PASS, FAIL, and NOT MEASURED. Near-threshold annotations come from R19 (noise band) and R20 (cross-validation), not from R12."
+    },
+    "R13": {
+      "rule_id": "R13",
+      "name": "Two-of-three-year ineligibility trigger",
+      "tag": "PAR-data",
+      "primary_citation": {
+        "kind": "irc",
+        "section": "OBBBA § 84001(c)(2)",
+        "verbatim": "for not less than 2 of the 3 years immediately preceding the date of the determination",
+        "corpus_anchor": "research/primary-sources/PLAW-119publ21.raw.txt:16478-16479"
+      },
+      "supporting_citations": [
+        {
+          "kind": "nprm",
+          "section": "proposed § 668.603 (eligibility consequences) and § 668.16(t) (institutional-level cascade)",
+          "fr_page": 21099,
+          "verbatim": "Two annual failures within three measurement years triggers Title IV Direct Loan ineligibility; first-failure disclosure obligations attach earlier under proposed § 668.43(d)(1).",
+          "corpus_anchor": "research/primary-sources/STATS_NPRM_FR_2026-07666.raw.txt:191-341"
+        }
+      ],
+      "mdoc_anchors": ["M04#pass-fail-trigger", "M05#program-level-consequence"],
+      "dean_facing_string": "Two annual failures within three measurement years triggers loss of Title IV Direct Loan eligibility for the program. First-failure disclosure obligations attach on the earlier release date."
+    },
+    "R14": {
+      "rule_id": "R14",
+      "name": "Hidden-program surfacer — sub-30 6-digit programs at this institution",
+      "tag": "DET",
+      "primary_citation": {
+        "kind": "nprm",
+        "section": "Cohort Period (preamble) — full 4-stage expansion",
+        "fr_page": 21099,
+        "verbatim": "(See R01–R05; the surfacer reads the same expansion rules in reverse — programs below 30 graduates over 5 years at 6-digit CIP are candidates for being pooled into a 4-digit-or-broader cohort the rule actually evaluates.)",
+        "corpus_anchor": "research/primary-sources/STATS_NPRM_FR_2026-07666.raw.txt:2272-2344"
+      },
+      "supporting_citations": [
+        {
+          "kind": "design",
+          "section": "design.v4 §3.5 (midpoint-15 problem)",
+          "verbatim": "Federal privacy rule replaces cell sizes 10-19 with the midpoint value 15; surfacer must display 'between 10 and 19' rather than the literal 15.",
+          "corpus_anchor": "briefs/2026-04-28-csu-deans-ep-tool/design.v4.md:195-202"
+        }
+      ],
+      "mdoc_anchors": ["M01#hidden-program-surfacer", "M01#5-impact-to-cota"],
+      "dean_facing_string": "When a program has fewer than 30 graduates over 5 years at the 6-digit code, the rule's expansion pulls in graduates from related programs (same 4-digit, then same 2-digit family) until 30 is reached. The surfacer lists those candidate programs at this institution from the public Completions data."
+    },
+    "R15": {
+      "rule_id": "R15",
+      "name": "Institutional-level exposure — § 668.16(t) advisory",
+      "tag": "ADV",
+      "primary_citation": {
+        "kind": "nprm",
+        "section": "proposed § 668.16(t)",
+        "fr_page": 21099,
+        "verbatim": "Amend §668.16(t) to require an institution to demonstrate it has met the financial responsibility standards if it has failed the conditions in 34 CFR 668.16(t) in two out of any three years.",
+        "corpus_anchor": "research/primary-sources/STATS_NPRM_FR_2026-07666.raw.txt:314-326"
+      },
+      "supporting_citations": [],
+      "mdoc_anchors": ["M06#institution-level-consequence", "M06#and-or-debate"],
+      "dean_facing_string": "Institution-level financial-responsibility consequences may attach when institutional thresholds in proposed § 668.16(t) are missed across years. The AND-vs-OR construction of the institutional test is unsettled in the corpus; this surfaces as an advisory, not a verdict."
+    },
+    "R16": {
+      "rule_id": "R16",
+      "name": "Pandemic-cohort-window advisory",
+      "tag": "ADV",
+      "primary_citation": {
+        "kind": "nprm",
+        "section": "RIA — cohort window",
+        "fr_page": 21169,
+        "verbatim": "(PPD:2026 cohort window pools AY 2017-18 + AY 2018-19; the 2018-19 award year places students in the labor market through the COVID-19 disruption period.)",
+        "corpus_anchor": "briefs/2026-04-28-csu-deans-ep-tool/design.v1.md:146"
+      },
+      "supporting_citations": [],
+      "mdoc_anchors": ["M01#pandemic-cohort-window"],
+      "dean_facing_string": "The first measurement uses cohorts that completed in AY 2017-18 and AY 2018-19. Both cohorts entered the labor market across the pandemic disruption window. This advisory flags the data-quality context; it does not alter the verdict."
+    },
+    "R17": {
+      "rule_id": "R17",
+      "name": "RIA Table 3.19 elevation flag — named CIP families",
+      "tag": "DET",
+      "primary_citation": {
+        "kind": "nprm",
+        "section": "RIA — Table 3.19 (Programs with Highest Failure Rates)",
+        "fr_page": 21155,
+        "verbatim": "Mental and Social Health & Allied Professions master's degree programs (CIP=51.15), Teacher Education and Professional Development associate's degree programs (CIP=13.12), and Drama/Theater Arts bachelor's degree programs (CIPs=50.05, 50.07, and 50.09) are anticipated to be most impacted by the proposed regulations. These programs are often between 10 and 20 times more likely to fail the accountability framework under the proposed regulation relative to the current regulations.",
+        "corpus_anchor": "research/primary-sources/STATS_NPRM_FR_2026-07666.raw.txt:8952-8970"
+      },
+      "supporting_citations": [],
+      "mdoc_anchors": ["M14#named-populations", "M14#3-verbatim-language"],
+      "dean_facing_string": "The Department's own Regulatory Impact Analysis names some program families as 10-to-20× more likely to fail the proposed framework: Drama/Theater bachelor's (CIP families 50.05, 50.07, 50.09), Mental and Social Health master's (51.15), and Teacher Education associate's (13.12). Per-CIP elevation factors recomputed against published data run higher than the prose."
+    },
+    "R18": {
+      "rule_id": "R18",
+      "name": "Graduate loan-cap interaction — OBBBA § 81001 advisory",
+      "tag": "DET",
+      "primary_citation": {
+        "kind": "irc",
+        "section": "OBBBA § 81001",
+        "verbatim": "for any period of instruction beginning on or after July 1, 2026, a graduate or professional student shall not be eligible to receive a Federal Direct PLUS Loan under this part. … beginning on July 1, 2026, the maximum annual amount of Federal Direct Unsubsidized Stafford loans — (i) a graduate student, who is not a professional student, may borrow in any academic year or its equivalent shall be $20,500; and (ii) a professional student may borrow in any academic year or its equivalent shall be $50,000.",
+        "corpus_anchor": "research/primary-sources/PLAW-119publ21.raw.txt:15309-15358"
+      },
+      "supporting_citations": [],
+      "mdoc_anchors": ["M08#obbba-loan-caps"],
+      "dean_facing_string": "Graduate and professional students lose access to Federal Direct PLUS loans for periods of instruction beginning July 1, 2026. Annual unsubsidized Stafford limits are $20,500 (graduate) and $50,000 (professional). This is a separate statutory change, not part of the earnings-premium framework, but it shapes what loss of Direct Loan eligibility under § 84001 actually means for the student."
+    },
+    "R19": {
+      "rule_id": "R19",
+      "name": "Noise-band advisory — near-threshold verdicts",
+      "tag": "ADV",
+      "primary_citation": {
+        "kind": "ria",
+        "section": "PPD:2026 Technical Data Appendix — Privacy Suppression",
+        "fr_page": null,
+        "verbatim": "Statistical noise is added to values used to construct the median earning measure, and to the completer counts.",
+        "corpus_anchor": "research/primary-sources/ahead-session-2-program-performance-data-technical-appendix-112901.pdf p. 7"
+      },
+      "supporting_citations": [
+        {
+          "kind": "design",
+          "section": "design.v4 §3.3",
+          "verbatim": "When abs(ep_gap_pct) ≤ 0.15, the tool annotates that PPD's noise-injection means the true gap could differ by up to ±9% from the published value.",
+          "corpus_anchor": "briefs/2026-04-28-csu-deans-ep-tool/design.v4.md:148-169"
+        }
+      ],
+      "mdoc_anchors": ["M01#privacy-suppression", "M12#data-quality-regime"],
+      "dean_facing_string": "The published median earnings carry statistical noise injected for privacy. When the gap to benchmark is within ±15% of the benchmark value, the verdict word is annotated: with the same input the rule could publish the opposite verdict. The earnings-premium gap is itself tool-derived from the published median and benchmark; the published data supplies the components, not the gap directly."
+    },
+    "R20": {
+      "rule_id": "R20",
+      "name": "Cross-validation against pre-computed pass/fail",
+      "tag": "DET",
+      "primary_citation": {
+        "kind": "ria",
+        "section": "PPD:2026 Technical Data Appendix (Jan 2 2026 erratum)",
+        "fr_page": null,
+        "verbatim": "An earlier version included a small issue where some post-baccalaureate certificate programs were inadvertently counted as 'failing' the aligned OBBB and GE earnings test, when in reality, they should have been counted as passing the test.",
+        "corpus_anchor": "research/primary-sources/ahead-session-2-program-performance-data-technical-appendix-112901.pdf"
+      },
+      "supporting_citations": [
+        {
+          "kind": "design",
+          "section": "design.v4 §3.4",
+          "verbatim": "Tool re-derives the verdict from the same published inputs and compares to the pre-computed mstr_obbb_fail_* variable. Per-program disagreement surfaces inline; institution-level disagreement above 5% surfaces a single banner.",
+          "corpus_anchor": "briefs/2026-04-28-csu-deans-ep-tool/design.v4.md:171-193"
+        }
+      ],
+      "mdoc_anchors": ["M12#data-quality-regime", "M12#cross-validation"],
+      "dean_facing_string": "The tool re-derives the verdict from the same published inputs and compares to the Department's pre-computed pass/fail. Per-program disagreement surfaces on the verdict card. If disagreement exceeds 5% of an institution's measured programs, an institution-level banner surfaces — the disagreement does not alter individual verdicts."
+    }
+  },
+  "mdoc_anchors": {
+    "M01#3-verbatim-language": {
+      "mdoc": "M01",
+      "title": "Cohort visibility cascade — verbatim language section",
+      "section_heading": "## 3. Verbatim language",
+      "file": "analyses/mechanisms/M01-cohort-visibility-cascade.draft.md"
+    },
+    "M01#stage-1-rule": {
+      "mdoc": "M01",
+      "title": "Stage-1 rule (single-year 6-digit, n≥30 floor)",
+      "section_heading": "## 3 — Cohort Period: 4-stage cascade (verbatim)",
+      "file": "analyses/mechanisms/M01-cohort-visibility-cascade.draft.md"
+    },
+    "M01#stage-2-rule": {
+      "mdoc": "M01",
+      "title": "Stage-2 rule (5 award years × 6-digit)",
+      "section_heading": "## 3 — Cohort Period: 4-stage cascade (verbatim)",
+      "file": "analyses/mechanisms/M01-cohort-visibility-cascade.draft.md"
+    },
+    "M01#stage-3-rule": {
+      "mdoc": "M01",
+      "title": "Stage-3 rule (4-digit one award year at a time)",
+      "section_heading": "## 3 — Cohort Period: 4-stage cascade (verbatim)",
+      "file": "analyses/mechanisms/M01-cohort-visibility-cascade.draft.md"
+    },
+    "M01#stage-4-rule": {
+      "mdoc": "M01",
+      "title": "Stage-4 rule (2-digit one award year at a time)",
+      "section_heading": "## 3 — Cohort Period: 4-stage cascade (verbatim)",
+      "file": "analyses/mechanisms/M01-cohort-visibility-cascade.draft.md"
+    },
+    "M01#failure-rule": {
+      "mdoc": "M01",
+      "title": "Cohort exhaustion → no median published",
+      "section_heading": "## 3 — Cohort Period (failure rule)",
+      "file": "analyses/mechanisms/M01-cohort-visibility-cascade.draft.md"
+    },
+    "M01#16-irs-reporter-floor": {
+      "mdoc": "M01",
+      "title": "16-IRS-reporter floor (proposed § 668.404(d))",
+      "section_heading": "### NPRM (proposed) — § 668.404(d) 16-IRS-reporter floor",
+      "file": "analyses/mechanisms/M01-cohort-visibility-cascade.draft.md"
+    },
+    "M01#proposed-668-402-c-3": {
+      "mdoc": "M01",
+      "title": "Proposed § 668.402(c)(3) 50%-in-state skip-calculation rule",
+      "section_heading": "### NPRM (proposed) — § 668.402(c)(3) 50%-in-state skip-calculation rule",
+      "file": "analyses/mechanisms/M01-cohort-visibility-cascade.draft.md"
+    },
+    "M01#hidden-program-surfacer": {
+      "mdoc": "M01",
+      "title": "Hidden-program surfacer (sub-30 programs pulled into expansion)",
+      "section_heading": "## 5. Impact to COTA",
+      "file": "analyses/mechanisms/M01-cohort-visibility-cascade.draft.md"
+    },
+    "M01#5-impact-to-cota": {
+      "mdoc": "M01",
+      "title": "Impact to COTA (worked example)",
+      "section_heading": "## 5. Impact to COTA",
+      "file": "analyses/mechanisms/M01-cohort-visibility-cascade.draft.md"
+    },
+    "M01#privacy-suppression": {
+      "mdoc": "M01",
+      "title": "Privacy suppression — published median noise injection",
+      "section_heading": "## 3 — Privacy Suppression (Technical Appendix p. 7)",
+      "file": "analyses/mechanisms/M01-cohort-visibility-cascade.draft.md"
+    },
+    "M01#pandemic-cohort-window": {
+      "mdoc": "M01",
+      "title": "PPD:2026 cohort window — pandemic disruption context",
+      "section_heading": "## 3 — Cohort Period: window pooling AY 2017-18 + AY 2018-19",
+      "file": "analyses/mechanisms/M01-cohort-visibility-cascade.draft.md"
+    },
+    "M02#earnings-numerator": {
+      "mdoc": "M02",
+      "title": "Earnings numerator — IRS match coverage and self-employment",
+      "section_heading": "## 1 — Earnings numerator",
+      "file": "analyses/mechanisms/M02-earnings-numerator.draft.md"
+    },
+    "M03#3-verbatim-language": {
+      "mdoc": "M03",
+      "title": "Benchmark construction — verbatim language section",
+      "section_heading": "## 3. Verbatim language",
+      "file": "analyses/mechanisms/M03-benchmark-construction.draft.md"
+    },
+    "M03#benchmark-route": {
+      "mdoc": "M03",
+      "title": "Benchmark route selector (50%-in-state)",
+      "section_heading": "## 3.1 Statute / 3.3 NPRM",
+      "file": "analyses/mechanisms/M03-benchmark-construction.draft.md"
+    },
+    "M03#graduate-benchmark": {
+      "mdoc": "M03",
+      "title": "Graduate benchmark — lowest of three",
+      "section_heading": "## 3.1 Statute (§ 84001(c)(3)(B)(ii))",
+      "file": "analyses/mechanisms/M03-benchmark-construction.draft.md"
+    },
+    "M03#undergraduate-benchmark": {
+      "mdoc": "M03",
+      "title": "Undergraduate benchmark — state HS-only earner",
+      "section_heading": "## 3.1 Statute (§ 84001(c)(3)(B)(i))",
+      "file": "analyses/mechanisms/M03-benchmark-construction.draft.md"
+    },
+    "M03#acs-n30-rule": {
+      "mdoc": "M03",
+      "title": "ACS n=30 cell-drop rule",
+      "section_heading": "## 3.3 NPRM (Earnings Threshold)",
+      "file": "analyses/mechanisms/M03-benchmark-construction.draft.md"
+    },
+    "M04#pass-fail-trigger": {
+      "mdoc": "M04",
+      "title": "Pass/fail trigger and gap calculation",
+      "section_heading": "## 1 — Description (operational specificity)",
+      "file": "analyses/mechanisms/M04-pass-fail-trigger.draft.md"
+    },
+    "M04#3-verbatim-language": {
+      "mdoc": "M04",
+      "title": "Pass/fail trigger — verbatim language",
+      "section_heading": "## 3. Verbatim language",
+      "file": "analyses/mechanisms/M04-pass-fail-trigger.draft.md"
+    },
+    "M04#display-helper": {
+      "mdoc": "M04",
+      "title": "Display helper note (R12 demoted)",
+      "section_heading": "(corpus convention; not in statute)",
+      "file": "analyses/mechanisms/M04-pass-fail-trigger.draft.md"
+    },
+    "M05#program-level-consequence": {
+      "mdoc": "M05",
+      "title": "Program-level consequence — Title IV Direct Loan ineligibility",
+      "section_heading": "## 1 — Program-level consequence",
+      "file": "analyses/mechanisms/M05-program-level-consequence.draft.md"
+    },
+    "M06#institution-level-consequence": {
+      "mdoc": "M06",
+      "title": "Institution-level consequence — financial responsibility",
+      "section_heading": "## 1 — Institution-level consequence",
+      "file": "analyses/mechanisms/M06-institution-level-consequence.draft.md"
+    },
+    "M06#and-or-debate": {
+      "mdoc": "M06",
+      "title": "AND-vs-OR construction in § 668.16(t)",
+      "section_heading": "## 3 — AND/OR debate",
+      "file": "analyses/mechanisms/M06-institution-level-consequence.draft.md"
+    },
+    "M08#obbba-loan-caps": {
+      "mdoc": "M08",
+      "title": "OBBBA § 81001 graduate loan caps",
+      "section_heading": "## 1 — OBBBA loan caps",
+      "file": "analyses/mechanisms/M08-obbba-loan-caps.draft.md"
+    },
+    "M12#data-quality-regime": {
+      "mdoc": "M12",
+      "title": "Data-quality regime — noise band, cross-validation, IRS suppression",
+      "section_heading": "## 1 — Reporting cadence & data quality",
+      "file": "analyses/mechanisms/M12-reporting-cadence-data-quality.draft.md"
+    },
+    "M12#cross-validation": {
+      "mdoc": "M12",
+      "title": "Cross-validation against pre-computed pass/fail",
+      "section_heading": "## 3 — Cross-validation policy",
+      "file": "analyses/mechanisms/M12-reporting-cadence-data-quality.draft.md"
+    },
+    "M14#named-populations": {
+      "mdoc": "M14",
+      "title": "RIA Table 3.19 named populations",
+      "section_heading": "## 1 — Named populations (Table 3.19)",
+      "file": "analyses/mechanisms/M14-targeting-named-populations.draft.md"
+    },
+    "M14#3-verbatim-language": {
+      "mdoc": "M14",
+      "title": "RIA Table 3.19 verbatim language",
+      "section_heading": "## 3. Verbatim language",
+      "file": "analyses/mechanisms/M14-targeting-named-populations.draft.md"
+    }
+  }
+}
