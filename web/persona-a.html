@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Check specific programs — CSU Deans EP Tool</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="breadcrumb"><a href="./index.html">← Back</a></p>
+      <h1>Check specific programs</h1>
+    </header>
+
+    <main class="run-page">
+      <form id="run-form" class="run-form" novalidate>
+        <label for="unitid-input">
+          IPEDS UNITID
+          <span class="hint">Six-digit federal identifier.</span>
+        </label>
+        <input
+          id="unitid-input"
+          name="unitid"
+          type="text"
+          inputmode="numeric"
+          pattern="[0-9]+"
+          maxlength="8"
+          placeholder="e.g. 110583"
+          required
+        />
+
+        <fieldset class="queried-cips">
+          <legend>Programs to check</legend>
+          <p class="hint">
+            Enter a four-digit CIP code (e.g. <code>5006</code> for Cinematic
+            Arts) and pick the credential. Add a row for each program. Programs
+            the Department does not publish for your campus return NOT MEASURED
+            with the reason explained on the result.
+          </p>
+          <div id="cip-rows" class="cip-rows"></div>
+          <button type="button" id="add-row" class="ghost-btn">
+            + Add another program
+          </button>
+        </fieldset>
+
+        <button type="submit" class="cta">Check programs</button>
+      </form>
+
+      <p id="status-line" class="status-line" role="status" aria-live="polite"></p>
+
+      <section id="result-region" class="result-region" hidden></section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="primary-source-reminder">
+        Re-derive against primary sources before any external submission.
+      </p>
+    </footer>
+
+    <script type="module" src="./js/persona-a.js"></script>
+  </body>
+</html>

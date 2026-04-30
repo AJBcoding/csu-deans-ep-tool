@@ -1,0 +1,247 @@
+{
+  "$schema": "./glossary.schema.json",
+  "version": "1.0.0",
+  "spec_anchor": "design.v6.md §17 (carries v5 §17 unchanged + v6 additions)",
+  "purpose": "Internal-vs-Dean-facing vocabulary swaps. Build-time linter (scripts/lint-glossary.ts) enforces both the forbidden-string list (§13 success criteria) and the substitutions defined here against any Dean-facing surface (content/, src/ui templates, rendered HTML).",
+  "forbidden_literals": [
+    {
+      "term": "cascade",
+      "reason": "design.v6 §13 — dean-facing UI must not contain this literal.",
+      "category": "spec-§13"
+    },
+    {
+      "term": "supergroup",
+      "reason": "design.v6 §13.",
+      "category": "spec-§13"
+    },
+    {
+      "term": "STATS",
+      "reason": "design.v6 §13. Refers to the dataset/NPRM internally; surface as 'the federal data the Department uses' or 'the federal rule'.",
+      "category": "spec-§13"
+    },
+    {
+      "term": "subpart Q",
+      "reason": "design.v6 §13.",
+      "category": "spec-§13"
+    },
+    {
+      "term": "subpart R",
+      "reason": "design.v6 §13.",
+      "category": "spec-§13"
+    },
+    {
+      "term": "PrivacySuppressed",
+      "reason": "design.v6 §13.",
+      "category": "spec-§13"
+    },
+    {
+      "term": "OPEID6",
+      "reason": "design.v6 §13.",
+      "category": "spec-§13"
+    },
+    {
+      "term": "PAR-data",
+      "reason": "design.v6 §13.",
+      "category": "spec-§13"
+    },
+    {
+      "term": "PAR-derived",
+      "reason": "design.v6 §13.",
+      "category": "spec-§13"
+    }
+  ],
+  "condescending_terms": [
+    {
+      "term": "complex",
+      "reason": "v6 §3-§5 peer-voice rule: no condescending phrasing.",
+      "category": "voice"
+    },
+    {
+      "term": "intuitive",
+      "reason": "v6 §3-§5 peer-voice rule.",
+      "category": "voice"
+    },
+    {
+      "term": "easy",
+      "reason": "v6 §3-§5 peer-voice rule.",
+      "category": "voice"
+    },
+    {
+      "term": "simply",
+      "reason": "v6 §3-§5 peer-voice rule.",
+      "category": "voice"
+    },
+    {
+      "term": "in plain English",
+      "reason": "v6 §3-§5 peer-voice rule — reader is a Dean, not a novice.",
+      "category": "voice"
+    }
+  ],
+  "internal_to_dean_facing": [
+    {
+      "internal": "Cohort cascade",
+      "dean_facing": "the rule's expansion (year-by-year, then program-by-program)",
+      "category": "v5-§17",
+      "notes": "Use 'expansion' as the noun. Stages of the expansion are described as 'expanded over X years' or 'pooled with related programs at the wider CIP family'."
+    },
+    {
+      "internal": "Stage 1",
+      "dean_facing": "single-year cohort at the program's own CIP",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "Stage 2",
+      "dean_facing": "expanded over multiple years at the program's own CIP",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "Stage 3",
+      "dean_facing": "pooled with related programs at the 4-digit CIP family",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "Stage 4",
+      "dean_facing": "pooled with related programs at the 2-digit CIP family",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "Supergroup",
+      "dean_facing": "wider CIP family / wider program group",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "STATS dataset",
+      "dean_facing": "the federal data the Department uses",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "PPD:2026",
+      "dean_facing": "the Department's federal data (2026 release)",
+      "category": "v5-§17",
+      "notes": "PPD as a literal token is acceptable in field-name contexts (e.g., 'Source: PPD field …'); not as a standalone Dean-facing term."
+    },
+    {
+      "internal": "OPEID6",
+      "dean_facing": "institution identifier",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "Subpart Q",
+      "dean_facing": "the federal rule",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "Subpart R",
+      "dean_facing": "the federal rule",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "6-digit CIP",
+      "dean_facing": "specific code (define on first mention)",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "4-digit CIP",
+      "dean_facing": "4-digit family (define on first mention)",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "2-digit CIP",
+      "dean_facing": "2-digit family (define on first mention)",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "PrivacySuppressed",
+      "dean_facing": "suppressed by federal privacy rule",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "Working-not-enrolled subset",
+      "dean_facing": "graduates who are not still in school and are working",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "median earnings of working not enrolled",
+      "dean_facing": "earnings of graduates who are working and not still in school",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "2-of-3-year trigger",
+      "dean_facing": "two failures in three years",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "EP gap",
+      "dean_facing": "gap between your graduates' median earnings and the benchmark",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "ep_gap_pct",
+      "dean_facing": "gap percentage",
+      "category": "v5-§17",
+      "notes": "Engine JSON keys are exempt; the linter scopes to Dean-facing strings (content/ + UI templates). The literal token must not appear in rendered HTML."
+    },
+    {
+      "internal": "Benchmark cell",
+      "dean_facing": "the figure your program is compared against",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "ACS PUMS",
+      "dean_facing": "Census earnings data",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "RIA Table 3.19",
+      "dean_facing": "the Department's own analysis of which programs are most at risk",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "AHEAD",
+      "dean_facing": "the federal data product the Department published in advance of the rulemaking",
+      "category": "v5-§17",
+      "notes": "Use only if necessary."
+    },
+    {
+      "internal": "Determinism",
+      "dean_facing": "reliable",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "parametric",
+      "dean_facing": "depends-on-data",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "advisory",
+      "dean_facing": "context note",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "irs_match_count",
+      "dean_facing": "IRS records returned",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "t4enrl_inst_instate_p1819",
+      "dean_facing": "in-state share",
+      "category": "v5-§17"
+    },
+    {
+      "internal": "n_size",
+      "dean_facing": "cohort count",
+      "category": "v5-§17-derived",
+      "notes": "Listed in cp-0on.2 issue body as a Dean-facing-forbidden token; tool-internal token only."
+    },
+    {
+      "internal": "Integrity envelope",
+      "dean_facing": "snapshot metadata (build date, federal-data release, noise-band count, cross-validation status)",
+      "category": "v6-§17"
+    },
+    {
+      "internal": "Primary-source reminder",
+      "dean_facing": "Re-derive against primary sources before any external submission",
+      "category": "v6-§17"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<article class="mdoc-panel" data-panel-id="M12" data-trigger="auto">
+  <header class="mdoc-header">
+    <span class="mdoc-id">M12</span>
+    <h2 class="mdoc-title">Programs without a published measure. The 'no measure' state is operationally distinct from passing — there is no procedural anchor for appeal under the proposed § 668.603 calc-error-only scope.</h2>
+  </header>
+
+  <section class="mdoc-summary">
+    <p>A program can be "not measured" for five distinct reasons. NOT MEASURED is not equivalent to PASS — it produces no failure count and no published earnings figure. Absence from the federal data is logically distinct from suppression: a missing row is not a privacy decision.</p>
+  </section>
+
+  <section class="mdoc-mechanism">
+    <h3>How it works</h3>
+    <p>The five operative reasons:</p>
+    <ul class="mdoc-steps">
+      <li><strong>Cohort below the 30-graduate floor after the four-step expansion (M01).</strong> Flag: <code>cohort_suppressed</code>. Source: proposed § 668.403(d).</li>
+      <li><strong>Privacy-suppressed cell.</strong> The federal data carries a row-level privacy mask on the program's earnings, applied for any qualifying privacy-protection reason. The figure is withheld regardless of cohort size.</li>
+      <li><strong>Out of scope of OBBBA § 84001.</strong> Some credentials (certain undergraduate certificates, programs at previously-exempt institutions) sit outside the rule's reach. Flag: <code>out_of_scope = true</code>.</li>
+      <li><strong>Invisible to the federal data (Persona-A queried-code path).</strong> A Dean queries a specific code (for example, Cinematic Arts at CSULB, baccalaureate, code 50.0601) and the federal data returns zero rows — even though IPEDS Completions shows hundreds of graduates in the relevant award years. Absence is logically distinct from suppression: no privacy decision, no cohort finding, only a row that never appeared. Surfaced with the b16-invisibility provenance line.</li>
+      <li><strong>IRS-records floor (proposed § 668.404(d)).</strong> Fewer than 16 graduates appear in the IRS-match for the measurement year. Distinct from the broader privacy-suppressed flag above; this is the proposed regulation's specific numeric trigger.</li>
+    </ul>
+    <p>None produce a failure count. None are appealable: the proposed § 668.603 appeal scope is "calculation error only," and NOT MEASURED is the absence of a calculation. The b16-invisibility case has no procedural anchor — no published flag to contest.</p>
+    <p>The snapshot-metadata footer reports which reason applied, traceable to the Department's published flag (or to the missing row, in the b16 case).</p>
+  </section>
+
+  <section class="mdoc-citations">
+    <h3>Sources</h3>
+    <ul>
+      <li><a class="cite" data-cite="nprm:668.403(d)" href="#">Proposed § 668.403(d)</a> — 30-graduate floor.</li>
+      <li><a class="cite" data-cite="nprm:668.404(d)" href="#">Proposed § 668.404(d)</a> — 16-IRS-records floor.</li>
+      <li><a class="cite" data-cite="nprm:668.603" href="#">Proposed § 668.603</a> — appeal scope (calc-error only).</li>
+      <li><a class="cite" data-cite="r12#five-reasons" href="#">R12 — five-reason taxonomy</a> — rules-engine enumeration.</li>
+      <li><a class="cite" data-cite="m12#no-measure-states" href="#">M12 — no-measurement-state walk-through</a>.</li>
+    </ul>
+  </section>
+</article>
