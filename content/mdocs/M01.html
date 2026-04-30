@@ -1,0 +1,34 @@
+<article class="mdoc-panel" data-panel-id="M01" data-trigger="auto">
+  <header class="mdoc-header">
+    <span class="mdoc-id">M01</span>
+    <h2 class="mdoc-title">The rule's cohort-expansion logic. A program with fewer than 30 qualifying graduates pulls in graduates from related programs (same 4-digit CIP family, then same 2-digit family) until 30 is reached or expansion exhausts.</h2>
+  </header>
+
+  <section class="mdoc-summary">
+    <p>The earnings-premium test only fires on a program whose four-year-prior graduating class reaches 30 qualifying graduates after a stepwise expansion. The expansion rule decides whether a program is measured at its own median, measured against pooled peers, or not measured at all.</p>
+  </section>
+
+  <section class="mdoc-mechanism">
+    <h3>How it works</h3>
+    <p>The Secretary builds the program's measured cohort in four steps. Each step is taken only if the prior step's count remains under 30:</p>
+    <ul class="mdoc-steps">
+      <li>Single award year at the program's own 6-digit specific code.</li>
+      <li>Five award years pooled at the program's own 6-digit specific code.</li>
+      <li>Five years × 6-digit + the 4-digit family, one year at a time.</li>
+      <li>Five years × 6-digit + 4-digit + the 2-digit family, one year at a time.</li>
+    </ul>
+    <p>If the count is still under 30 after the fourth step, no median is published for the program in that year. The Department's preamble describes this as expansion "in order to achieve a cohort of at least 30 individuals."</p>
+    <p>The expansion is independent of the benchmark expansion (M03). Both fire under their own thresholds and may pull in different peer populations.</p>
+  </section>
+
+  <section class="mdoc-citations">
+    <h3>Sources</h3>
+    <ul>
+      <li><a class="cite" data-cite="obbba:84001(c)(4)" href="#">OBBBA § 84001(c)(4)</a> — statutory 30-individual floor and the two-stage statutory expansion.</li>
+      <li><a class="cite" data-cite="nprm:668.403(d)" href="#">Proposed § 668.403(d)</a> — program-level 30-completer floor in the proposed reg.</li>
+      <li><a class="cite" data-cite="nprm:668.404(d)" href="#">Proposed § 668.404(d)</a> — 16-IRS-reporter floor.</li>
+      <li><a class="cite" data-cite="nprm:cohort-period-preamble" href="#">NPRM preamble — Cohort Period</a> — verbatim 4-step expansion description.</li>
+      <li><a class="cite" data-cite="m01#expansion-logic" href="#">M01 — expansion-logic walk-through</a> — full mechanism analysis (internal corpus).</li>
+    </ul>
+  </section>
+</article>

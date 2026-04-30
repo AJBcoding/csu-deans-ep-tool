@@ -1,0 +1,33 @@
+<article class="mdoc-panel" data-panel-id="M12" data-trigger="auto">
+  <header class="mdoc-header">
+    <span class="mdoc-id">M12</span>
+    <h2 class="mdoc-title">Programs without a published measure. The 'no measure' state is operationally distinct from passing — there is no procedural anchor for appeal under the proposed § 668.603 calc-error-only scope.</h2>
+  </header>
+
+  <section class="mdoc-summary">
+    <p>A program can be "not measured" for several distinct reasons, each with different procedural implications. NOT MEASURED is not equivalent to PASS — it produces no failure count, but it also produces no published earnings figure for the program.</p>
+  </section>
+
+  <section class="mdoc-mechanism">
+    <h3>How it works</h3>
+    <p>The four operative reasons a program produces NOT MEASURED:</p>
+    <ul class="mdoc-steps">
+      <li><strong>Cohort below 30 after the four-step expansion (M01).</strong> Reported as the suppression flag <code>cohort_suppressed</code>. No median is published.</li>
+      <li><strong>IRS reporter count below 16</strong> for the matched cohort (proposed § 668.404(d)). The earnings record is suppressed by federal privacy rule.</li>
+      <li><strong>Benchmark population below threshold.</strong> Census data in the population required by the rule (M03) does not contain enough working adults to publish; no comparison possible.</li>
+      <li><strong>Out of scope of OBBBA § 84001.</strong> Some credentials (undergraduate certificates of certain types, programs at exempt institutions before the carve-out's removal) sit outside the rule's reach. The tool reports this with <code>out_of_scope = true</code>.</li>
+    </ul>
+    <p>None of these states produce a failure count. None of them are appealable: the proposed § 668.603 appeal scope is "calculation error only," and a NOT MEASURED outcome is the absence of a calculation, not a calculation error. M01's expansion logic is not appealable independently either.</p>
+    <p>The snapshot-metadata footer on every result page reports which suppression reason applied, with provenance traceable to the Department's published flag.</p>
+  </section>
+
+  <section class="mdoc-citations">
+    <h3>Sources</h3>
+    <ul>
+      <li><a class="cite" data-cite="nprm:668.403(d)" href="#">Proposed § 668.403(d)</a> — 30-completer floor.</li>
+      <li><a class="cite" data-cite="nprm:668.404(d)" href="#">Proposed § 668.404(d)</a> — 16-IRS-reporter floor.</li>
+      <li><a class="cite" data-cite="nprm:668.603" href="#">Proposed § 668.603</a> — appeal scope (calc-error only).</li>
+      <li><a class="cite" data-cite="m12#no-measure-states" href="#">M12 — no-measurement-state walk-through</a>.</li>
+    </ul>
+  </section>
+</article>
