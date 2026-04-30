@@ -1,0 +1,18 @@
+# Cloudflare Pages config — drives `wrangler pages dev` and `wrangler pages deploy`.
+#
+# Pages picks up the static-asset directory (`pages_build_output_dir`) plus
+# the `functions/` directory at deploy time. The Functions runtime compiles
+# `functions/api/v1/[[path]].ts` automatically; we don't reference it here.
+#
+# Domain selection is deferred to the chair (per cp-0on.7 bead). Until a
+# custom domain is bound, deploys land on a *.pages.dev preview URL which
+# satisfies the "live URL reachable from public internet" acceptance criterion.
+
+name = "csu-deans-ep-tool"
+compatibility_date = "2025-09-01"
+pages_build_output_dir = "./dist-pages"
+
+# No bindings required for Phase 5: the API loader pulls bundled fixtures
+# (functions/_lib/bundled-fixtures.ts) and there's no DB/KV/R2 dependency.
+# Future phases that need persistent storage would add [[kv_namespaces]] /
+# [[r2_buckets]] blocks here.

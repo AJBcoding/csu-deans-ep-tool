@@ -34,7 +34,7 @@ Static site + thin API server reading pre-built JSON. Build pipeline lints dean-
 | 2 | API contract frozen; Persona C endpoint live | blocked on 1 |
 | 3 | Static UI for Personas A & B | **complete (cp-0on.6 — chair-review pending)** |
 | 4 | M-doc panels pre-rendered at build time + glossary linter | parallel with 3 |
-| 5 | One-page PDF export + deployment | blocked on 3, 4 |
+| 5 | One-page PDF export + Cloudflare Pages/Workers deployment | **complete (cp-0on.7)** |
 
 ## Phase 3 — running the UI locally
 
@@ -68,9 +68,126 @@ web/
   js/persona-{a,b}.js  Page controllers — fetch, render, hydrate
 ```
 
-For Cloudflare Pages deployment, ship `web/` as the doc root and either copy
-`content/` into `web/content/` at build time or add a redirect rule routing
-`/content/*` to the bundled assets. Phase 5 closes this out.
+For Cloudflare Pages deployment, see [Deploying to Cloudflare Pages](#deploying-to-cloudflare-pages) below.
+
+## PDF export (Phase 5)
+
+Every result page (Persona A and Persona B) gets a **Save as PDF** button at
+the top of the result region once a verdict has rendered. Clicking it invokes
+`window.print()` against the page's `@media print` stylesheet
+(`web/css/main.css`), which compresses the result into a one-page deterministic
+artifact preserving:
+
+- Verdict colorbands (FAIL red / PASS green / NOT MEASURED grey / noise-band amber)
+- Program identifier, cohort count, median earnings, benchmark, and gap
+- The full rules-fired list (auto-expanded — citations are load-bearing per spec §0)
+- Snapshot metadata block (build date, federal-data release, noise-band count)
+- Cross-validation banner if disagreements exist
+- Both reminders: `footer_reminder` and `primary_source_reminder`
+- A print-only footer identifying the tool, institution, and data provenance
+
+Mobile Safari supports this via Share → Save to Files (PDF). Print engines
+across modern browsers honor `print-color-adjust: exact` so verdict colorbands
+survive the print pipeline.
+
+**Determinism note (spec §0):** `window.print()` rasterizes the existing DOM
+through the browser's deterministic layout + print engine. There is no LLM,
+no async inference, no random source. Same input record + same stylesheet
+produces the same PDF. This is the same code path Puppeteer / headless
+Chromium uses on the server side; we run it client-side because every dean
+already has a browser, and it preserves the no-server-cost posture.
+
+## Deploying to Cloudflare Pages
+
+The deployment is **Cloudflare Pages + Pages Functions** — single project,
+single domain, single deploy step:
+
+- **Static UI** ships from `dist-pages/` (built by `npm run build:pages`,
+  which copies `web/` + `content/` into the output directory).
+- **API endpoint** ships from `functions/api/v1/[[path]].ts` — a Pages
+  Function that wraps the Web Standards router in `src/api/web-router.ts`.
+  Same handlers as the local Node `http` server; different transport.
+- **Bundled fixtures**: `functions/_lib/bundled-fixtures.ts` imports the
+  per-institution JSON files that ship with the Worker. Phase 5 ships
+  CSULB (UNITID 110583); add records to that file as the build pipeline
+  produces additional institution fixtures.
+
+### Local preview
+
+```bash
+npm run build:pages          # builds dist-pages/
+npm run dev:pages            # wrangler pages dev — runs the Functions runtime locally
+```
+
+`wrangler pages dev` boots the Pages Functions runtime against `dist-pages/`
+on `http://127.0.0.1:8788/`. Functions log to stderr.
+
+### Deploy
+
+```bash
+# One-time: install wrangler globally if not already installed via npm devDeps
+npm install
+
+# Authenticate (opens a browser):
+npx wrangler login
+
+# Push a deploy from the local checkout:
+npm run build:pages
+npm run deploy
+```
+
+CI deploys are wired up in `.github/workflows/deploy.yml`:
+
+- Push to `main` → production deploy on the Pages project.
+- Push a PR → preview deploy on a `*.pages.dev` branch URL.
+- Manual: GitHub Actions → "Build & Deploy to Cloudflare Pages" → Run workflow.
+
+### Required GitHub Secrets
+
+Set these in **Repo Settings → Secrets and variables → Actions → Repository secrets**:
+
+| Secret | Value | How to get it |
+|---|---|---|
+| `CLOUDFLARE_API_TOKEN` | API token with Pages:Edit permission | Cloudflare dash → My Profile → API Tokens → Create Token → "Edit Cloudflare Pages" template |
+| `CLOUDFLARE_ACCOUNT_ID` | Account ID | Cloudflare dash → right sidebar of any zone → "Account ID" |
+
+The deploy step is gated on `CLOUDFLARE_API_TOKEN` — if the secret is unset,
+the workflow runs all quality gates and prints a notice but skips the deploy
+step. This lets the repo's CI pass on forks / branches without Pages access.
+
+### Custom domain
+
+Phase 5 deploys to a Cloudflare-managed `*.pages.dev` preview URL. To bind a
+custom domain (chair-deferred decision):
+
+1. Cloudflare dash → Pages → `csu-deans-ep-tool` project → Custom domains → Set up a custom domain.
+2. Cloudflare auto-provisions DNS + TLS (no manual cert work). For a domain
+   already on Cloudflare DNS, this is a one-click bind. For an external
+   registrar, follow the CNAME instructions Cloudflare surfaces.
+3. Update `package.json` deploy script to use `--branch=main` for the
+   production environment if you want pushes to main to land directly on the
+   custom domain (already wired in `.github/workflows/deploy.yml`).
+
+### Cloudflare Workers bundle limits
+
+The Pages Function runs as a Worker. Free-tier limit: 1 MB compressed bundle.
+The bundled CSULB fixture is ~98 KB; the engine + handlers + router compile
+to roughly 50 KB. Plenty of headroom for additional institution fixtures
+(each ~30-100 KB depending on program count). For institution counts > ~10,
+move from bundled fixtures to Workers KV or R2 storage.
+
+### Smoke-testing the live deployment
+
+```bash
+# Replace <DOMAIN> with the deployed *.pages.dev URL or your custom domain.
+curl -s https://<DOMAIN>/api/v1/health | jq .
+curl -s https://<DOMAIN>/api/v1/analysis/110583 | jq '.programs[] | {cip4, credlev, verdict}'
+```
+
+The first call should return `status: ok` with `institutions_loaded >= 1`.
+The second should include CSULB's four dean-memo verdicts (Music MM FAIL,
+Art MFA FAIL, Theatre BA PASS, Cinematic Arts BA absent → POST a queried
+CIP request to surface NOT MEASURED + b16_invisible).
 
 ## Refreshing the build-time data
 

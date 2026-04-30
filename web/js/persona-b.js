@@ -4,6 +4,7 @@ import { getAnalysisByUnitid, ApiError } from './api.js';
 import { loadCitations, hydrateCitations } from './citations.js';
 import { loadPanel, autoTriggeredIds, learnMoreIds } from './panels.js';
 import { renderResult } from './render.js';
+import { mountPdfButton, defaultPrintFooter } from './pdf.js';
 
 const form = document.getElementById('run-form');
 const input = document.getElementById('unitid-input');
@@ -47,6 +48,7 @@ async function run(unitid) {
     const { byId, learnMore } = await loadPanelsForResult(result);
     region.innerHTML = renderResult(result, byId, learnMore);
     if (citations) hydrateCitations(region, citations);
+    mountPdfButton(region, { printFooterText: defaultPrintFooter(result) });
     region.hidden = false;
     setStatus(
       `Showing ${result.programs.length} program${result.programs.length === 1 ? '' : 's'} for ${result.instnm}.`,
