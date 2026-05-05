@@ -616,6 +616,32 @@ button.ghost-btn {
   color: var(--color-text-muted);
 }
 
+/* CSU systemwide context (cp-j0gw.8) */
+
+.systemwide-context {
+  margin-top: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(31, 58, 138, 0.06);
+  border-left: 3px solid #1f3a8a;
+  border-radius: 4px;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.systemwide-context .systemwide-source {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.systemwide-context code {
+  font-size: 0.82rem;
+  background: rgba(0, 0, 0, 0.06);
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+}
+
 /* ─── Panels ─────────────────────────────────────────────────────────── */
 
 .panels-region {

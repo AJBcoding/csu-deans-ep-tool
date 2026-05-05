@@ -141,6 +141,8 @@ export function renderVerdictCard(program) {
     ? renderVerificationRecipe(program.verification_recipe)
     : '';
 
+  const systemwide = renderSystemwideContext(program.cip4, program.credlev);
+
   return `
     <article class="verdict-card" ${dataAttrs}>
       <div class="program-line">
@@ -153,6 +155,7 @@ export function renderVerdictCard(program) {
       ${notMeasuredNote}
       ${xv}
       ${derivation}
+      ${systemwide}
       ${renderPanelTriggerList(program.panels_triggered)}
       <details class="drill-in">
         <summary>Why this verdict — rules fired</summary>
@@ -161,6 +164,61 @@ export function renderVerdictCard(program) {
       ${recipe}
     </article>
   `;
+}
+
+/**
+ * Lazy-loaded CSU systemwide context (cp-j0gw.8). The JSON is fetched once on
+ * first call and cached. If the fetch fails (offline build / standalone test
+ * harness), the function returns an empty string and the verdict card renders
+ * without the context line — never blocks the per-program verdict.
+ */
+let SYSTEMWIDE_CONTEXT = null;
+let SYSTEMWIDE_CONTEXT_LOADING = null;
+async function loadSystemwideContext() {
+  if (SYSTEMWIDE_CONTEXT !== null) return SYSTEMWIDE_CONTEXT;
+  if (SYSTEMWIDE_CONTEXT_LOADING) return SYSTEMWIDE_CONTEXT_LOADING;
+  SYSTEMWIDE_CONTEXT_LOADING = fetch('./content/systemwide-cip-context.json')
+    .then((r) => (r.ok ? r.json() : null))
+    .then((data) => {
+      SYSTEMWIDE_CONTEXT = data ?? { by_cip: {}, n_campuses_in_scope: 0 };
+      return SYSTEMWIDE_CONTEXT;
+    })
+    .catch(() => {
+      SYSTEMWIDE_CONTEXT = { by_cip: {}, n_campuses_in_scope: 0 };
+      return SYSTEMWIDE_CONTEXT;
+    });
+  return SYSTEMWIDE_CONTEXT_LOADING;
+}
+
+/** Trigger preload from page init code (e.g. persona-b.js). */
+export function preloadSystemwideContext() {
+  return loadSystemwideContext();
+}
+
+/**
+ * Synchronous render — uses preloaded data if available, otherwise renders
+ * empty (and the page can re-render once the fetch resolves).
+ */
+function renderSystemwideContext(cip4, _credlev) {
+  if (SYSTEMWIDE_CONTEXT === null) return '';
+  const ctx = SYSTEMWIDE_CONTEXT.by_cip?.[cip4];
+  if (!ctx) return '';
+  const k = SYSTEMWIDE_CONTEXT.n_campuses_in_scope ?? 22;
+  const total = ctx.total_cells ?? 0;
+  if (total === 0) return '';
+  const direct = ctx.a_direct_fail ?? 0;
+  const invisible = ctx.c_invisible ?? 0;
+  const knife = ctx.d_knife_edge ?? 0;
+  const pool = ctx.e_pool_suppressed ?? 0;
+  const parts = [];
+  if (direct > 0) parts.push(`${direct} direct-fail`);
+  if (invisible > 0) parts.push(`${invisible} invisible`);
+  if (knife > 0) parts.push(`${knife} knife-edge`);
+  if (pool > 0) parts.push(`${pool} pool-suppressed`);
+  const breakdown = parts.length > 0 ? ` (${parts.join(' · ')})` : '';
+  return `<p class="systemwide-context"><strong>CSU systemwide context:</strong> CIP ${escapeHtml(
+    cip4,
+  )} (${escapeHtml(ctx.cip4_title ?? '')}) shows ${total} exposure cell${total === 1 ? '' : 's'} across ${ctx.n_unique_campuses ?? 0} of ${k} CSU campuses${breakdown}. <span class="systemwide-source">Source: <code>analyses/csu-systemwide-exposure/output/3cut-2026-05-04/</code></span></p>`;
 }
 
 export function renderVerificationRecipe(recipe) {

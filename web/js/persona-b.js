@@ -3,7 +3,11 @@
 import { getAnalysisByUnitid, ApiError } from './api.js';
 import { loadCitations, hydrateCitations } from './citations.js';
 import { loadPanel, autoTriggeredIds, learnMoreIds } from './panels.js';
-import { renderResult } from './render.js';
+import { renderResult, preloadSystemwideContext } from './render.js';
+
+// Kick off the systemwide-context fetch immediately so it's ready by the time
+// the user submits a UNITID (cp-j0gw.8). Failures fall back to no-context.
+preloadSystemwideContext();
 import { mountPdfButton, defaultPrintFooter } from './pdf.js';
 
 const form = document.getElementById('run-form');
