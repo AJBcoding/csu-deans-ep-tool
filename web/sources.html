@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Public data sources — CSU Deans EP Tool</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/learn.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="breadcrumb"><a href="./index.html">← Back</a></p>
+      <h1>Public data sources</h1>
+      <p class="tagline">
+        Every number this tool surfaces traces back to a publicly available
+        federal data source. Nothing here is proprietary, institutional, or
+        student-level. Verify any finding against the source below.
+      </p>
+      <p class="public-data-badge" aria-label="Public data only">
+        <span class="badge-dot" aria-hidden="true">●</span>
+        Public data only · No private or institutional data leaves your browser
+      </p>
+      <nav class="header-nav" aria-label="Main">
+        <a href="./learn.html">Mechanism Library</a>
+        <a href="./sources.html" aria-current="page">Sources</a>
+      </nav>
+    </header>
+
+    <aside class="top-disclaimer" role="note" aria-label="Important context">
+      <p>
+        <strong>Public data only.</strong>
+        We are <strong>not attorneys, not legislative analysts</strong>. The
+        sources below are the entire input to this tool. If a finding cannot
+        be reproduced from one of them, it does not belong in your filing.
+      </p>
+    </aside>
+
+    <main class="learn-page">
+      <section class="sources-region">
+        <h2>Earnings &amp; cohort data</h2>
+        <article class="source-card">
+          <h3>AHEAD PPD:2026 — Program Performance Data file 112908</h3>
+          <p><strong>Publisher:</strong> U.S. Department of Education / National Center for Education Statistics, distributed via the AHEAD negotiated-rulemaking session-2 materials.</p>
+          <p><strong>Grain:</strong> OPEID6 institution × 4-digit CIP × credential level. Earnings derive from IRS records (W-2 + Schedule SE), measured at the fourth tax year following completion.</p>
+          <p><strong>What this tool reads from it:</strong> <code>md_earn_wne_p4</code> (median earnings), <code>count_wne_p4</code> (single-window cohort count), <code>fail_obbb_cip2_wageb</code> (PPD-published verdict flag), <code>cipx</code> (4-digit CIP), <code>credlev</code>.</p>
+          <p><strong>Verify:</strong> Open the file in your spreadsheet or SQL tool; filter to your institution's OPEID6 and the (cip4, credlev) of interest.</p>
+          <p class="source-meta">Methodology documentation: PPD:2026 Technical Data Appendix.</p>
+        </article>
+
+        <article class="source-card">
+          <h3>IPEDS Completions Survey (C-survey)</h3>
+          <p><strong>Publisher:</strong> NCES, U.S. Department of Education.</p>
+          <p><strong>Grain:</strong> UNITID institution × 6-digit CIP × award level × academic year.</p>
+          <p><strong>What this tool reads from it:</strong> Completer counts at programs that may be invisible to AHEAD's PPD (B16 invisibility) — used by R14 to surface programs that exist at the institution but have no row in PPD.</p>
+          <p><strong>Verify:</strong> <a href="https://nces.ed.gov/ipeds/datacenter/" target="_blank" rel="noopener noreferrer">IPEDS Data Center</a>.</p>
+        </article>
+      </section>
+
+      <section class="sources-region">
+        <h2>Statutes</h2>
+        <article class="source-card">
+          <h3>Public Law 119-21 — One Big Beautiful Bill Act (OBBBA)</h3>
+          <p><strong>Section of interest:</strong> § 84001 (the program-level Earnings Premium test); § 81001 (graduate-loan caps).</p>
+          <p><strong>Verify:</strong> <a href="https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.pdf" target="_blank" rel="noopener noreferrer">PLAW-119publ21 PDF on Congress.gov</a> — official enrolled text.</p>
+        </article>
+
+        <article class="source-card">
+          <h3>Higher Education Act § 498</h3>
+          <p><strong>Topic:</strong> Administrative-capability authority cited by the Department for the proposed § 668.16(t) institution-level escalation pathway.</p>
+          <p><strong>Verify:</strong> <a href="https://uscode.house.gov/" target="_blank" rel="noopener noreferrer">U.S. Code via House Office of the Law Revision Counsel</a> — Title 20.</p>
+        </article>
+      </section>
+
+      <section class="sources-region">
+        <h2>Proposed rule (NPRM)</h2>
+        <article class="source-card">
+          <h3>STATS NPRM — Federal Register 2026-07666</h3>
+          <p><strong>Publisher:</strong> U.S. Department of Education.</p>
+          <p><strong>What this tool reads from it:</strong> Proposed § 668.2(b), § 668.402(c)(3), § 668.403(d)(1), § 668.404(d), § 668.43(d)(1), § 668.603, § 668.16(t); RIA Tables 3.1, 3.9, 3.19; preamble Sections IX.GD (Cohort Period, Earnings Threshold).</p>
+          <p><strong>Verify:</strong> <a href="https://www.federalregister.gov/" target="_blank" rel="noopener noreferrer">Federal Register</a> — search <em>2026-07666</em>.</p>
+          <p class="source-meta">Comment period closes 2026-05-20.</p>
+        </article>
+      </section>
+
+      <section class="sources-region">
+        <h2>Procedural and judicial frameworks</h2>
+        <article class="source-card">
+          <h3>OIRA Circular A-4 (2003) — Regulatory Analysis</h3>
+          <p><strong>Topic:</strong> Problem statement (§ 1), alternatives review (§ 6), uncertainty analysis (§ E). Used to test whether the NPRM's analytical record meets the federal regulatory-analysis floor.</p>
+          <p><strong>Verify:</strong> <a href="https://obamawhitehouse.archives.gov/omb/circulars_a004_a-4/" target="_blank" rel="noopener noreferrer">OMB / OIRA Circular A-4 (2003)</a>.</p>
+        </article>
+
+        <article class="source-card">
+          <h3>Loper Bright Enterprises v. Raimondo, 603 U.S. ___ (2024)</h3>
+          <p><strong>Topic:</strong> Judicial interpretation of statutes; Chevron deference no longer applies.</p>
+          <p><strong>Verify:</strong> Slip opinion via the Supreme Court of the United States.</p>
+        </article>
+
+        <article class="source-card">
+          <h3>Motor Vehicle Mfrs. Ass'n v. State Farm Mut. Auto. Ins. Co., 463 U.S. 29 (1983)</h3>
+          <p><strong>Topic:</strong> Four-prong reasoned-decisionmaking standard for arbitrary-and-capricious review.</p>
+          <p><strong>Verify:</strong> Slip opinion via primary judicial reporters.</p>
+        </article>
+      </section>
+
+      <section class="sources-region">
+        <h2>Engine + reproducer code</h2>
+        <article class="source-card">
+          <h3>This tool's source code</h3>
+          <p><strong>Repository:</strong> <a href="https://github.com/AJBcoding/csu-deans-ep-tool" target="_blank" rel="noopener noreferrer">github.com/AJBcoding/csu-deans-ep-tool</a> — MIT-licensed, open source.</p>
+          <p><strong>Where the rule lives in code:</strong> <code>src/rules.ts</code> (R01–R20), <code>src/verdict.ts</code> (PPD vs tool re-derivation), <code>src/engine.ts</code> (orchestration), <code>src/types.ts</code> (record shape), <code>content/mdocs/</code> (M-doc panels), <code>content/citations.json</code> (anchor → primary-source map).</p>
+          <p><strong>Tests:</strong> <code>tests/acceptance.test.ts</code> reproduces the CSULB UNITID 110583 dean memo v10 § 1 numbers exactly.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="primary-source-reminder">
+        Re-derive against primary sources before any external submission.
+      </p>
+    </footer>
+  </body>
+</html>
