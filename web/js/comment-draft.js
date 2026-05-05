@@ -119,7 +119,7 @@ function buildOutline(result) {
     lines.push(`[The Mechanism Library panel M18 walks through the five legal frames the`);
     lines.push(`Department's design must answer (Loper Bright + major-questions, OIRA`);
     lines.push(`Circular A-4 § 1, § 6, § E, and Motor Vehicle Mfrs. v. State Farm). If`);
-    lines.push(`you have a legal position on the institution-level cascade design, this`);
+    lines.push(`you have a legal position on the institution-level escalation design, this`);
     lines.push(`is where to put it. The tool does not take a legal position; it surfaces`);
     lines.push(`the questions for you to answer or to ask counsel about.]`);
     lines.push(``);

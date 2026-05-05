@@ -66,7 +66,7 @@ function buildVerificationRecipe(
   basis: DerivationBasis,
 ): VerificationRecipe {
   const sourceData = 'AHEAD PPD:2026 file 112908 (program-performance-data-debt-earnings-and-earnings-test-metrics)';
-  const sourceGrain = 'OPEID6 × 4-digit CIP × CREDLEV';
+  const sourceGrain = 'institution identifier × 4-digit CIP × credential level';
 
   if (basis === 'ppd_published_authoritative') {
     return {
@@ -82,7 +82,7 @@ function buildVerificationRecipe(
       engine_reference: 'src/verdict.ts:derivePpdVerdict() — see also src/obbba_rollup/cascade.py for cohort-floor logic',
       steps: [
         'Open PPD:2026 file 112908 in your spreadsheet/SQL tool of choice.',
-        `Filter to OPEID6 (institution) × cipx="${program.cip4}" × credlev="${program.credlev}".`,
+        `Filter to your institution × cipx="${program.cip4}" × credlev="${program.credlev}".`,
         'Read the value of fail_obbb_cip2_wageb. 1 = FAIL, 0 = PASS, NULL = not measured.',
         'AHEAD-published-flag override (cp-wssr): when fail_obbb_cip2_wageb is non-null, it is the regulatory verdict, even if count_wne_p4 < 30. AHEAD\'s pooled cohort meets the statutory § 84001(c)(2)(A) floor.',
       ],
@@ -411,7 +411,7 @@ function evaluateInvisibleProgram(
     derivation_basis: 'not_measured',
     verification_recipe: {
       source_data: 'AHEAD PPD:2026 file 112908 + IPEDS Completions C-survey',
-      source_grain: 'OPEID6 × 4-digit CIP × CREDLEV (PPD); UNITID × 6-digit CIP × award level (IPEDS)',
+      source_grain: 'institution identifier × 4-digit CIP × credential level (PPD); UNITID × 6-digit CIP × award level (IPEDS Completions)',
       source_fields: [
         '(absence) — no row in PPD for this (cip4, credlev) at this institution',
         'IPEDS C2024_A.AWLEVEL × CIPCODE — checks whether the institution awarded any completers',
@@ -419,7 +419,7 @@ function evaluateInvisibleProgram(
       engine_reference: 'src/engine.ts:evaluateInvisibleProgram() — surfaces R03/R05/R12 with B16 invisibility provenance',
       steps: [
         'Open PPD:2026 file 112908.',
-        `Filter to the institution's OPEID6 and look for cipx="${cip4}" × credlev="${credlev}". You will find no row.`,
+        `Filter to your institution and look for cipx="${cip4}" × credlev="${credlev}". You will find no row.`,
         'Cross-check IPEDS Completions: the institution may award completers in this CIP that AHEAD did not record. If so, the program is operating but invisible to the EP test.',
         'B16 invisibility means the cohort cascade did not run for this program — there is no published cell to escalate.',
       ],
