@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>M01 Cohort-floor demo — CSU Deans EP Tool</title>
+    <meta
+      name="description"
+      content="Interactive demo: how the cohort floor (16 vs 30) flips program verdicts under the OBBBA Earnings-Premium test."
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="./cohort-floor-demo.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="breadcrumb"><a href="../index.html">← Back to start</a></p>
+      <h1>M01 cohort-floor demo</h1>
+      <p class="tagline">
+        Move the slider between 16 and 30 and watch which illustrative
+        programs flip between MEASURED and NOT MEASURED. The 30-completer
+        statutory floor (NPRM § 668.403(d)(1)) and the AHEAD count_wne_p4
+        single-window threshold (16) define the operative gap.
+      </p>
+      <p class="public-data-badge" aria-label="Public data only">
+        <span class="badge-dot" aria-hidden="true">●</span>
+        Illustrative data only · No institutional data leaves your browser
+      </p>
+    </header>
+
+    <aside class="top-disclaimer" role="note" aria-label="Important context">
+      <p>
+        <strong>Read first.</strong>
+        Built by educators —
+        <strong>not attorneys, not legislative analysts</strong>. The numbers
+        below are
+        <strong>illustrative synthetic completer counts</strong>, not real
+        institutional records. The mechanic is real; the data is not.
+        Independently verify M01 against the
+        <a href="../sources.html">primary sources</a>
+        before any external submission.
+      </p>
+    </aside>
+
+    <main class="cf-page" data-cf-root>
+      <section class="cf-control" aria-label="Cohort floor slider">
+        <h2>Cohort floor: <span data-cf-floor>30</span></h2>
+        <label class="cf-slider-label" for="cf-slider">
+          Drag to set the cohort floor (16 to 30)
+        </label>
+        <input
+          id="cf-slider"
+          class="cf-slider"
+          type="range"
+          min="16"
+          max="30"
+          step="1"
+          value="30"
+          data-cf-slider
+          aria-label="Cohort floor"
+        />
+        <div class="cf-scale" aria-hidden="true">
+          <span>16 · AHEAD count_wne_p4</span>
+          <span>30 · OBBBA statutory floor</span>
+        </div>
+        <p class="cf-counts" data-cf-counts aria-live="polite"></p>
+      </section>
+
+      <section class="cf-results" aria-label="Program verdicts">
+        <h2>Programs at this floor</h2>
+        <ul class="cf-list" data-cf-list aria-live="polite"></ul>
+      </section>
+
+      <section class="cf-caption">
+        <h2>What this is showing</h2>
+        <p>
+          AHEAD's <code>count_wne_p4</code> is single-window — a count of
+          completers in one award year matched to year-4 earnings. OBBBA's
+          statutory 30-floor (HEA § 454(c)(4)(A)) is for the
+          <em>pooled</em> measurement cohort assembled under NPRM § IX.GD
+          (raw.txt 2272–2344), one award year added at a time across years
+          5–8 prior to the earnings year.
+        </p>
+        <p>
+          The <strong>AHEAD-published-flag override</strong> (cp-wssr) honors
+          verdicts in the 16 ≤ n &lt; 30 gap when AHEAD already published a
+          flag for the program. That override is why some programs in this
+          demo stay MEASURED at floor=30 even though their pooled cohort
+          sits below 30.
+        </p>
+      </section>
+
+      <footer class="cf-footer">
+        <p>
+          See
+          <a href="../../content/mdocs/M01.html">M01 — The cohort-expansion rule</a>
+          for the full mechanism walk; see
+          <code>cp-wssr</code> for the AHEAD-published-flag override
+          methodology.
+        </p>
+      </footer>
+    </main>
+
+    <footer class="site-footer">
+      <p class="primary-source-reminder">
+        Re-derive against primary sources before any external submission.
+      </p>
+    </footer>
+
+    <script type="module" src="./cohort-floor-demo.js"></script>
+  </body>
+</html>
