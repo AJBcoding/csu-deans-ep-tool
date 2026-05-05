@@ -93,6 +93,11 @@ export const M_DOCS = {
   M14: 'M14-targeting-named-populations',
   M15: 'M15-strategic-response-scenarios',
   M17: 'M17-bd-csd-delays',
+  // M18 added per cp-j0gw.7 — § 668.16(t) institution-level cascade
+  // 5-pass convergence from Phase 2 nprm-audit (Loper Bright + MQD +
+  // OIRA A-4 §1/§6/§E + State Farm). Auto-triggers when any program
+  // at the institution surfaces as FAIL.
+  M18: 'M18-668-16-t-five-pass-convergence',
   // M16 is intentionally deferred per analyses/mechanisms/_index.md.
 } as const;
 

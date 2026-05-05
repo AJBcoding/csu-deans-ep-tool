@@ -90,15 +90,16 @@ describe('JSON Schema parity with engine output', () => {
     }
   });
 
-  it('AUTO_TRIGGERED_PANELS matches spec §5 (eight panels)', () => {
+  it('AUTO_TRIGGERED_PANELS matches spec §5 + cp-j0gw.7 ext (nine panels incl. M18)', () => {
     expect([...AUTO_TRIGGERED_PANELS].sort()).toEqual([
-      'M01', 'M03', 'M04', 'M05', 'M07', 'M12', 'M13', 'M14',
+      'M01', 'M03', 'M04', 'M05', 'M07', 'M12', 'M13', 'M14', 'M18',
     ]);
   });
 
-  it('PANEL_IDS excludes M16 (intentionally deferred)', () => {
+  it('PANEL_IDS excludes M16 (intentionally deferred); cp-j0gw.7 adds M18', () => {
     expect(PANEL_IDS).not.toContain('M16');
-    expect(PANEL_IDS).toHaveLength(16);
+    expect(PANEL_IDS).toContain('M18');
+    expect(PANEL_IDS).toHaveLength(17);
   });
 
   it('integrity envelope required fields all present in the engine output', () => {

@@ -163,11 +163,11 @@ describe('GET /api/v1/analysis/:unitid (Persona B)', () => {
     expect(theatre?.noise_band.provenance).toBe('gap_tool_derived');
   });
 
-  it('all eight v6 panels auto-trigger', () => {
+  it('all nine v6+ext panels auto-trigger (cp-j0gw.7 adds M18)', () => {
     const result = handleAnalysisGet(loader, '110583', FROZEN_TIME);
     const body = result.body as AnalysisGetResponse;
     expect(body.panels.map((p) => p.id).sort()).toEqual([
-      'M01', 'M03', 'M04', 'M05', 'M07', 'M12', 'M13', 'M14',
+      'M01', 'M03', 'M04', 'M05', 'M07', 'M12', 'M13', 'M14', 'M18',
     ]);
   });
 

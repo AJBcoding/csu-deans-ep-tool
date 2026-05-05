@@ -127,10 +127,10 @@ describe('Acceptance — dean memo v10 §1', () => {
     expect(r12?.note).toMatch(/cohort cascade did not run/i);
   });
 
-  it('all eight v6 panels auto-trigger on the CSULB run', () => {
+  it('all nine v6+ext panels auto-trigger on the CSULB run (cp-j0gw.7 adds M18)', () => {
     const ids = result.panels.map((p) => p.id);
     expect(ids.sort()).toEqual([
-      'M01', 'M03', 'M04', 'M05', 'M07', 'M12', 'M13', 'M14',
+      'M01', 'M03', 'M04', 'M05', 'M07', 'M12', 'M13', 'M14', 'M18',
     ]);
   });
 
