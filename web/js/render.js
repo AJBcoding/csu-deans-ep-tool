@@ -206,6 +206,10 @@ function renderSystemwideContext(cip4, _credlev) {
   const k = SYSTEMWIDE_CONTEXT.n_campuses_in_scope ?? 22;
   const total = ctx.total_cells ?? 0;
   if (total === 0) return '';
+  // Suppress when only one CSU campus surfaces this CIP — there is no real
+  // "systemwide context" to convey (just this one institution).
+  const nCampuses = ctx.n_unique_campuses ?? 0;
+  if (nCampuses < 2) return '';
   const direct = ctx.a_direct_fail ?? 0;
   const invisible = ctx.c_invisible ?? 0;
   const knife = ctx.d_knife_edge ?? 0;
@@ -216,9 +220,13 @@ function renderSystemwideContext(cip4, _credlev) {
   if (knife > 0) parts.push(`${knife} knife-edge`);
   if (pool > 0) parts.push(`${pool} pool-suppressed`);
   const breakdown = parts.length > 0 ? ` (${parts.join(' · ')})` : '';
+  // Title may be empty when the build pipeline could not harvest a CIP-title
+  // for this code; omit the parenthetical entirely rather than render "()".
+  const title = (ctx.cip4_title ?? '').trim();
+  const titleFragment = title.length > 0 ? ` (${escapeHtml(title)})` : '';
   return `<p class="systemwide-context"><strong>CSU systemwide context:</strong> CIP ${escapeHtml(
     cip4,
-  )} (${escapeHtml(ctx.cip4_title ?? '')}) shows ${total} exposure cell${total === 1 ? '' : 's'} across ${ctx.n_unique_campuses ?? 0} of ${k} CSU campuses${breakdown}. <span class="systemwide-source">Source: <code>analyses/csu-systemwide-exposure/output/3cut-2026-05-04/</code></span></p>`;
+  )}${titleFragment} shows ${total} exposure cell${total === 1 ? '' : 's'} across ${nCampuses} of ${k} CSU campuses${breakdown}. <span class="systemwide-source">Source: <a href="./sources.html">public data sources</a> · derived from CSU systemwide-exposure 3-cut analysis (2026-05-04).</span></p>`;
 }
 
 export function renderVerificationRecipe(recipe) {

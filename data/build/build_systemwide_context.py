@@ -85,12 +85,18 @@ def load_campuses(path: Path) -> list[dict]:
 
 
 def load_titles(path: Path) -> dict[str, str]:
+    """Read cip4_title from unified_exposure.csv, one per cip4. Source CSVs
+    arrive with whitespace-padded titles (``"... General."`` becomes
+    ``"... General"`` after rstrip-dot, leaving stray double spaces). Collapse
+    runs of whitespace so the rendered UI line reads cleanly."""
+    import re
     titles: dict[str, str] = {}
     with path.open() as f:
         for row in csv.DictReader(f):
             cip4 = row["cip4"]
-            title = row["cip4_title"].strip().rstrip(".")
-            if cip4 not in titles:
+            raw = row["cip4_title"].strip().rstrip(".")
+            title = re.sub(r"\s+", " ", raw).strip()
+            if cip4 not in titles and title:
                 titles[cip4] = title
     return titles
 
@@ -112,8 +118,10 @@ def main() -> None:
     campuses = load_campuses(src / "cut1_by_campus.csv")
     titles = load_titles(src / "unified_exposure.csv")
 
+    # Empty string when no title was harvested. The UI omits the parenthetical
+    # entirely on empty/missing — see web/js/render.js:renderSystemwideContext.
     for cip4 in by_cip:
-        by_cip[cip4]["cip4_title"] = titles.get(cip4, "(unknown)")
+        by_cip[cip4]["cip4_title"] = titles.get(cip4, "")
 
     by_cip_sorted = dict(sorted(by_cip.items()))
 

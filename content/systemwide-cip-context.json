@@ -124,7 +124,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 2,
       "n_unique_campuses": 2,
-      "cip4_title": ""
+      "cip4_title": "Teacher Education and Professional Development Specific Levels and Methods"
     },
     "1313": {
       "cip4": "1313",
@@ -144,7 +144,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 1,
       "n_unique_campuses": 1,
-      "cip4_title": "Education  Other"
+      "cip4_title": "Education Other"
     },
     "1401": {
       "cip4": "1401",
@@ -204,7 +204,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 5,
       "n_unique_campuses": 5,
-      "cip4_title": "Linguistic  Comparative  and Related Language Studies and Services"
+      "cip4_title": "Linguistic Comparative and Related Language Studies and Services"
     },
     "1603": {
       "cip4": "1603",
@@ -214,7 +214,7 @@
       "e_pool_suppressed": 2,
       "total_cells": 2,
       "n_unique_campuses": 2,
-      "cip4_title": "East Asian Languages  Literatures  and Linguistics"
+      "cip4_title": "East Asian Languages Literatures and Linguistics"
     },
     "1609": {
       "cip4": "1609",
@@ -224,7 +224,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 3,
       "n_unique_campuses": 3,
-      "cip4_title": "Romance Languages  Literatures  and Linguistics"
+      "cip4_title": "Romance Languages Literatures and Linguistics"
     },
     "1699": {
       "cip4": "1699",
@@ -234,7 +234,7 @@
       "e_pool_suppressed": 1,
       "total_cells": 1,
       "n_unique_campuses": 1,
-      "cip4_title": "Foreign Languages  Literatures  and Linguistics  Other"
+      "cip4_title": "Foreign Languages Literatures and Linguistics Other"
     },
     "1901": {
       "cip4": "1901",
@@ -244,7 +244,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 1,
       "n_unique_campuses": 1,
-      "cip4_title": "Family and Consumer Sciences/Human Sciences  General"
+      "cip4_title": "Family and Consumer Sciences/Human Sciences General"
     },
     "1907": {
       "cip4": "1907",
@@ -254,7 +254,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 2,
       "n_unique_campuses": 2,
-      "cip4_title": ""
+      "cip4_title": "Human Development Family Studies and Related Services"
     },
     "199": {
       "cip4": "199",
@@ -274,7 +274,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 4,
       "n_unique_campuses": 4,
-      "cip4_title": "English Language and Literature  General"
+      "cip4_title": "English Language and Literature General"
     },
     "2313": {
       "cip4": "2313",
@@ -294,7 +294,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 1,
       "n_unique_campuses": 1,
-      "cip4_title": "Liberal Arts and Sciences  General Studies and Humanities"
+      "cip4_title": "Liberal Arts and Sciences General Studies and Humanities"
     },
     "2603": {
       "cip4": "2603",
@@ -314,7 +314,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 2,
       "n_unique_campuses": 2,
-      "cip4_title": ""
+      "cip4_title": "Zoology/Animal Biology"
     },
     "2701": {
       "cip4": "2701",
@@ -324,7 +324,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 3,
       "n_unique_campuses": 3,
-      "cip4_title": ""
+      "cip4_title": "Mathematics"
     },
     "2705": {
       "cip4": "2705",
@@ -394,7 +394,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 2,
       "n_unique_campuses": 2,
-      "cip4_title": ""
+      "cip4_title": "Parks Recreation and Leisure Studies"
     },
     "3105": {
       "cip4": "3105",
@@ -404,7 +404,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 3,
       "n_unique_campuses": 3,
-      "cip4_title": ""
+      "cip4_title": "Sports Kinesiology and Physical Education/Fitness"
     },
     "3801": {
       "cip4": "3801",
@@ -484,7 +484,7 @@
       "e_pool_suppressed": 1,
       "total_cells": 8,
       "n_unique_campuses": 8,
-      "cip4_title": ""
+      "cip4_title": "Anthropology"
     },
     "4504": {
       "cip4": "4504",
@@ -504,7 +504,7 @@
       "e_pool_suppressed": 1,
       "total_cells": 2,
       "n_unique_campuses": 2,
-      "cip4_title": ""
+      "cip4_title": "Economics"
     },
     "4507": {
       "cip4": "4507",
@@ -584,7 +584,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 2,
       "n_unique_campuses": 2,
-      "cip4_title": ""
+      "cip4_title": "Film/Video and Photographic Arts"
     },
     "5007": {
       "cip4": "5007",
@@ -624,7 +624,7 @@
       "e_pool_suppressed": 2,
       "total_cells": 2,
       "n_unique_campuses": 2,
-      "cip4_title": "Arts  Entertainment  and Media Management"
+      "cip4_title": "Arts Entertainment and Media Management"
     },
     "502": {
       "cip4": "502",
@@ -634,7 +634,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 2,
       "n_unique_campuses": 2,
-      "cip4_title": "Ethnic  Cultural Minority  Gender  and Group Studies"
+      "cip4_title": "Ethnic Cultural Minority Gender and Group Studies"
     },
     "5099": {
       "cip4": "5099",
@@ -644,7 +644,7 @@
       "e_pool_suppressed": 1,
       "total_cells": 1,
       "n_unique_campuses": 1,
-      "cip4_title": "Visual and Performing Arts  Other"
+      "cip4_title": "Visual and Performing Arts Other"
     },
     "5100": {
       "cip4": "5100",
@@ -694,7 +694,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 5,
       "n_unique_campuses": 5,
-      "cip4_title": ""
+      "cip4_title": "Mental and Social Health Services and Allied Professions"
     },
     "5122": {
       "cip4": "5122",
@@ -714,7 +714,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 2,
       "n_unique_campuses": 2,
-      "cip4_title": ""
+      "cip4_title": "Rehabilitation and Therapeutic Professions"
     },
     "5138": {
       "cip4": "5138",
@@ -724,7 +724,7 @@
       "e_pool_suppressed": 1,
       "total_cells": 1,
       "n_unique_campuses": 1,
-      "cip4_title": "Registered Nursing  Nursing Administration  Nursing Research and Clinical Nursing"
+      "cip4_title": "Registered Nursing Nursing Administration Nursing Research and Clinical Nursing"
     },
     "5202": {
       "cip4": "5202",
@@ -734,7 +734,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 2,
       "n_unique_campuses": 2,
-      "cip4_title": "Business Administration  Management and Operations"
+      "cip4_title": "Business Administration Management and Operations"
     },
     "5203": {
       "cip4": "5203",
@@ -844,7 +844,7 @@
       "e_pool_suppressed": 0,
       "total_cells": 3,
       "n_unique_campuses": 3,
-      "cip4_title": "Radio  Television  and Digital Communication"
+      "cip4_title": "Radio Television and Digital Communication"
     }
   },
   "disclaimer": "CSU systemwide context derived from forward-simulated PPD:2026 negotiator analytic file. Not a prediction of which programs will fail in 2027 \u2014 a current snapshot of how the proposed rule maps onto the system as of the data freeze. Verify against the source CSVs (path above)."
