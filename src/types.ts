@@ -137,10 +137,31 @@ export interface CrossValidation {
 
 export interface NoiseBandAnnotation {
   fired: boolean;
-  /** Provenance string per chair greenlight (SPEC-DELTA §2.2). */
+  /**
+   * Provenance string per chair greenlight (SPEC-DELTA §2.2).
+   *
+   * - `gap_tool_derived` — verdict's noise-band gap was computed from
+   *   PPD-published earnings + benchmark; the percentage gap itself
+   *   is NOT a published PPD field.
+   * - `earnings_suppressed_ppd_published` — verdict surfaces from the
+   *   PPD-published OBBBA flag, but the underlying earnings cell is
+   *   suppressed under the federal privacy rule (`earn_suppressed=true`).
+   *   Noise-band test is structurally inapplicable.
+   * - `cohort_suppressed_ppd_published` — verdict surfaces from the
+   *   PPD-published OBBBA flag, but the underlying earnings cell is
+   *   not published because the cohort is below the floor or otherwise
+   *   unavailable at 4-digit grain (`median_earn_p4 IS NULL` while the
+   *   privacy-suppression flag is NOT the cause). Noise-band test is
+   *   structurally inapplicable for a cohort-level reason rather than a
+   *   privacy-rule reason; the distinction matters for explainability
+   *   per SPEC-DELTA §2.3 four-layer suppression model.
+   * - `null` — annotation not fired (verdict NOT MEASURED, gap outside
+   *   threshold, or no published gap to evaluate).
+   */
   provenance:
     | 'gap_tool_derived'
     | 'earnings_suppressed_ppd_published'
+    | 'cohort_suppressed_ppd_published'
     | null;
   message: string | null;
 }

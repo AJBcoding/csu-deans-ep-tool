@@ -42,12 +42,29 @@ function buildNoiseBandAnnotation(
   if (surfacedVerdict === 'NOT MEASURED') {
     return { fired: false, provenance: null, message: null };
   }
-  if (program.suppression.earn_suppressed || program.median_earn_p4 === null) {
+  // Privacy-suppressed earnings cell — the federal privacy rule withheld
+  // the cell-level value. Verdict still surfaces from the published OBBBA
+  // flag, but the noise-band test cannot run because there is no gap to
+  // threshold. Distinct from cohort-level suppression below.
+  if (program.suppression.earn_suppressed) {
     return {
       fired: true,
       provenance: 'earnings_suppressed_ppd_published',
       message:
         'Verdict is PPD-published; underlying earnings cell suppressed under federal privacy rule. Noise-band test is structurally inapplicable.',
+    };
+  }
+  // Cohort-level suppression — earnings not published at the 4-digit grain
+  // (typically because the cell's cohort is below the floor or the cell
+  // was not published at 4-digit despite the verdict being published via
+  // 2-digit pool flag). Per SPEC-DELTA §2.3 four-layer suppression, this
+  // is a structurally different cause from the privacy-rule case above.
+  if (program.median_earn_p4 === null) {
+    return {
+      fired: true,
+      provenance: 'cohort_suppressed_ppd_published',
+      message:
+        'Verdict is PPD-published; underlying earnings not published at 4-digit grain (cohort below floor or otherwise unavailable). Noise-band test is structurally inapplicable.',
     };
   }
   if (program.ep_gap_pct === null) {
