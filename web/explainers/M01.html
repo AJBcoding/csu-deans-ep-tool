@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>M01 — How a program is counted (the cohort floor) — CSU Deans EP Tool</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/explainers.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="breadcrumb">
+        <a href="../index.html">← Back to home</a>
+        ·
+        <a href="../learn.html">Mechanism Library</a>
+      </p>
+      <h1>M01 — How a program is counted</h1>
+      <p class="tagline">
+        The cohort floor and what happens when the Department has already
+        published a verdict for your program.
+      </p>
+      <p class="public-data-badge" aria-label="Public data only">
+        <span class="badge-dot" aria-hidden="true">●</span>
+        Public data only · No private or institutional data leaves your browser
+      </p>
+    </header>
+
+    <aside class="top-disclaimer" role="note" aria-label="Important context">
+      <p>
+        <strong>Read first.</strong>
+        Built by educators — <strong>not attorneys, not legislative analysts</strong>.
+        Every walk on this page is a working explanation of a published
+        proposed rule, not legal advice. Independently verify all citations
+        against the
+        <a href="../sources.html">primary sources</a>
+        before any external submission, public comment, or institutional decision.
+      </p>
+    </aside>
+
+    <main class="explainer-page">
+      <section>
+        <h2>The short version</h2>
+        <p class="lede">
+          The earnings test only fires on a program once enough graduates are
+          in the measured group. The federal rule sets a floor of 30
+          graduates. If a single award year does not reach that floor, the
+          rule expands the count — first by pooling more years, then by
+          pooling related programs at wider levels of the federal CIP coding
+          system. If the count never reaches 30, the program is reported as
+          NOT MEASURED for that year.
+        </p>
+        <p>
+          On top of that floor, the Department has already published a
+          pre-computed pass/fail flag for many programs in its public data
+          file. When that flag is present, the tool surfaces it as the
+          authoritative verdict. Local re-derivation only fills in where the
+          Department has left a blank.
+        </p>
+      </section>
+
+      <section>
+        <h2>The four-step expansion</h2>
+        <p>
+          The rule asks four questions in order. Each step is taken only if
+          the previous step's count is still under 30 graduates.
+        </p>
+        <div class="field-step">
+          <strong>Step 1</strong>
+          Single-year cohort at the program's own specific code (the full
+          six-digit federal CIP). If 30 or more graduates show up in that
+          single award year, the rule stops here — the program is measured at
+          its own median.
+        </div>
+        <div class="field-step">
+          <strong>Step 2</strong>
+          Five award years pooled at the program's own specific code. The
+          rule pools the most-recent five years rather than picking one. The
+          published median is the median of that pooled population.
+        </div>
+        <div class="field-step">
+          <strong>Step 3</strong>
+          Five years at the program's specific code, plus related programs at
+          the 4-digit family — programs that share the first four digits of
+          the federal CIP code. The 4-digit family captures programs the
+          Department treats as substantively similar.
+        </div>
+        <div class="field-step">
+          <strong>Step 4</strong>
+          Five years at the specific code, plus the 4-digit family, plus
+          related programs at the wider 2-digit family — the broadest
+          program grouping the federal CIP code defines. If the count is
+          still under 30 after this step, no median is published.
+        </div>
+        <p>
+          Each step adds graduates from the wider program group; it does not
+          discard the inner group. The expansion only stops when 30 is
+          reached or when there are no wider groups left to pool.
+        </p>
+        <p>
+          The rule's preamble describes this expansion as moving "in order
+          to achieve a cohort of at least 30 individuals." The four-step
+          structure is the proposed rule's procedural answer to the
+          statutory floor written into OBBBA itself.
+        </p>
+      </section>
+
+      <section>
+        <h2>The published-flag override</h2>
+        <p>
+          The rule does not run live on your data. The Department publishes
+          a federal data file each release cycle that already includes a
+          pre-computed pass/fail flag for the programs it can score. The
+          field name is <code>fail_obbb_cip2_wageb</code>: a value of 1 means
+          fail under the rule's published verdict, 0 means pass, and a blank
+          means no published verdict.
+        </p>
+        <p>
+          When that field is present and non-blank, this tool treats it as
+          authoritative. The on-screen verdict reads from the federal file
+          directly. Local re-computation against median earnings and the
+          benchmark figure runs in parallel as a cross-check, but it does
+          not replace the published value.
+        </p>
+        <p>
+          Local re-derivation only becomes the surfaced verdict when the
+          Department has not published a value for that program — which
+          mostly happens for rows the rule reports as NOT MEASURED for an
+          unrelated reason (cohort below floor, fewer than 16 IRS records,
+          or out-of-scope credential level).
+        </p>
+        <p>
+          If the tool's local re-derivation disagrees with the Department's
+          published verdict, the on-screen card surfaces both side by side
+          and flags the disagreement. Disagreement is rare; it points to a
+          real-world data edge worth verifying against the federal source
+          before any external use.
+        </p>
+      </section>
+
+      <section>
+        <h2>What this means in practice</h2>
+        <p>
+          For a small program at a single institution, the published verdict
+          is most often the binding answer. If the program reaches the floor
+          on its own cohort or a multi-year pool, the score is its own
+          median. If the program is small enough that the rule has to pool
+          related programs, the score is a wider-group median — and a small
+          program can pass or fail on a number that is not really its own.
+        </p>
+        <p>
+          When the count never reaches 30 and no wider grouping closes the
+          gap, the program is reported NOT MEASURED. NOT MEASURED is not a
+          pass and not a fail. The rule's program-level Title IV consequence
+          (M05) does not attach to a NOT MEASURED program.
+        </p>
+        <p>
+          The expansion described here is independent of the rule's
+          benchmark expansion (M03). Both can fire, and they can pull
+          graduates from different groupings on each side of the comparison.
+        </p>
+      </section>
+
+      <aside class="verify-callout" role="note" aria-label="Verify against primary sources">
+        <h2>Verify against primary sources</h2>
+        <p>
+          Every claim above traces to a publicly available statute, proposed
+          rule, or federal data file. See the
+          <a href="../sources.html">Public data sources</a>
+          page for the OBBBA statute (§ 84001(c)(4) — 30-individual floor),
+          the proposed rule (§ 668.403(d) — program-level floor;
+          § 668.404(d) — 16-IRS-reporter floor), and the federal data file
+          (<code>fail_obbb_cip2_wageb</code> field). Re-derive against those
+          sources before any external submission.
+        </p>
+      </aside>
+
+      <nav class="explainer-nav" aria-label="Other explainers">
+        <a href="./M03.html">Next: M03 — Lowest-of-three benchmark routing →</a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <p class="primary-source-reminder">
+        Re-derive against primary sources before any external submission.
+      </p>
+    </footer>
+  </body>
+</html>
