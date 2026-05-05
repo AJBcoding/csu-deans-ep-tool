@@ -6,7 +6,28 @@ A dean enters their IPEDS UNITID and CIP codes (or auto-pulls from IPEDS Complet
 
 ## Status
 
-Pre-implementation. The design spec is final (Pass 5, peer-respect & integrity). Build sequence is in flight under the Gas Town Mayor.
+**v1 (cp-0on epic) shipped 2026-04-30.** Personas A/B/C live with 197/197 tests, CSULB UNITID 110583 reproducing dean memo v10 §1 exactly.
+
+**v1.1 (cp-j0gw extension) in PR review as of 2026-05-05.** Adds the senate-staff + public-commenter audience surfaces and folds in post-2026-04-30 corpus updates. See `docs/cp-j0gw-ext-changelog.md` for the full sub-bead ledger and 5-pass Ralph review record. Three open PRs (stacked):
+
+| PR | Title | Tests |
+|---|---|---|
+| [#1](https://github.com/AJBcoding/csu-deans-ep-tool/pull/1) | cp-j0gw: senate-staff + public-commenter audience extension; Mechanism Library + depth toggle + Sources | 203/203 |
+| [#2](https://github.com/AJBcoding/csu-deans-ep-tool/pull/2) | cp-j0gw.11: interactive M01 cohort-floor demo widget | — |
+| [#3](https://github.com/AJBcoding/csu-deans-ep-tool/pull/3) | cp-j0gw.8: systemwide 3-cut context — "this CIP fails at N CSU campuses" | 212/212 |
+
+## Routes
+
+| Route | Purpose | Audience |
+|---|---|---|
+| `/` | Landing — persona picker + ground rules | All |
+| `/persona-a.html` | Check specific (CIP4, credlev) pairs | Dean / IR analyst |
+| `/persona-b.html` | Auto-pull all programs at a UNITID | Dean / IR analyst |
+| `/learn/` | Mechanism Library — every M-doc as standalone instructive content; reading-depth toggle (Brief / Standard / Detail) | Senate staff, legislators, public, students |
+| `/sources.html` | Public Sources — every primary source the tool reads or cites, with verification path | All |
+| `/comment-draft.html` | Generate DRAFT public-comment outline (markdown, copy/download) | Public commenters |
+| `/widgets/cohort-floor-demo.html` | Interactive M01 cohort-floor demo (slider) | All |
+| `/api/v1/...` | Public API surface (Persona C) | IR / programmatic consumers |
 
 ## Spec
 
