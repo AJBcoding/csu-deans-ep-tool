@@ -8,19 +8,22 @@ reading-depth toggle + Public Sources page) the chair specified mid-flight.
 Branch: `cp-0on-ext-senate-plain-lang`. Acceptance gate (CSULB UNITID 110583
 reproduces dean memo v10 §1 EXACTLY) preserved throughout.
 
-## Stacked PR record (2026-05-05)
+## Stacked PR record (2026-05-05, refreshed end-of-day)
 
-Five PRs open on `github.com/AJBcoding/csu-deans-ep-tool`. They stack cleanly when merged in order with one trivial conflict resolution on `web/index.html` (3 persona-cards merge in sequence — see "Smoke-stack record" below).
+**Six PRs open** on `github.com/AJBcoding/csu-deans-ep-tool`. They stack cleanly when merged in order with one trivial conflict resolution on `web/index.html` (3 persona-cards merge in sequence — see "Smoke-stack record" below).
 
 | PR | Branch | Bead | Author | Tests after merge |
 |---|---|---|---|---|
 | **#1** | `cp-0on-ext-senate-plain-lang` | cp-j0gw (epic main) | crew/anthonybyrnes | 203 |
 | **#3** | `cp-j0gw-8-systemwide-context` | cp-j0gw.8 + .13 | crew/anthonybyrnes | 212 |
-| **#2** | `polecat/obsidian/cp-j0gw.11` | cp-j0gw.11 | polecats/obsidian | 212 |
+| **#2** | `polecat/obsidian/cp-j0gw.11` (+ cp-j0gw.17 lint follow-up) | cp-j0gw.11 + .17 | polecats/obsidian | 224 |
 | **#4** | `cp-j0gw.14-r19-suppressed-earnings-annotation` | cp-j0gw.14 | polecats/topaz | 228 |
-| **#5** | `cp-j0gw.15-plain-lang-explainers` | cp-j0gw.15 | polecats/quartz | **249** |
+| **#5** | `cp-j0gw.15-plain-lang-explainers` | cp-j0gw.15 (M01/M03/M18) | polecats/quartz | 249 |
+| **#6** | `cp-j0gw.18-plain-lang-explainers-batch2` | cp-j0gw.18 (M04/M07/M14) | polecats/quartz | **270** |
 
-Suggested chair merge order: **#1 → #3 → #2 → #4 → #5** (matches dependency stack; tests pass at every step).
+Suggested chair merge order: **#1 → #3 → #2 → #4 → #5 → #6** (matches dependency stack; tests pass at every step).
+
+PR #2 now carries the cp-j0gw.17 lint fix (commit `38e236c`) so the broader lint scan is clean across all 6 PRs once stacked. **No remaining `OPEID6` or `cascade` literals** on dean-facing surface; the only informational lint findings are formal cite names (`STATS NPRM`, `RIA Table 3.19`) which are preserved per existing M-doc convention.
 
 ## Sub-bead ledger
 
@@ -42,6 +45,8 @@ Suggested chair merge order: **#1 → #3 → #2 → #4 → #5** (matches depende
 | cp-j0gw.14 | engine | R19 suppressed-earnings annotation — 4th provenance value | ✅ done (PR #4 — topaz polecat) |
 | cp-j0gw.15 | content | Plain-language standalone explainers M01/M03/M18 | ✅ done (PR #5 — quartz polecat) |
 | cp-j0gw.16 | qa | Lighthouse + axe-core audit | deferred — runs against preview URL after PR #1 merges |
+| cp-j0gw.17 | lint | Replace `cascade` literal in widget link text | ✅ done (PR #2 commit `38e236c` — obsidian polecat) |
+| cp-j0gw.18 | content | Plain-language standalone explainers M04/M07/M14 (batch 2) | ✅ done (PR #6 — quartz polecat) |
 
 ## Chair-review track applied (this evening)
 
