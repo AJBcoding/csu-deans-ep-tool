@@ -8,22 +8,72 @@ reading-depth toggle + Public Sources page) the chair specified mid-flight.
 Branch: `cp-0on-ext-senate-plain-lang`. Acceptance gate (CSULB UNITID 110583
 reproduces dean memo v10 §1 EXACTLY) preserved throughout.
 
+## Stacked PR record (2026-05-05)
+
+Five PRs open on `github.com/AJBcoding/csu-deans-ep-tool`. They stack cleanly when merged in order with one trivial conflict resolution on `web/index.html` (3 persona-cards merge in sequence — see "Smoke-stack record" below).
+
+| PR | Branch | Bead | Author | Tests after merge |
+|---|---|---|---|---|
+| **#1** | `cp-0on-ext-senate-plain-lang` | cp-j0gw (epic main) | crew/anthonybyrnes | 203 |
+| **#3** | `cp-j0gw-8-systemwide-context` | cp-j0gw.8 + .13 | crew/anthonybyrnes | 212 |
+| **#2** | `polecat/obsidian/cp-j0gw.11` | cp-j0gw.11 | polecats/obsidian | 212 |
+| **#4** | `cp-j0gw.14-r19-suppressed-earnings-annotation` | cp-j0gw.14 | polecats/topaz | 228 |
+| **#5** | `cp-j0gw.15-plain-lang-explainers` | cp-j0gw.15 | polecats/quartz | **249** |
+
+Suggested chair merge order: **#1 → #3 → #2 → #4 → #5** (matches dependency stack; tests pass at every step).
+
 ## Sub-bead ledger
 
 | Bead | Type | Title | Status |
 |---|---|---|---|
-| cp-j0gw.1 | analytical | English MA (CIP 23.01, n=29, −4.97%) — REV-2 third CSULB direct-fail | done |
-| cp-j0gw.2 | engine | derivation_basis field — explicit AHEAD-published-flag-override (cp-wssr) | done |
-| cp-j0gw.3 | framing | simulation_framing field — "FORWARD SIMULATION; first STATS release 2027-07-01" | done |
+| cp-j0gw.1 | analytical | English MA (CIP 23.01, n=29, −4.97%) — REV-2 third CSULB direct-fail | ✅ done (PR #1) |
+| cp-j0gw.2 | engine | derivation_basis field — explicit AHEAD-published-flag-override (cp-wssr) | ✅ done (PR #1) |
+| cp-j0gw.3 | framing | simulation_framing field — "FORWARD SIMULATION; first STATS release 2027-07-01" | ✅ done (PR #1) |
 | cp-j0gw.4 | persona | Persona D (legislator/staff) | folded into Mechanism Library + Brief depth |
-| cp-j0gw.5 | persona | Persona E — Generate Comment Outline (DRAFT) | done |
-| cp-j0gw.6 | safety | "not attorneys / not legislative analysts" + per-finding verification recipe | done |
-| cp-j0gw.7 | content | M-doc M18 — § 668.16(t) five-pass convergence | done |
-| cp-j0gw.8 | context | 3-cut systemwide ("this CIP fails at N campuses") | deferred — needs build pipeline change |
-| cp-j0gw.9 | content | Mechanism Library /learn/ standalone instructive surface | done |
-| cp-j0gw.10 | ux | Reading-depth toggle (Brief / Standard / Detail) | done |
-| cp-j0gw.11 | bonus | Interactive widget for one mechanism | deferred — bonus |
-| cp-j0gw.12 | safety | Public-data badge + dedicated /sources page | done |
+| cp-j0gw.5 | persona | Persona E — Generate Comment Outline (DRAFT) | ✅ done (PR #1) |
+| cp-j0gw.6 | safety | "not attorneys / not legislative analysts" + per-finding verification recipe | ✅ done (PR #1) |
+| cp-j0gw.7 | content | M-doc M18 — § 668.16(t) five-pass convergence | ✅ done (PR #1) |
+| cp-j0gw.8 | context | 3-cut systemwide ("this CIP fails at N campuses") | ✅ done (PR #3) |
+| cp-j0gw.9 | content | Mechanism Library /learn/ standalone instructive surface | ✅ done (PR #1) |
+| cp-j0gw.10 | ux | Reading-depth toggle (Brief / Standard / Detail) | ✅ done (PR #1) |
+| cp-j0gw.11 | interactive | Interactive M01 cohort-floor demo widget | ✅ done (PR #2 — obsidian polecat) |
+| cp-j0gw.12 | safety | Public-data badge + dedicated /sources page | ✅ done (PR #1) |
+| cp-j0gw.13 | content | Tool README v1.1 status block + routes table | ✅ done (PR #3) |
+| cp-j0gw.14 | engine | R19 suppressed-earnings annotation — 4th provenance value | ✅ done (PR #4 — topaz polecat) |
+| cp-j0gw.15 | content | Plain-language standalone explainers M01/M03/M18 | ✅ done (PR #5 — quartz polecat) |
+| cp-j0gw.16 | qa | Lighthouse + axe-core audit | deferred — runs against preview URL after PR #1 merges |
+
+## Chair-review track applied (this evening)
+
+Before the polecat PR returns landed, the chair-review track was iterated inline:
+
+- **Review #1 — disclaimer wording** (envelope + top-aside): approved as-is.
+- **Review #2 — systemwide context one-liner**: refined — empty-title bug fixed (whitespace collapse + omit parenthetical when missing), single-campus suppress gate added (`n_unique_campuses >= 2`), source line hyperlinked to `/sources.html` instead of monospace path. Landed in PR #3 commit `6f8d526`.
+- **Review #3 — Mechanism Library topic groupings**: applied — M07 duplication fixed (was in 2 groups), M02 promoted to "How the rule works", group 3 renamed "Edge cases, timing, and who's hit hardest", group 4 renamed "Process, appeals, and authority". Landed in PR #1 commit `7f6dfe7`.
+- **Review #4 — M18 panel prose**: skipped (chair direction); BUG FIX shipped regardless — 5 doubled fragments `"institution-level institution-level escalation pathway"` stripped (glossary-substitution artifact). Landed in PR #1 commit `9c68b91`.
+- **Review #5 — sample comment outline**: not yet run.
+
+## Smoke-stack record (2026-05-05 evening)
+
+All 5 PRs were stacked on top of `origin/main` in temporary branch `smoke-stack` to verify mergeability:
+
+```
+main → +PR#1 (203 tests)
+     → +PR#3 (212 tests)
+     → +PR#2 (212 tests, 1 trivial conflict on web/index.html — both branches added persona-cards at same insertion point; resolution = keep both, in sequence)
+     → +PR#4 (228 tests)
+     → +PR#5 (249 tests)
+```
+
+Production lint scan (`npx tsx scripts/lint-glossary.ts content web`) caught 3 dean-facing literal violations on the cp-j0gw extension surface (separate from the regression test, which only lints `content/mdocs/`):
+
+- `src/engine.ts` verification_recipe: 4 uses of forbidden literal "OPEID6" — fixed in PR #1 commit `0993045`
+- `web/sources.html` PPD source-card: 2 uses of "OPEID6" — fixed in PR #1 commit `0993045`
+- `web/js/comment-draft.js` outline scaffold: 1 use of "cascade" — fixed in PR #1 commit `0993045`
+
+PR #2 (obsidian widget) carries one similar lint violation (link text "M01 — Cohort visibility cascade" uses forbidden literal "cascade"). Surfacing as a follow-up note rather than amending obsidian's PR unilaterally; can be patched in a 1-line follow-up commit if the chair wants the broader-scope lint clean before merge.
+
+Formal NPRM/RIA/citation names like "STATS NPRM 2026-07666" and "RIA Table 3.19" are retained on the Sources page even though they trip the broader lint — these are primary-source titles, not prose; the existing M-doc panels follow the same convention.
 
 ## What changed in this branch
 
