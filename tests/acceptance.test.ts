@@ -156,6 +156,40 @@ describe('Acceptance — dean memo v10 §1', () => {
     expect(result.integrity_envelope.expertise_disclaimer).toMatch(/Independently verify/i);
   });
 
+  it('every measured verdict carries derivation_basis = ppd_published_authoritative (cp-j0gw.2)', () => {
+    // CSULB fixture has PPD-published flags on every measured row, so AHEAD-
+    // published-flag override (cp-wssr) is the basis for every FAIL/PASS.
+    const measured = result.programs.filter((p) => p.verdict !== 'NOT MEASURED');
+    expect(measured.length).toBeGreaterThan(0);
+    for (const v of measured) {
+      expect(v.derivation_basis).toBe('ppd_published_authoritative');
+    }
+  });
+
+  it('Music MM verification recipe maps to PPD fields and engine module (cp-j0gw.6)', () => {
+    const v = find('5009', "Master's");
+    expect(v?.verification_recipe.source_data).toMatch(/PPD:2026/);
+    expect(v?.verification_recipe.source_grain).toMatch(/CIP/);
+    expect(v?.verification_recipe.source_fields).toContain(
+      'fail_obbb_cip2_wageb (PPD-published verdict flag)',
+    );
+    expect(v?.verification_recipe.engine_reference).toMatch(/derivePpdVerdict/);
+    expect(v?.verification_recipe.steps.length).toBeGreaterThan(2);
+    // Steps mention the cp-wssr override explicitly.
+    const stepText = v?.verification_recipe.steps.join('\n') ?? '';
+    expect(stepText).toMatch(/cp-wssr|AHEAD-published-flag/i);
+  });
+
+  it('Cinematic Arts BA invisible-program recipe references IPEDS cross-check (cp-j0gw.6)', () => {
+    const queried = analyzeQueriedPrograms(inst, [
+      { cip4: '5006', credlev: 'Bachelor' },
+    ]);
+    const v = queried.programs.find((p) => p.cip4 === '5006');
+    expect(v?.derivation_basis).toBe('not_measured');
+    expect(v?.verification_recipe.source_data).toMatch(/IPEDS Completions/);
+    expect(v?.verification_recipe.steps.join('\n')).toMatch(/B16 invisibility/i);
+  });
+
   it('footer reminder is present on every result page', () => {
     expect(result.footer_reminder).toBe(
       'Re-derive against primary sources before any external submission.',

@@ -546,6 +546,76 @@ button.ghost-btn {
   background: rgba(0, 0, 0, 0.12);
 }
 
+/* ─── Derivation basis + verification recipe (cp-j0gw.2 + .6) ────────── */
+
+.derivation-basis {
+  margin-top: var(--space-sm);
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+}
+
+.verification-recipe {
+  margin-top: var(--space-sm);
+  border-top: 1px dashed rgba(0, 0, 0, 0.12);
+  padding-top: var(--space-sm);
+  font-size: 0.92rem;
+}
+
+.verification-recipe summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.verification-recipe[open] summary {
+  margin-bottom: var(--space-sm);
+}
+
+.verification-recipe dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem var(--space-sm);
+  margin: 0 0 var(--space-sm);
+}
+
+.verification-recipe dt {
+  font-weight: 600;
+}
+
+.verification-recipe dd {
+  margin: 0;
+}
+
+.verification-recipe code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.88rem;
+  background: rgba(0, 0, 0, 0.06);
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+}
+
+.verification-recipe .recipe-fields,
+.verification-recipe .recipe-steps {
+  margin: 0 0 var(--space-sm) var(--space-md);
+}
+
+.verification-recipe .recipe-attribution {
+  font-style: italic;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  margin-top: var(--space-sm);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: var(--space-xs);
+}
+
+.simulation-framing,
+.expertise-disclaimer {
+  margin-top: var(--space-sm);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--color-text-muted);
+}
+
 /* ─── Panels ─────────────────────────────────────────────────────────── */
 
 .panels-region {

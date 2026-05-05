@@ -105,6 +105,22 @@ const $defs = {
       status: { $ref: '#/$defs/CrossValidationStatus' },
     },
   },
+  DerivationBasis: {
+    type: 'string',
+    enum: ['ppd_published_authoritative', 'tool_re_derived', 'not_measured'],
+  },
+  VerificationRecipe: {
+    type: 'object',
+    required: ['source_data', 'source_grain', 'source_fields', 'engine_reference', 'steps'],
+    additionalProperties: false,
+    properties: {
+      source_data: { type: 'string' },
+      source_grain: { type: 'string' },
+      source_fields: { type: 'array', items: { type: 'string' } },
+      engine_reference: { type: 'string' },
+      steps: { type: 'array', items: { type: 'string' } },
+    },
+  },
   ProgramVerdict: {
     type: 'object',
     required: [
@@ -122,6 +138,8 @@ const $defs = {
       'cross_validation',
       'rules_fired',
       'panels_triggered',
+      'derivation_basis',
+      'verification_recipe',
     ],
     additionalProperties: false,
     properties: {
@@ -147,6 +165,8 @@ const $defs = {
         type: 'array',
         items: { type: 'string' },
       },
+      derivation_basis: { $ref: '#/$defs/DerivationBasis' },
+      verification_recipe: { $ref: '#/$defs/VerificationRecipe' },
     },
   },
   HiddenProgram: {
