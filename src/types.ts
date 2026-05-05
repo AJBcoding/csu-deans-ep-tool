@@ -206,6 +206,18 @@ export interface IntegrityEnvelope {
     out_of_scope: number;
   };
   primary_source_reminder: string;
+  /**
+   * "Forward simulation" framing per cp-dw65 (cp-j0gw.3). All EP-test verdicts
+   * here are SIMULATIONS run on AHEAD's negotiator analytic file (PPD:2026),
+   * not observations of an implemented rule. The first official STATS earnings-
+   * premium release is scheduled for 2027-07-01.
+   */
+  simulation_framing: string;
+  /**
+   * "Not attorneys / not legislative analysts" disclaimer per cp-j0gw.6.
+   * Surfaced on every result page in addition to the primary-source reminder.
+   */
+  expertise_disclaimer: string;
 }
 
 export interface PanelDescriptor {

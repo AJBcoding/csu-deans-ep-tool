@@ -161,6 +161,34 @@ main {
   margin: 0;
 }
 
+/* ─── Top disclaimer (cp-j0gw.6) ─────────────────────────────────────── */
+
+.top-disclaimer {
+  background: #fff8e6;
+  border-left: 4px solid #c08a00;
+  padding: var(--space-sm) var(--space-md);
+  margin: 0 var(--space-md) var(--space-md);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.top-disclaimer p {
+  margin: 0;
+}
+
+.top-disclaimer strong {
+  font-weight: 700;
+}
+
+@media (prefers-color-scheme: dark) {
+  .top-disclaimer {
+    background: #2a2410;
+    border-left-color: #d6a400;
+    color: #f4e8c2;
+  }
+}
+
 /* ─── Landing page ───────────────────────────────────────────────────── */
 
 .persona-card {

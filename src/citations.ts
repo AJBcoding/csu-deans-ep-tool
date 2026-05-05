@@ -99,3 +99,20 @@ export const M_DOCS = {
 /** Footer reminder rendered on every result page per spec §1.4. */
 export const PRIMARY_SOURCE_REMINDER =
   'Re-derive against primary sources before any external submission.';
+
+/**
+ * Forward-simulation framing per cp-dw65 (cp-j0gw.3). Every EP-test verdict
+ * surfaced by this tool is a SIMULATION run against AHEAD's negotiator
+ * analytic file (PPD:2026), not an observation of the implemented rule. The
+ * first official STATS earnings-premium release is scheduled for 2027-07-01.
+ */
+export const SIMULATION_FRAMING =
+  'FORWARD SIMULATION — verdicts shown here are computed on the PPD:2026 negotiator analytic file. The first official STATS earnings-premium release is scheduled for 2027-07-01. Conditional on AHEAD-published projections holding.';
+
+/**
+ * Expertise disclaimer per cp-j0gw.6. We are not attorneys and not legislative
+ * analysts. Findings derive from publicly available data; verify against
+ * primary sources before any external use.
+ */
+export const EXPERTISE_DISCLAIMER =
+  'This tool is built by educators, not attorneys or legislative analysts. Every finding is derived from publicly available federal data using the rules engine documented in this repo. Independently verify all numbers and citations against the primary sources before any external submission, public comment, or institutional decision.';

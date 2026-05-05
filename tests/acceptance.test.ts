@@ -144,6 +144,18 @@ describe('Acceptance — dean memo v10 §1', () => {
     expect(result.integrity_envelope.cross_validation_disagreements).toBe(0);
   });
 
+  it('integrity envelope surfaces simulation framing (cp-j0gw.3)', () => {
+    expect(result.integrity_envelope.simulation_framing).toMatch(/FORWARD SIMULATION/);
+    expect(result.integrity_envelope.simulation_framing).toMatch(/PPD:2026/);
+    expect(result.integrity_envelope.simulation_framing).toMatch(/2027-07-01/);
+  });
+
+  it('integrity envelope surfaces expertise disclaimer (cp-j0gw.6)', () => {
+    expect(result.integrity_envelope.expertise_disclaimer).toMatch(/not attorneys/i);
+    expect(result.integrity_envelope.expertise_disclaimer).toMatch(/not.*legislative analysts/i);
+    expect(result.integrity_envelope.expertise_disclaimer).toMatch(/Independently verify/i);
+  });
+
   it('footer reminder is present on every result page', () => {
     expect(result.footer_reminder).toBe(
       'Re-derive against primary sources before any external submission.',

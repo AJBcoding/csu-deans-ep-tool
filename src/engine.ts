@@ -16,7 +16,11 @@ import type {
   VerdictWord,
 } from './types.js';
 import { CITATIONS, M_DOCS } from './citations.js';
-import { PRIMARY_SOURCE_REMINDER } from './citations.js';
+import {
+  EXPERTISE_DISCLAIMER,
+  PRIMARY_SOURCE_REMINDER,
+  SIMULATION_FRAMING,
+} from './citations.js';
 import {
   RULES,
   RULE_ORDER,
@@ -163,6 +167,8 @@ function buildIntegrityEnvelope(
       out_of_scope,
     },
     primary_source_reminder: PRIMARY_SOURCE_REMINDER,
+    simulation_framing: SIMULATION_FRAMING,
+    expertise_disclaimer: EXPERTISE_DISCLAIMER,
   };
 }
 

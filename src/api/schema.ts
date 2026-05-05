@@ -191,6 +191,8 @@ const $defs = {
       'cross_validation_disagreements',
       'data_status_summary',
       'primary_source_reminder',
+      'simulation_framing',
+      'expertise_disclaimer',
     ],
     additionalProperties: false,
     properties: {
@@ -217,6 +219,8 @@ const $defs = {
         },
       },
       primary_source_reminder: { type: 'string' },
+      simulation_framing: { type: 'string' },
+      expertise_disclaimer: { type: 'string' },
     },
   },
   AnalysisResultBase: {
