@@ -12,7 +12,9 @@ const DEPTH_KEY = 'csu-ep-tool:reading-depth';
 const VALID_DEPTHS = new Set(['brief', 'standard', 'detail']);
 
 async function loadPanel(id) {
-  const res = await fetch(`./../content/mdocs/${id}.html`);
+  // In dev-server: /content/mdocs/* served from <repo>/content/mdocs/*.
+  // In dist-pages build: content/ is copied alongside web/ outputs.
+  const res = await fetch(`./content/mdocs/${id}.html`);
   if (!res.ok) {
     throw new Error(`Failed to load ${id}: HTTP ${res.status}`);
   }
