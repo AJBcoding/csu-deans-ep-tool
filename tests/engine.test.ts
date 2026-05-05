@@ -249,6 +249,87 @@ describe('Engine — noise-band suppressed-earnings annotation', () => {
     expect(v.noise_band.fired).toBe(true);
     expect(v.noise_band.provenance).toBe('earnings_suppressed_ppd_published');
   });
+
+  // cp-j0gw.14 / R19 fourth annotation case (SPEC-DELTA §2.2).
+  // When the published OBBBA verdict surfaces but the underlying earnings
+  // are not published at the 4-digit grain for a cohort-level reason
+  // (median_earn_p4 IS NULL with earn_suppressed=false — typically cohort
+  // below floor or pool-inherited verdict), the noise-band test is still
+  // structurally inapplicable but for a different reason than the
+  // privacy-rule case above. The annotation must distinguish so the UI
+  // can explain WHY the noise band did not run, per SPEC-DELTA §2.3
+  // four-layer suppression model.
+  describe('fourth annotation case — cohort_suppressed_ppd_published', () => {
+    it('fires when verdict published but earnings null without privacy-rule suppression', () => {
+      const inst = makeInstitution([
+        makeProgram({
+          median_earn_p4: null,
+          ep_gap_pct: null,
+          ppd_fail_obbb: 1,
+          suppression: { cohort_suppressed: true, earn_suppressed: false },
+        }),
+      ]);
+      const r = analyzeInstitution(inst);
+      const v = r.programs[0]!;
+      expect(v.verdict).toBe('FAIL');
+      expect(v.noise_band.fired).toBe(true);
+      expect(v.noise_band.provenance).toBe('cohort_suppressed_ppd_published');
+      expect(v.noise_band.message).toMatch(/cohort below floor|not published at 4-digit/i);
+    });
+
+    it('keeps earnings_suppressed_ppd_published when earn_suppressed=true even if median_earn_p4 is null', () => {
+      // earn_suppressed wins over the cohort branch — the privacy-rule
+      // explanation is the more specific and user-relevant reason.
+      const inst = makeInstitution([
+        makeProgram({
+          median_earn_p4: null,
+          ep_gap_pct: null,
+          ppd_fail_obbb: 1,
+          suppression: { earn_suppressed: true, cohort_suppressed: true },
+        }),
+      ]);
+      const r = analyzeInstitution(inst);
+      const v = r.programs[0]!;
+      expect(v.noise_band.provenance).toBe('earnings_suppressed_ppd_published');
+    });
+
+    it('does not fire when surfaced verdict is NOT MEASURED', () => {
+      // When the cell never surfaces a verdict, no annotation fires —
+      // regardless of which suppression flag is set.
+      const inst = makeInstitution([
+        makeProgram({
+          median_earn_p4: null,
+          ep_gap_pct: null,
+          ppd_fail_obbb: null,
+          benchmark: null,
+          suppression: { cohort_suppressed: true },
+        }),
+      ]);
+      const r = analyzeInstitution(inst);
+      const v = r.programs[0]!;
+      expect(v.verdict).toBe('NOT MEASURED');
+      expect(v.noise_band.fired).toBe(false);
+      expect(v.noise_band.provenance).toBeNull();
+    });
+
+    it('does not fire when earnings are present (preserves gap_tool_derived path)', () => {
+      // Backward-compat sanity: the existing measurable-with-noise-band path
+      // still produces gap_tool_derived; the new fourth case only branches
+      // on median_earn_p4 IS NULL.
+      const inst = makeInstitution([
+        makeProgram({
+          median_earn_p4: 38270.0,
+          ep_gap_pct: 0.0606,
+          ppd_fail_obbb: 0,
+          suppression: { cohort_suppressed: false, earn_suppressed: false },
+        }),
+      ]);
+      const r = analyzeInstitution(inst);
+      const v = r.programs[0]!;
+      expect(v.noise_band.fired).toBe(true);
+      expect(v.noise_band.provenance).toBe('gap_tool_derived');
+    });
+  });
 });
 
 // ─────────────────────────────────────────────────────────────────────────────

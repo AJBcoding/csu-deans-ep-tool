@@ -88,7 +88,14 @@ const $defs = {
       fired: { type: 'boolean' },
       provenance: {
         oneOf: [
-          { type: 'string', enum: ['gap_tool_derived', 'earnings_suppressed_ppd_published'] },
+          {
+            type: 'string',
+            enum: [
+              'gap_tool_derived',
+              'earnings_suppressed_ppd_published',
+              'cohort_suppressed_ppd_published',
+            ],
+          },
           { type: 'null' },
         ],
       },
