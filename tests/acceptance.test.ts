@@ -1,9 +1,12 @@
 // Acceptance — reproduces dean memo v10 §1 numbers from the CSULB fixture.
 //
 // Source: briefs/2026-04-23-dean-royce-OBBBA-EP-synthesis.v10.md §1 bottom-line.
+// Extension (cp-j0gw.1): English MA per REV-2 narrative correction (cp-fiq8.2.2,
+// 2026-05-03) — third CSULB direct-fail surfaced after AHEAD-flag-override fix.
 //
-// Music MM (5009/Master's):       FAIL @ -32.65%, n=28
-// Art MFA (5007/Master's):        FAIL @ -20.40%, n=23
+// Music MM   (5009/Master's):     FAIL @ -32.65%, n=28
+// Art MFA    (5007/Master's):     FAIL @ -20.40%, n=23
+// English MA (2301/Master's):     FAIL @ -4.97%,  n=29  (cp-j0gw.1, REV-2)
 // Theatre BA (5005/Bachelor):     PASS @ +6.06%, n=81 — within R19 noise band
 // Cinematic Arts BA (5006/Bach):  NOT MEASURED (B16 invisibility — absent from PPD)
 
@@ -45,6 +48,32 @@ describe('Acceptance — dean memo v10 §1', () => {
     expect(v?.noise_band.fired).toBe(false);
     expect(v?.cross_validation.status).toBe('agree');
     expect(v?.rules_fired.map((r) => r.id)).toContain('R17');
+  });
+
+  it('English MA (2301/Master\'s) — FAIL at -4.97%, n=29 (REV-2 cp-j0gw.1)', () => {
+    // REV-2 narrative correction (cp-fiq8.2.2, 2026-05-03): the AHEAD-published
+    // per-cell flag override surfaces this as the third CSULB direct-fail. Gap
+    // is small (-4.97%) but PPD-published verdict is authoritative — falls
+    // OUTSIDE the noise band trigger range only because PPD asserts FAIL.
+    // Source: analyses/csulb-impact-passes/narrative.md REV-2; senate packet
+    // briefs/senate-distribution-2026-05-04/.
+    const v = find('2301', "Master's");
+    expect(v).toBeDefined();
+    expect(v?.verdict).toBe('FAIL');
+    expect(v?.cohort_count).toBe(29);
+    expect(v?.median_earn_p4).toBe(47026.0);
+    expect(v?.benchmark).toBe(49483.0);
+    expect(v?.ep_gap_pct).toBeCloseTo(-0.0497, 4);
+    // PPD-published agrees with tool re-derivation (both FAIL).
+    expect(v?.cross_validation.status).toBe('agree');
+    // R08 fires — graduate lowest-of-three benchmark route.
+    expect(v?.rules_fired.map((r) => r.id)).toContain('R08');
+    // R18 fires — graduate loan-cap advisory.
+    expect(v?.rules_fired.map((r) => r.id)).toContain('R18');
+    // R19 fires — gap is INSIDE ±15% noise band; verdict could read other way
+    // on the same data with privacy noise.
+    expect(v?.noise_band.fired).toBe(true);
+    expect(v?.noise_band.provenance).toBe('gap_tool_derived');
   });
 
   it('Theatre BA (5005/Bachelor) — PASS at +6.06%, n=81, in R19 noise band', () => {
