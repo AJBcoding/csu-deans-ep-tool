@@ -1,7 +1,8 @@
-// cp-j0gw.15 — plain-language standalone explainer pages structural test.
-// Each explainer page must surface the same shared patterns: public-data
-// badge, top-disclaimer, breadcrumb, verify-against-primary-sources callout,
-// and a topic-specific anchor heading.
+// cp-j0gw.15 + cp-j0gw.18 — plain-language standalone explainer pages
+// structural test. Each explainer page must surface the same shared
+// patterns: public-data badge, top-disclaimer, breadcrumb,
+// verify-against-primary-sources callout, and a topic-specific anchor
+// heading.
 
 import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
@@ -25,6 +26,24 @@ const PAGES = [
     title: /M03\s*—\s*How the benchmark is selected/,
     topicAnchor: /lowest of three/i,
     sourcesAnchor: /84001\(c\)\(3\)\(B\)|668\.402\(c\)\(3\)/,
+  },
+  {
+    file: 'M04.html',
+    title: /M04\s*—\s*When a program crosses from passing to failing/,
+    topicAnchor: /two failures in three years|two-failures-in-three-years/i,
+    sourcesAnchor: /84001\(c\)\(1\)|668\.402|668\.603/,
+  },
+  {
+    file: 'M07.html',
+    title: /M07\s*—\s*First-failure disclosures/,
+    topicAnchor: /Department-prescribed warning|first-failure release date/i,
+    sourcesAnchor: /668\.43\(d\)\(1\)|668\.43\(d\)\(2\)/,
+  },
+  {
+    file: 'M14.html',
+    title: /M14\s*—\s*Named populations/,
+    topicAnchor: /named CIP families|elevation factor/i,
+    sourcesAnchor: /regulatory-impact analysis|most at risk/i,
   },
   {
     file: 'M18.html',

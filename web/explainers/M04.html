@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>M04 — Pass / fail trigger and the four-year lag — CSU Deans EP Tool</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/explainers.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="breadcrumb">
+        <a href="../index.html">← Back to home</a>
+        ·
+        <a href="../learn.html">Mechanism Library</a>
+      </p>
+      <h1>M04 — When a program crosses from passing to failing</h1>
+      <p class="tagline">
+        How the rule reads single-year results, what 'two failures in three
+        years' actually means, and why every measurement looks back four
+        tax years.
+      </p>
+      <p class="public-data-badge" aria-label="Public data only">
+        <span class="badge-dot" aria-hidden="true">●</span>
+        Public data only · No private or institutional data leaves your browser
+      </p>
+    </header>
+
+    <aside class="top-disclaimer" role="note" aria-label="Important context">
+      <p>
+        <strong>Read first.</strong>
+        Built by educators — <strong>not attorneys, not legislative analysts</strong>.
+        Every walk on this page is a working explanation of a published
+        proposed rule, not legal advice. Independently verify all citations
+        against the
+        <a href="../sources.html">primary sources</a>
+        before any external submission, public comment, or institutional decision.
+      </p>
+    </aside>
+
+    <main class="explainer-page">
+      <section>
+        <h2>The short version</h2>
+        <p class="lede">
+          The earnings-premium test produces a single-year pass-or-fail
+          arithmetic for each measured program. One single-year failure
+          attaches a disclosure obligation but no Title IV consequence. Two
+          single-year failures within any three consecutive measurement
+          years take the program out of Direct Loan eligibility for new
+          students.
+        </p>
+        <p>
+          Each measurement year reads earnings four tax years after the
+          measured graduating cohort. That four-year lag is built into the
+          statute itself. The first measurement year a graduating class
+          ever appears in is therefore four years after that class
+          graduates — and a program does not feel any pass-or-fail signal
+          until that lag has already passed.
+        </p>
+      </section>
+
+      <section>
+        <h2>The single-year pass/fail arithmetic</h2>
+        <p>
+          For each award year a program is measured in, the rule computes
+          two numbers — the program's median earnings (graduates who are
+          working and not still in school) and a benchmark figure drawn
+          from federal Census data — and asks whether the median is
+          greater than or equal to the benchmark.
+        </p>
+        <div class="field-step">
+          <strong>Pass</strong>
+          The program's median earnings are greater than or equal to the
+          benchmark figure. The program is reported PASS for that
+          measurement year. No federal consequence attaches; the program
+          remains fully Title IV eligible.
+        </div>
+        <div class="field-step">
+          <strong>Fail</strong>
+          The program's median earnings are less than the benchmark
+          figure. The program is reported FAIL for that measurement year.
+          Disclosure obligations attach (M07). Title IV eligibility is not
+          yet affected by the single failure.
+        </div>
+        <div class="field-step">
+          <strong>Not measured</strong>
+          The program does not have enough graduates, or enough IRS
+          earnings records, to produce a published median. The program is
+          reported NOT MEASURED for that year. NOT MEASURED is not a pass
+          and not a fail; no consequence attaches.
+        </div>
+        <p>
+          The single-year arithmetic is straightforward. The state machine
+          on top of it — the rule that decides what consequence attaches
+          and when — is what makes the test stateful across years.
+        </p>
+      </section>
+
+      <section>
+        <h2>The two-failures-in-three-years rule</h2>
+        <p>
+          OBBBA § 84001(c)(1) sets the program-level Title IV consequence
+          on a two-failure trigger inside a rolling three-year window. The
+          window slides forward each year. A program that fails in year
+          one and again in year three loses Direct Loan eligibility on the
+          year-three release; a program that fails in year one and again
+          in year four does not lose eligibility on the year-four release,
+          because year one has rolled out of the three-year window by then.
+        </p>
+        <p>
+          The trigger reads only across <em>measurement years</em>. A NOT
+          MEASURED year does not count as a pass and does not count as a
+          fail. It is a year without a result. A program with measurement
+          gaps can take longer to accumulate two failures inside any
+          three consecutive measurement years, but the gap does not erase
+          earlier failures — they remain on the running tally until they
+          age out of the three-year window.
+        </p>
+        <p>
+          The federal data product the Department published in advance of
+          the rulemaking carries pre-computed pass/fail flags for each
+          measurement year. The tool reads the published flag as
+          authoritative and surfaces local re-computation alongside it as
+          a cross-check (M01).
+        </p>
+      </section>
+
+      <section>
+        <h2>The four-year earnings lag</h2>
+        <p>
+          The statute defines program earnings as median earnings four tax
+          years after the measured graduating cohort completed. That lag
+          is structural: the federal data the Department uses is built
+          from IRS records (W-2 and Schedule SE filings), and four tax
+          years is the lag that produces stable post-completion earnings
+          for graduates who entered the workforce after their degree.
+        </p>
+        <p>
+          The lag has two practical consequences. First, the first
+          measurement year a graduating class ever appears in is the
+          fourth tax year after that class graduates. A class that
+          completed in academic year 2023-24 first appears in measurement
+          year 2027-28 (the federal data release that reports tax-year
+          2027 earnings).
+        </p>
+        <p>
+          Second, any institutional response to a failure — a curriculum
+          change, a program closure, a new program, a CIP-code shift —
+          takes at least four years from the entering cohort onward to
+          register on the test. A program that admits a new entering
+          cohort under a redesigned curriculum will not see that cohort's
+          earnings appear in the federal data for at least six years
+          after admission (two-to-three years to graduate plus four tax
+          years post-completion).
+        </p>
+      </section>
+
+      <section>
+        <h2>What this means in practice</h2>
+        <p>
+          One failure attaches a disclosure obligation that the program
+          must publish on admissions and recruitment materials before the
+          next entering cohort accepts admission (M07). The disclosure
+          obligation is independent of any appeal. Filing an appeal under
+          proposed § 668.603 does not pause the disclosure requirement;
+          the failing program must surface the federal-warning language
+          while the appeal is pending.
+        </p>
+        <p>
+          Two failures inside any three consecutive measurement years take
+          the program out of Direct Loan eligibility for new students.
+          Existing borrowers are unaffected for prior disbursements (M05).
+          A program restored to compliance after eligibility loss must
+          clear the published procedure under proposed § 668.604; the
+          institution may not restart enrollment without an affirmative
+          determination from the Department.
+        </p>
+        <p>
+          The proposed appeal scope under § 668.603 is limited to
+          calculation-error claims — arithmetic disputes about the
+          single-year pass/fail computation. Methodological disagreement,
+          IRS-match-quality concerns, and disputes about the cohort-side
+          expansion outcome are outside the appeal scope.
+        </p>
+      </section>
+
+      <aside class="verify-callout" role="note" aria-label="Verify against primary sources">
+        <h2>Verify against primary sources</h2>
+        <p>
+          Every claim above traces to a publicly available statute,
+          proposed rule, or federal data file. See the
+          <a href="../sources.html">Public data sources</a>
+          page for the OBBBA statute (§ 84001(c)(1) — two-failure
+          trigger; § 84001(c)(2) — single-year pass/fail definition), the
+          proposed rule (§ 668.402 — measurement window; § 668.603 —
+          appeal scope; § 668.604 — re-entry procedure), and the federal
+          data file's pre-computed pass/fail field. Re-derive against
+          those sources before any external submission.
+        </p>
+      </aside>
+
+      <nav class="explainer-nav" aria-label="Other explainers">
+        <a href="./M03.html">← Previous: M03 — Lowest-of-three benchmark routing</a>
+        <a href="./M07.html">Next: M07 — First-failure disclosures →</a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <p class="primary-source-reminder">
+        Re-derive against primary sources before any external submission.
+      </p>
+    </footer>
+  </body>
+</html>
