@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pull by UNITID — CSU Deans EP Tool</title>
+    <title>Comment outline (DRAFT) — CSU Deans EP Tool</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/learn.css" />
   </head>
   <body>
     <header class="site-header">
       <p class="breadcrumb"><a href="./index.html">← Back</a></p>
-      <h1>Pull every program at your institution</h1>
+      <h1>Comment outline (DRAFT)</h1>
+      <p class="tagline">
+        Build a structured, citation-anchored outline you can edit into a
+        public comment on the proposed rule. The outline gives you the
+        scaffolding — the program findings, the mechanism citations, the
+        verification recipes — and leaves the substantive arguments to you.
+      </p>
       <p class="public-data-badge" aria-label="Public data only">
         <span class="badge-dot" aria-hidden="true">●</span>
         Public data only · No private or institutional data leaves your browser
@@ -24,16 +30,19 @@
     <aside class="top-disclaimer" role="note" aria-label="Important context">
       <p>
         <strong>Read first.</strong>
-        Built by educators — <strong>not attorneys, not legislative analysts</strong>.
-        Verdicts are <strong>forward simulations</strong> on the AHEAD PPD:2026
-        analytic file. The first official STATS earnings-premium release is
-        scheduled for 2027-07-01. Verify against primary sources before any
-        external use.
+        This generates a <strong>DRAFT skeleton</strong> for a public comment,
+        not a filed comment. We are <strong>not attorneys, not legislative
+        analysts</strong>. The outline gives you the structure, citations, and
+        verification recipes — you supply the substantive arguments,
+        institutional context, and any legal positions. Verify every cite
+        against the
+        <a href="./sources.html">primary sources</a>
+        before submitting anything.
       </p>
     </aside>
 
     <main class="run-page">
-      <form id="run-form" class="run-form" novalidate>
+      <form id="comment-form" class="run-form" novalidate>
         <label for="unitid-input">
           IPEDS UNITID
           <span class="hint">
@@ -42,8 +51,7 @@
               href="https://nces.ed.gov/ipeds/datacenter/InstitutionList.aspx"
               target="_blank"
               rel="noopener noreferrer"
-              >IPEDS Data Center</a
-            >.
+              >IPEDS Data Center</a>.
           </span>
         </label>
         <input
@@ -56,12 +64,18 @@
           placeholder="e.g. 110583"
           required
         />
-        <button type="submit" class="cta">Run analysis</button>
+        <button type="submit" class="cta">Generate outline</button>
       </form>
 
       <p id="status-line" class="status-line" role="status" aria-live="polite"></p>
 
-      <section id="result-region" class="result-region" hidden></section>
+      <section id="outline-region" class="outline-region" hidden>
+        <div class="outline-toolbar">
+          <button id="copy-button" type="button" class="cta">Copy as Markdown</button>
+          <button id="download-button" type="button" class="cta">Download .md</button>
+        </div>
+        <pre id="outline-pre" class="outline-pre" aria-label="Comment outline draft"></pre>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -70,6 +84,6 @@
       </p>
     </footer>
 
-    <script type="module" src="./js/persona-b.js"></script>
+    <script type="module" src="./js/comment-draft.js"></script>
   </body>
 </html>

@@ -115,6 +115,20 @@ const PANELS: PanelDef[] = [
         : null;
     },
   },
+  {
+    // cp-j0gw.7 — § 668.16(t) institution-level cascade. Auto-fires when any
+    // program at the institution surfaces as FAIL, since that is the trigger
+    // condition the cascade design is meant to escalate from.
+    id: 'M18',
+    m_doc: M_DOCS.M18,
+    header:
+      "When a program failure could spread to the whole institution. Proposed § 668.16(t) lets program-level failures escalate into an institution-level Title IV finding. Five independent legal frames each give the Department's chosen design a separate problem to answer.",
+    trigger: (verdicts) => {
+      const failing = verdicts.filter((v) => v.verdict === 'FAIL');
+      if (failing.length === 0) return null;
+      return `${failing.length} failing program${failing.length === 1 ? '' : 's'} put institution-level § 668.16(t) cascade machinery in scope for this institution.`;
+    },
+  },
 ];
 
 export function buildPanels(
@@ -143,7 +157,7 @@ export function buildPanels(
 export function panelsTriggeredByProgram(verdict: ProgramVerdict): string[] {
   const ids: string[] = ['M01', 'M13']; // always fire
   if (verdict.verdict !== 'NOT MEASURED') ids.push('M03', 'M04');
-  if (verdict.verdict === 'FAIL') ids.push('M05', 'M07');
+  if (verdict.verdict === 'FAIL') ids.push('M05', 'M07', 'M18');
   if (verdict.verdict === 'NOT MEASURED') ids.push('M12');
   if (verdict.rules_fired.some((r) => r.id === 'R17')) ids.push('M14');
   return ids;

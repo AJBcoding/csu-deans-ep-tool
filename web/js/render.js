@@ -124,6 +124,23 @@ export function renderVerdictCard(program) {
         )}.</p>`
       : '';
 
+  const derivationLabel = {
+    ppd_published_authoritative:
+      'Verdict carried by AHEAD\'s published per-cell flag (regulatory-authoritative; cp-wssr override).',
+    tool_re_derived:
+      'Verdict computed by this tool from PPD-published earnings + benchmark; AHEAD did not publish a flag.',
+    not_measured: 'Insufficient inputs — no verdict possible. See reason above.',
+  };
+  const derivation = program.derivation_basis
+    ? `<p class="derivation-basis"><strong>Verdict basis:</strong> ${escapeHtml(
+        derivationLabel[program.derivation_basis] ?? program.derivation_basis,
+      )}</p>`
+    : '';
+
+  const recipe = program.verification_recipe
+    ? renderVerificationRecipe(program.verification_recipe)
+    : '';
+
   return `
     <article class="verdict-card" ${dataAttrs}>
       <div class="program-line">
@@ -135,12 +152,42 @@ export function renderVerdictCard(program) {
       ${noiseBandNote}
       ${notMeasuredNote}
       ${xv}
+      ${derivation}
       ${renderPanelTriggerList(program.panels_triggered)}
       <details class="drill-in">
         <summary>Why this verdict — rules fired</summary>
         ${renderRuleList(program.rules_fired)}
       </details>
+      ${recipe}
     </article>
+  `;
+}
+
+export function renderVerificationRecipe(recipe) {
+  if (!recipe) return '';
+  const fields = (recipe.source_fields ?? [])
+    .map((f) => `<li>${escapeHtml(f)}</li>`)
+    .join('');
+  const steps = (recipe.steps ?? [])
+    .map((s) => `<li>${escapeHtml(s)}</li>`)
+    .join('');
+  return `
+    <details class="verification-recipe">
+      <summary>How to reproduce this number — verification recipe</summary>
+      <dl>
+        <dt>Source data</dt><dd>${escapeHtml(recipe.source_data)}</dd>
+        <dt>Source grain</dt><dd>${escapeHtml(recipe.source_grain)}</dd>
+        <dt>Engine reference</dt><dd><code>${escapeHtml(recipe.engine_reference)}</code></dd>
+      </dl>
+      <p><strong>Source fields:</strong></p>
+      <ul class="recipe-fields">${fields}</ul>
+      <p><strong>Steps:</strong></p>
+      <ol class="recipe-steps">${steps}</ol>
+      <p class="recipe-attribution">
+        We are not attorneys or legislative analysts. Independently verify
+        every number against the source-data and engine code above.
+      </p>
+    </details>
   `;
 }
 
@@ -168,6 +215,16 @@ export function renderIntegrityEnvelope(env) {
         <dt>Disagreements with the Department's pre-computed verdict</dt><dd>${formatInt(env.cross_validation_disagreements)}</dd>
       </dl>
       <p class="primary-source-reminder">${escapeHtml(env.primary_source_reminder)}</p>
+      ${
+        typeof env.simulation_framing === 'string' && env.simulation_framing.length > 0
+          ? `<p class="simulation-framing"><strong>Simulation framing:</strong> ${escapeHtml(env.simulation_framing)}</p>`
+          : ''
+      }
+      ${
+        typeof env.expertise_disclaimer === 'string' && env.expertise_disclaimer.length > 0
+          ? `<p class="expertise-disclaimer"><strong>About this tool:</strong> ${escapeHtml(env.expertise_disclaimer)}</p>`
+          : ''
+      }
     </section>
   `;
 }

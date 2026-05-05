@@ -142,8 +142,8 @@ describe('renderer — full CSULB result (Persona B)', () => {
     expect(matches!.length).toBeGreaterThanOrEqual(2);
   });
 
-  it('renders 8 auto-triggered panel blocks (M01,M03,M04,M05,M07,M12,M13,M14)', () => {
-    for (const id of ['M01', 'M03', 'M04', 'M05', 'M07', 'M12', 'M13', 'M14']) {
+  it('renders 9 auto-triggered panel blocks (M01,M03,M04,M05,M07,M12,M13,M14,M18 — cp-j0gw.7)', () => {
+    for (const id of ['M01', 'M03', 'M04', 'M05', 'M07', 'M12', 'M13', 'M14', 'M18']) {
       expect(html).toContain(`id="panel-${id}"`);
     }
   });

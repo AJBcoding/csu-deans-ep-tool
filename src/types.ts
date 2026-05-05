@@ -145,6 +145,44 @@ export interface NoiseBandAnnotation {
   message: string | null;
 }
 
+/**
+ * Where the surfaced verdict came from — explicit AHEAD-published-flag-override
+ * provenance per cp-wssr (cp-j0gw.2).
+ *
+ * - 'ppd_published_authoritative': PPD's pre-computed flag (`fail_obbb_cip2_wageb`)
+ *   carried the verdict. Per cp-wssr methodology note, this override is honored
+ *   even when count_wne_p4 < 30, because AHEAD's pooled cohort meets the
+ *   statutory floor and AHEAD's published flag is the regulatory verdict.
+ * - 'tool_re_derived': PPD did not publish a flag; the tool computed verdict
+ *   from median_earn_p4 vs benchmark (OBBBA § 84001(c)(2) "less than median").
+ * - 'not_measured': insufficient inputs — see not_measured_reason.
+ */
+export type DerivationBasis =
+  | 'ppd_published_authoritative'
+  | 'tool_re_derived'
+  | 'not_measured';
+
+/**
+ * Verification recipe per cp-j0gw.6 — short structured block that tells a
+ * reader "how to reproduce this number" without needing this tool. Aligned to
+ * the CIPcodes reproducibility rule (every claim cited or scripted).
+ */
+export interface VerificationRecipe {
+  /** Source-data file (e.g. "AHEAD PPD:2026 file 112908"). */
+  source_data: string;
+  /** Granularity at which the value lives in the source. */
+  source_grain: string;
+  /**
+   * Field name(s) in the source that produce this verdict. Keeps the recipe
+   * grep-able against the AHEAD codebook.
+   */
+  source_fields: string[];
+  /** Engine module / function reference. */
+  engine_reference: string;
+  /** Short human-readable steps a reader can follow. */
+  steps: string[];
+}
+
 export interface ProgramVerdict {
   cip4: string;
   cip4_title: string;
@@ -160,6 +198,10 @@ export interface ProgramVerdict {
   cross_validation: CrossValidation;
   rules_fired: RuleFire[];
   panels_triggered: string[];
+  /** Where the verdict came from (cp-j0gw.2). */
+  derivation_basis: DerivationBasis;
+  /** "How to reproduce this number" recipe (cp-j0gw.6). */
+  verification_recipe: VerificationRecipe;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -206,6 +248,18 @@ export interface IntegrityEnvelope {
     out_of_scope: number;
   };
   primary_source_reminder: string;
+  /**
+   * "Forward simulation" framing per cp-dw65 (cp-j0gw.3). All EP-test verdicts
+   * here are SIMULATIONS run on AHEAD's negotiator analytic file (PPD:2026),
+   * not observations of an implemented rule. The first official STATS earnings-
+   * premium release is scheduled for 2027-07-01.
+   */
+  simulation_framing: string;
+  /**
+   * "Not attorneys / not legislative analysts" disclaimer per cp-j0gw.6.
+   * Surfaced on every result page in addition to the primary-source reminder.
+   */
+  expertise_disclaimer: string;
 }
 
 export interface PanelDescriptor {

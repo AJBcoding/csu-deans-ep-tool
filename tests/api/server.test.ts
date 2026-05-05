@@ -107,12 +107,13 @@ describe('Server integration — transport layer', () => {
     expect(body.error.code).toBe('BAD_REQUEST');
   });
 
-  it('GET /api/v1/panels returns the 16-panel manifest', async () => {
+  it('GET /api/v1/panels returns the 17-panel manifest (cp-j0gw.7 adds M18)', async () => {
     const res = await fetch(`${baseUrl}/api/v1/panels`);
     expect(res.status).toBe(200);
     const body = (await res.json()) as PanelManifestResponse;
-    expect(body.panels).toHaveLength(16);
+    expect(body.panels).toHaveLength(17);
     expect(body.panels.map((p) => p.id)).not.toContain('M16');
+    expect(body.panels.map((p) => p.id)).toContain('M18');
   });
 
   it('GET /api/v1/panels/M16 returns 404 with deferral note', async () => {

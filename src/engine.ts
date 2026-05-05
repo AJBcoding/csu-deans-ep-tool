@@ -4,6 +4,7 @@
 import type {
   AnalysisResult,
   Credlev,
+  DerivationBasis,
   HiddenProgram,
   HiddenProgramCandidate,
   HiddenProgramSurface,
@@ -14,9 +15,14 @@ import type {
   ProgramVerdict,
   RuleFire,
   VerdictWord,
+  VerificationRecipe,
 } from './types.js';
 import { CITATIONS, M_DOCS } from './citations.js';
-import { PRIMARY_SOURCE_REMINDER } from './citations.js';
+import {
+  EXPERTISE_DISCLAIMER,
+  PRIMARY_SOURCE_REMINDER,
+  SIMULATION_FRAMING,
+} from './citations.js';
 import {
   RULES,
   RULE_ORDER,
@@ -34,6 +40,93 @@ import { buildPanels, panelsTriggeredByProgram } from './panels.js';
 
 const NOISE_BAND_THRESHOLD = 0.15;
 const CROSS_VALIDATION_BANNER_PCT = 0.05;
+
+/**
+ * Where the surfaced verdict came from. PPD-published is authoritative — when
+ * `ppd_fail_obbb` is non-null we honor it (cp-wssr AHEAD-published-flag override).
+ * Tool re-derivation only fills in when PPD has not published.
+ */
+function deriveDerivationBasis(
+  program: ProgramRecord,
+  surfaced: VerdictWord,
+): DerivationBasis {
+  if (surfaced === 'NOT MEASURED') return 'not_measured';
+  if (program.ppd_fail_obbb !== null) return 'ppd_published_authoritative';
+  return 'tool_re_derived';
+}
+
+/**
+ * Per-finding verification recipe — maps each verdict back to source-data
+ * fields, engine module, and a short procedural description (cp-j0gw.6).
+ * The recipe is for a reader who wants to reproduce the finding WITHOUT this
+ * tool, using the AHEAD codebook + the obbba_rollup engine spec.
+ */
+function buildVerificationRecipe(
+  program: ProgramRecord,
+  basis: DerivationBasis,
+): VerificationRecipe {
+  const sourceData = 'AHEAD PPD:2026 file 112908 (program-performance-data-debt-earnings-and-earnings-test-metrics)';
+  const sourceGrain = 'institution identifier × 4-digit CIP × credential level';
+
+  if (basis === 'ppd_published_authoritative') {
+    return {
+      source_data: sourceData,
+      source_grain: sourceGrain,
+      source_fields: [
+        'fail_obbb_cip2_wageb (PPD-published verdict flag)',
+        'count_wne_p4 (cohort count, single-window pooled)',
+        'md_earn_wne_p4 (median earnings, 4th tax year post-completion)',
+        'cipx (4-digit CIP)',
+        'credlev',
+      ],
+      engine_reference: 'src/verdict.ts:derivePpdVerdict() — see also src/obbba_rollup/cascade.py for cohort-floor logic',
+      steps: [
+        'Open PPD:2026 file 112908 in your spreadsheet/SQL tool of choice.',
+        `Filter to your institution × cipx="${program.cip4}" × credlev="${program.credlev}".`,
+        'Read the value of fail_obbb_cip2_wageb. 1 = FAIL, 0 = PASS, NULL = not measured.',
+        'AHEAD-published-flag override (cp-wssr): when fail_obbb_cip2_wageb is non-null, it is the regulatory verdict, even if count_wne_p4 < 30. AHEAD\'s pooled cohort meets the statutory § 84001(c)(2)(A) floor.',
+      ],
+    };
+  }
+
+  if (basis === 'tool_re_derived') {
+    return {
+      source_data: sourceData,
+      source_grain: sourceGrain,
+      source_fields: [
+        'md_earn_wne_p4 (median earnings)',
+        'benchmark (lowest-of-three per OBBBA § 84001(c)(3)(B))',
+        'cipx (4-digit CIP)',
+        'credlev',
+      ],
+      engine_reference: 'src/verdict.ts:deriveToolVerdict()',
+      steps: [
+        'Open PPD:2026 file 112908.',
+        `Read md_earn_wne_p4 for cipx="${program.cip4}" × credlev="${program.credlev}".`,
+        'Compute benchmark per OBBBA § 84001(c)(3)(B): lowest of (a) state same-CIP BA median, (b) national same-CIP BA median, (c) state same-state HS median (UG only) or national field-of-study BA median (graduate).',
+        'Verdict = FAIL when median earnings < benchmark; PASS otherwise.',
+      ],
+    };
+  }
+
+  // not_measured
+  return {
+    source_data: sourceData,
+    source_grain: sourceGrain,
+    source_fields: [
+      'count_wne_p4 (null when below 30 cohort floor or absent)',
+      'md_earn_wne_p4 (null when IRS reporters < 16)',
+      'fail_obbb_cip2_wageb (null when not measured)',
+    ],
+    engine_reference: 'src/verdict.ts:deriveNotMeasuredReason()',
+    steps: [
+      'Open PPD:2026 file 112908.',
+      `Look up cipx="${program.cip4}" × credlev="${program.credlev}". Row may be absent (B16 invisibility) or present with null fields.`,
+      'Determine reason: out_of_scope (not in OBBBA § 84001 scope), privacy_suppressed (missing_test=1), cohort_below_floor (cohort < 30), earnings_below_floor (IRS reporters < 16).',
+      'Cross-check against IPEDS Completions C-survey if you suspect the institution awards completers AHEAD does not record.',
+    ],
+  };
+}
 
 function buildNoiseBandAnnotation(
   program: ProgramRecord,
@@ -90,6 +183,7 @@ function evaluateProgram(
     if (fire !== null) fires.push(fire);
   }
 
+  const derivationBasis = deriveDerivationBasis(program, surfacedVerdict);
   const verdict: ProgramVerdict = {
     cip4: program.cip4,
     cip4_title: program.cip4_title,
@@ -109,6 +203,8 @@ function evaluateProgram(
     },
     rules_fired: fires,
     panels_triggered: [],
+    derivation_basis: derivationBasis,
+    verification_recipe: buildVerificationRecipe(program, derivationBasis),
   };
   verdict.panels_triggered = panelsTriggeredByProgram(verdict);
   return verdict;
@@ -163,6 +259,8 @@ function buildIntegrityEnvelope(
       out_of_scope,
     },
     primary_source_reminder: PRIMARY_SOURCE_REMINDER,
+    simulation_framing: SIMULATION_FRAMING,
+    expertise_disclaimer: EXPERTISE_DISCLAIMER,
   };
 }
 
@@ -310,6 +408,22 @@ function evaluateInvisibleProgram(
     },
     rules_fired: fires,
     panels_triggered: ['M01', 'M12', 'M13'],
+    derivation_basis: 'not_measured',
+    verification_recipe: {
+      source_data: 'AHEAD PPD:2026 file 112908 + IPEDS Completions C-survey',
+      source_grain: 'institution identifier × 4-digit CIP × credential level (PPD); UNITID × 6-digit CIP × award level (IPEDS Completions)',
+      source_fields: [
+        '(absence) — no row in PPD for this (cip4, credlev) at this institution',
+        'IPEDS C2024_A.AWLEVEL × CIPCODE — checks whether the institution awarded any completers',
+      ],
+      engine_reference: 'src/engine.ts:evaluateInvisibleProgram() — surfaces R03/R05/R12 with B16 invisibility provenance',
+      steps: [
+        'Open PPD:2026 file 112908.',
+        `Filter to your institution and look for cipx="${cip4}" × credlev="${credlev}". You will find no row.`,
+        'Cross-check IPEDS Completions: the institution may award completers in this CIP that AHEAD did not record. If so, the program is operating but invisible to the EP test.',
+        'B16 invisibility means the cohort cascade did not run for this program — there is no published cell to escalate.',
+      ],
+    },
   };
   // Mark the program for the institution-context callers.
   void institution;

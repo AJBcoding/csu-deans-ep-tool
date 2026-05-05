@@ -69,7 +69,7 @@ describe('citations — case-insensitive lookup', () => {
     // `sources`, not `mdoc_anchors`, and are out of scope here.
     setCitationsForTesting(realCitations);
     const cits = await loadCitations('cache-hit');
-    const panelHtmls = ['M01', 'M03', 'M04', 'M05', 'M07', 'M12', 'M13', 'M14'].map(
+    const panelHtmls = ['M01', 'M03', 'M04', 'M05', 'M07', 'M12', 'M13', 'M14', 'M18'].map(
       (id) => readFileSync(resolve(__dirname, '..', '..', 'content', 'mdocs', `${id}.html`), 'utf8'),
     );
     const panelAnchorKeys: string[] = [];

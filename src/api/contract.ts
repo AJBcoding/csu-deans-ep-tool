@@ -140,13 +140,13 @@ export type AnalysisPostResponse = AnalysisGetResponse;
 
 export const PANEL_IDS = [
   'M01', 'M02', 'M03', 'M04', 'M05', 'M06', 'M07', 'M08', 'M09',
-  'M10', 'M11', 'M12', 'M13', 'M14', 'M15', 'M17',
+  'M10', 'M11', 'M12', 'M13', 'M14', 'M15', 'M17', 'M18',
 ] as const;
 
 export type PanelId = (typeof PANEL_IDS)[number];
 
 export const AUTO_TRIGGERED_PANELS = [
-  'M01', 'M03', 'M04', 'M05', 'M07', 'M12', 'M13', 'M14',
+  'M01', 'M03', 'M04', 'M05', 'M07', 'M12', 'M13', 'M14', 'M18',
 ] as const satisfies readonly PanelId[];
 
 export const LEARN_MORE_PANELS = [

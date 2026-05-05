@@ -1,0 +1,215 @@
+/* learn.css — Mechanism Library page (cp-j0gw.9) + reading-depth toggle (cp-j0gw.10) */
+
+.public-data-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e6f4ea;
+  color: #14532d;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.75rem;
+}
+
+.public-data-badge .badge-dot {
+  color: #16a34a;
+  font-size: 0.65rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .public-data-badge {
+    background: #14321b;
+    color: #b6e8c4;
+  }
+}
+
+/* Reading-depth toggle */
+
+.learn-toolbar {
+  margin: 1rem;
+  padding: 1rem;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.depth-toggle {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.depth-toggle legend {
+  font-weight: 700;
+  margin-right: 0.75rem;
+  padding: 0;
+}
+
+.depth-toggle label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(0, 0, 0, 0.04);
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.depth-toggle label:has(input:checked) {
+  background: #1f3a8a;
+  color: #fff;
+}
+
+.depth-toggle input {
+  margin: 0;
+}
+
+.depth-help {
+  margin: 0.75rem 0 0;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+}
+
+/* Topic groupings */
+
+.learn-toc {
+  margin: 1rem;
+}
+
+.learn-toc h2 {
+  margin: 0 0 0.5rem;
+}
+
+.learn-group {
+  margin-bottom: 1.25rem;
+}
+
+.learn-group h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.learn-group ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.learn-group li {
+  margin: 0.2rem 0;
+}
+
+/* Panel region — sequence of M-doc HTMLs loaded inline */
+
+.panel-region {
+  margin: 1rem;
+}
+
+.panel-region .panel-loading,
+.panel-region .panel-error {
+  padding: 1rem;
+  background: var(--color-card);
+  border-left: 4px solid #888;
+  border-radius: 4px;
+}
+
+.panel-region .panel-error {
+  border-left-color: #c44536;
+  color: #7a1f17;
+}
+
+.panel-region .mdoc-panel {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.panel-region .mdoc-panel .mdoc-id {
+  display: inline-block;
+  background: #1f3a8a;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.panel-region .mdoc-panel .mdoc-title {
+  display: inline;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.panel-region .mdoc-panel section {
+  margin-top: 1rem;
+}
+
+.panel-region .mdoc-panel h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+.panel-region .mdoc-panel ul,
+.panel-region .mdoc-panel ol {
+  margin: 0 0 0.5rem 1.25rem;
+}
+
+.panel-region .mdoc-panel .mdoc-footer {
+  border-top: 1px dashed rgba(0, 0, 0, 0.12);
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* Reading-depth visibility (cp-j0gw.10).
+   Brief = .mdoc-summary only.
+   Standard = + .mdoc-mechanism.
+   Detail = + .mdoc-citations + .mdoc-footer. */
+
+body[data-depth="brief"] .panel-region .mdoc-mechanism,
+body[data-depth="brief"] .panel-region .mdoc-citations,
+body[data-depth="brief"] .panel-region .mdoc-footer {
+  display: none;
+}
+
+body[data-depth="standard"] .panel-region .mdoc-citations,
+body[data-depth="standard"] .panel-region .mdoc-footer {
+  display: none;
+}
+
+/* Header nav (cp-j0gw.9) */
+
+.header-nav {
+  margin: 0.75rem 0 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 2px solid #1f3a8a;
+  padding-bottom: 2px;
+  font-weight: 600;
+}
+
+.header-nav a:hover {
+  color: #1f3a8a;
+}
