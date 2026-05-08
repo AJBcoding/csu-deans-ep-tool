@@ -1,0 +1,851 @@
+{
+  "schema_version": "1.0.0",
+  "build_date": "2026-05-05",
+  "ppd_release": "2026",
+  "scope_label": "CSU systemwide (22 of 23 campuses, 196 exposure cells, 81 unique CIP-4 codes)",
+  "source_csv_path": "CIPcodes:analyses/csu-systemwide-exposure/output/3cut-2026-05-04/",
+  "reproducer_script": "CIPcodes:analyses/csu-systemwide-exposure/scripts/03_build_systemwide.py",
+  "failure_type_legend": {
+    "a_direct_fail": "AHEAD published per-cell fail flag = 1 (direct regulatory verdict)",
+    "c_invisible": "IPEDS-recorded completers but no AHEAD row (B16 invisibility)",
+    "d_knife_edge": "Within \u00b120% of lowest-of-three benchmark \u2014 sensitivity-flip candidate",
+    "e_pool_suppressed": "Below 30-completer floor at 4-digit; pool has failing siblings"
+  },
+  "totals": {
+    "A_directly_failing_AHEAD": {
+      "n_cells": 21,
+      "n_campuses": 10,
+      "n_unique_cip4": 12
+    },
+    "C_invisible_no_AHEAD_row": {
+      "n_cells": 86,
+      "n_campuses": 20,
+      "n_unique_cip4": 52
+    },
+    "D_knife_edge_passing_within_20pct": {
+      "n_cells": 66,
+      "n_campuses": 17,
+      "n_unique_cip4": 31
+    },
+    "E_suppressed_pool_has_failing_siblings": {
+      "n_cells": 23,
+      "n_campuses": 9,
+      "n_unique_cip4": 15
+    }
+  },
+  "n_campuses_in_scope": 22,
+  "n_unique_cip4": 81,
+  "by_cip": {
+    "100": {
+      "cip4": "100",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "101": {
+      "cip4": "101",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "106": {
+      "cip4": "106",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "109": {
+      "cip4": "109",
+      "a_direct_fail": 0,
+      "c_invisible": 2,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": ""
+    },
+    "1101": {
+      "cip4": "1101",
+      "a_direct_fail": 0,
+      "c_invisible": 3,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 3,
+      "n_unique_campuses": 3,
+      "cip4_title": ""
+    },
+    "1109": {
+      "cip4": "1109",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "1301": {
+      "cip4": "1301",
+      "a_direct_fail": 0,
+      "c_invisible": 5,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 5,
+      "n_unique_campuses": 5,
+      "cip4_title": ""
+    },
+    "1311": {
+      "cip4": "1311",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "1312": {
+      "cip4": "1312",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Teacher Education and Professional Development Specific Levels and Methods"
+    },
+    "1313": {
+      "cip4": "1313",
+      "a_direct_fail": 0,
+      "c_invisible": 5,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 5,
+      "n_unique_campuses": 4,
+      "cip4_title": ""
+    },
+    "1399": {
+      "cip4": "1399",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Education Other"
+    },
+    "1401": {
+      "cip4": "1401",
+      "a_direct_fail": 0,
+      "c_invisible": 3,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 3,
+      "n_unique_campuses": 3,
+      "cip4_title": ""
+    },
+    "1409": {
+      "cip4": "1409",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "1413": {
+      "cip4": "1413",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "1436": {
+      "cip4": "1436",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "1510": {
+      "cip4": "1510",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "1601": {
+      "cip4": "1601",
+      "a_direct_fail": 2,
+      "c_invisible": 1,
+      "d_knife_edge": 2,
+      "e_pool_suppressed": 0,
+      "total_cells": 5,
+      "n_unique_campuses": 5,
+      "cip4_title": "Linguistic Comparative and Related Language Studies and Services"
+    },
+    "1603": {
+      "cip4": "1603",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 2,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "East Asian Languages Literatures and Linguistics"
+    },
+    "1609": {
+      "cip4": "1609",
+      "a_direct_fail": 1,
+      "c_invisible": 0,
+      "d_knife_edge": 2,
+      "e_pool_suppressed": 0,
+      "total_cells": 3,
+      "n_unique_campuses": 3,
+      "cip4_title": "Romance Languages Literatures and Linguistics"
+    },
+    "1699": {
+      "cip4": "1699",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 1,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Foreign Languages Literatures and Linguistics Other"
+    },
+    "1901": {
+      "cip4": "1901",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Family and Consumer Sciences/Human Sciences General"
+    },
+    "1907": {
+      "cip4": "1907",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Human Development Family Studies and Related Services"
+    },
+    "199": {
+      "cip4": "199",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "2301": {
+      "cip4": "2301",
+      "a_direct_fail": 2,
+      "c_invisible": 2,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 4,
+      "n_unique_campuses": 4,
+      "cip4_title": "English Language and Literature General"
+    },
+    "2313": {
+      "cip4": "2313",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 3,
+      "e_pool_suppressed": 1,
+      "total_cells": 4,
+      "n_unique_campuses": 3,
+      "cip4_title": "Rhetoric and Composition/Writing Studies"
+    },
+    "2401": {
+      "cip4": "2401",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Liberal Arts and Sciences General Studies and Humanities"
+    },
+    "2603": {
+      "cip4": "2603",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Botany/Plant Biology"
+    },
+    "2607": {
+      "cip4": "2607",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Zoology/Animal Biology"
+    },
+    "2701": {
+      "cip4": "2701",
+      "a_direct_fail": 0,
+      "c_invisible": 2,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 3,
+      "n_unique_campuses": 3,
+      "cip4_title": "Mathematics"
+    },
+    "2705": {
+      "cip4": "2705",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "3017": {
+      "cip4": "3017",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "3018": {
+      "cip4": "3018",
+      "a_direct_fail": 0,
+      "c_invisible": 2,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": ""
+    },
+    "3020": {
+      "cip4": "3020",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "305": {
+      "cip4": "305",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "3099": {
+      "cip4": "3099",
+      "a_direct_fail": 0,
+      "c_invisible": 7,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 7,
+      "n_unique_campuses": 6,
+      "cip4_title": ""
+    },
+    "3101": {
+      "cip4": "3101",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Parks Recreation and Leisure Studies"
+    },
+    "3105": {
+      "cip4": "3105",
+      "a_direct_fail": 0,
+      "c_invisible": 2,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 3,
+      "n_unique_campuses": 3,
+      "cip4_title": "Sports Kinesiology and Physical Education/Fitness"
+    },
+    "3801": {
+      "cip4": "3801",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 2,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Philosophy"
+    },
+    "399": {
+      "cip4": "399",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "4201": {
+      "cip4": "4201",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "4301": {
+      "cip4": "4301",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "4302": {
+      "cip4": "4302",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "4400": {
+      "cip4": "4400",
+      "a_direct_fail": 0,
+      "c_invisible": 2,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": ""
+    },
+    "4501": {
+      "cip4": "4501",
+      "a_direct_fail": 0,
+      "c_invisible": 4,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 4,
+      "n_unique_campuses": 4,
+      "cip4_title": ""
+    },
+    "4502": {
+      "cip4": "4502",
+      "a_direct_fail": 0,
+      "c_invisible": 2,
+      "d_knife_edge": 5,
+      "e_pool_suppressed": 1,
+      "total_cells": 8,
+      "n_unique_campuses": 8,
+      "cip4_title": "Anthropology"
+    },
+    "4504": {
+      "cip4": "4504",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Criminology"
+    },
+    "4506": {
+      "cip4": "4506",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 1,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Economics"
+    },
+    "4507": {
+      "cip4": "4507",
+      "a_direct_fail": 0,
+      "c_invisible": 2,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": ""
+    },
+    "4509": {
+      "cip4": "4509",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "4510": {
+      "cip4": "4510",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 1,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Political Science and Government"
+    },
+    "4511": {
+      "cip4": "4511",
+      "a_direct_fail": 1,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Sociology"
+    },
+    "5003": {
+      "cip4": "5003",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 5,
+      "total_cells": 5,
+      "n_unique_campuses": 5,
+      "cip4_title": "Dance"
+    },
+    "5004": {
+      "cip4": "5004",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 2,
+      "e_pool_suppressed": 1,
+      "total_cells": 3,
+      "n_unique_campuses": 3,
+      "cip4_title": "Design and Applied Arts"
+    },
+    "5005": {
+      "cip4": "5005",
+      "a_direct_fail": 3,
+      "c_invisible": 2,
+      "d_knife_edge": 6,
+      "e_pool_suppressed": 1,
+      "total_cells": 12,
+      "n_unique_campuses": 9,
+      "cip4_title": "Drama/Theatre Arts and Stagecraft"
+    },
+    "5006": {
+      "cip4": "5006",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Film/Video and Photographic Arts"
+    },
+    "5007": {
+      "cip4": "5007",
+      "a_direct_fail": 5,
+      "c_invisible": 0,
+      "d_knife_edge": 6,
+      "e_pool_suppressed": 0,
+      "total_cells": 11,
+      "n_unique_campuses": 11,
+      "cip4_title": "Fine and Studio Arts"
+    },
+    "5009": {
+      "cip4": "5009",
+      "a_direct_fail": 2,
+      "c_invisible": 0,
+      "d_knife_edge": 8,
+      "e_pool_suppressed": 3,
+      "total_cells": 13,
+      "n_unique_campuses": 12,
+      "cip4_title": "Music"
+    },
+    "501": {
+      "cip4": "501",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Area Studies"
+    },
+    "5010": {
+      "cip4": "5010",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 2,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Arts Entertainment and Media Management"
+    },
+    "502": {
+      "cip4": "502",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 2,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Ethnic Cultural Minority Gender and Group Studies"
+    },
+    "5099": {
+      "cip4": "5099",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 1,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Visual and Performing Arts Other"
+    },
+    "5100": {
+      "cip4": "5100",
+      "a_direct_fail": 0,
+      "c_invisible": 4,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 4,
+      "n_unique_campuses": 3,
+      "cip4_title": ""
+    },
+    "5107": {
+      "cip4": "5107",
+      "a_direct_fail": 1,
+      "c_invisible": 0,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Health and Medical Administrative Services"
+    },
+    "5108": {
+      "cip4": "5108",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "5109": {
+      "cip4": "5109",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "5115": {
+      "cip4": "5115",
+      "a_direct_fail": 0,
+      "c_invisible": 2,
+      "d_knife_edge": 3,
+      "e_pool_suppressed": 0,
+      "total_cells": 5,
+      "n_unique_campuses": 5,
+      "cip4_title": "Mental and Social Health Services and Allied Professions"
+    },
+    "5122": {
+      "cip4": "5122",
+      "a_direct_fail": 1,
+      "c_invisible": 0,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Public Health"
+    },
+    "5123": {
+      "cip4": "5123",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Rehabilitation and Therapeutic Professions"
+    },
+    "5138": {
+      "cip4": "5138",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 1,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Registered Nursing Nursing Administration Nursing Research and Clinical Nursing"
+    },
+    "5202": {
+      "cip4": "5202",
+      "a_direct_fail": 1,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 2,
+      "n_unique_campuses": 2,
+      "cip4_title": "Business Administration Management and Operations"
+    },
+    "5203": {
+      "cip4": "5203",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "5209": {
+      "cip4": "5209",
+      "a_direct_fail": 1,
+      "c_invisible": 0,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Hospitality Administration/Management"
+    },
+    "5210": {
+      "cip4": "5210",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "5213": {
+      "cip4": "5213",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 1,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Management Sciences and Quantitative Methods"
+    },
+    "5216": {
+      "cip4": "5216",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "5220": {
+      "cip4": "5220",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 1,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Construction Management"
+    },
+    "5299": {
+      "cip4": "5299",
+      "a_direct_fail": 0,
+      "c_invisible": 1,
+      "d_knife_edge": 0,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": ""
+    },
+    "5401": {
+      "cip4": "5401",
+      "a_direct_fail": 1,
+      "c_invisible": 0,
+      "d_knife_edge": 2,
+      "e_pool_suppressed": 0,
+      "total_cells": 3,
+      "n_unique_campuses": 3,
+      "cip4_title": "History"
+    },
+    "901": {
+      "cip4": "901",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 3,
+      "e_pool_suppressed": 0,
+      "total_cells": 3,
+      "n_unique_campuses": 3,
+      "cip4_title": "Communication and Media Studies"
+    },
+    "904": {
+      "cip4": "904",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 1,
+      "e_pool_suppressed": 0,
+      "total_cells": 1,
+      "n_unique_campuses": 1,
+      "cip4_title": "Journalism"
+    },
+    "907": {
+      "cip4": "907",
+      "a_direct_fail": 0,
+      "c_invisible": 0,
+      "d_knife_edge": 3,
+      "e_pool_suppressed": 0,
+      "total_cells": 3,
+      "n_unique_campuses": 3,
+      "cip4_title": "Radio Television and Digital Communication"
+    }
+  },
+  "disclaimer": "CSU systemwide context derived from forward-simulated PPD:2026 negotiator analytic file. Not a prediction of which programs will fail in 2027 \u2014 a current snapshot of how the proposed rule maps onto the system as of the data freeze. Verify against the source CSVs (path above)."
+}
